@@ -1,6 +1,8 @@
 # 🎓 高校信息检索 Skill
 
-[![OpenCode Skill](https://img.shields.io/badge/OpenCode-Skill-blue.svg)](https://github.com/sst/opencode)
+[![OpenCode](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://github.com/sst/opencode)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-purple.svg)](https://docs.anthropic.com/en/docs/claude-code)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.0.0-brightgreen.svg)](#版本记录)
@@ -25,11 +27,29 @@
 
 ## 📦 安装
 
+本 Skill 遵循 [Anthropic Agent Skills Spec](https://docs.anthropic.com/en/docs/claude-code/skills)，兼容所有支持该规范的 AI Agent 平台。
+
+### OpenCode
+
 ```bash
 git clone https://github.com/MRLMRML/university-info-skill.git ~/.opencode/skills/高校信息检索
 ```
 
-无需配置，开箱即用。
+### Claude Code
+
+```bash
+git clone https://github.com/MRLMRML/university-info-skill.git ~/.claude/skills/高校信息检索
+```
+
+### OpenClaw
+
+```bash
+git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skills/高校信息检索
+```
+
+> 也支持项目级安装：克隆到项目根目录的 `.opencode/skills/` 或 `.claude/skills/` 下即可。
+
+无需额外配置，开箱即用。
 
 ---
 
