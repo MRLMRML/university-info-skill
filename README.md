@@ -5,11 +5,11 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.2.0-brightgreen.svg)](#版本记录)
+[![Version](https://img.shields.io/badge/version-2.3.0-brightgreen.svg)](#版本记录)
 
 > 中国高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
 
-覆盖全国 **147 所双一流高校**，支持 **7 种查询类型**，核心数据源自**教育部官方文件**。
+覆盖全国 **147 所双一流高校**，支持 **14 种查询类型**，核心数据源自**教育部官方文件**。
 
 ---
 
@@ -139,11 +139,18 @@ git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skill
 |---|------|-----------|--------|
 | 1 | 基础信息 | "基本信息"、"什么层次"、"是不是985" | universities.json |
 | 2 | 学科实力 | "A+学科"、"优势学科"、"学科排名" | disciplines.csv |
-| 3 | 科研水平 | "实验室"、"科研经费"、"研究方向" | universities.json + Web |
-| 4 | 就业质量 | "毕业生去向"、"薪资"、"就业率" | universities.json + Web |
+| 3 | 科研水平 | "实验室"、"科研经费"、"研究方向" | universities.json |
+| 4 | 就业质量 | "毕业生去向"、"薪资"、"就业率" | universities.json |
 | 5 | 生源结构 | "多少学生"、"本硕博比例"、"男女比" | universities.json |
 | 6 | 院校筛选 | "有哪些"、"列表"、"筛选" | config.yaml |
 | 7 | 高校对比 | "对比"、"VS"、"哪个好" | 多文件聚合 |
+| 8 | 录取分数线 | "多少分能上"、"分数线"、"录取位次" | scores.db (SQLite) |
+| 9 | 大学排名 | "排名"、"排第几"、"软科排名" | rankings.csv |
+| 10 | 师资实力 | "院士"、"杰青"、"师资力量" | universities.json |
+| 11 | 智能推荐 | "推荐学校"、"目标校"、"哪些学校适合" | 多源聚合 |
+| 12 | 报告生成 | "校招策略"、"择校报告"、"分析报告" | 全量数据 |
+| 13 | 学科交叉 | "同时XX和XX都强"、"跨学科" | disciplines.csv |
+| 14 | 综合画像 | "怎么样"、"介绍一下" | 全量数据聚合 |
 
 ---
 
@@ -171,12 +178,17 @@ git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skill
 
 ## 📋 版本记录
 
+### v2.3.0 (2025-04) — Phase 2 功能增强
+
+- ✅ 新增 scores.db SQLite 录取分数线数据库
+- ✅ 查询类型从 7 种扩展至 **14 种**
+- ✅ 新增：录取分数线 / 大学排名 / 师资实力 / 智能推荐 / 报告生成 / 学科交叉 / 综合画像
+
 ### v2.2.0 (2025-04) — Phase 1 数据补全
 
-- ✅ disciplines.csv: 477 → **1483 条**（Playwright 爬取，95 学科 A+/A/A-/B+ 全覆盖）
+- ✅ disciplines.csv: 477 → **1483 条**（95 学科 A+/A/A-/B+ 全覆盖）
 - ✅ 新增 rankings.csv: **软科 2024 中国大学排名 TOP240**
-- ✅ 就业/科研数据: 39 所 985 **全部覆盖**（此前仅 37/16 所）
-- ✅ 新增师资数据: 39 所 985 院士/杰青/长江学者数量
+- ✅ 就业/科研/师资数据: 39 所 985 **全部覆盖**
 - ✅ 新增多平台兼容支持（Claude Code / OpenClaw）
 
 ### v2.1.0 (2025-04) — 数据审计
