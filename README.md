@@ -178,6 +178,12 @@ git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skill
 
 ## 📋 版本记录
 
+### v2.4.0 (2025-04) — Phase 3 场景化拆分
+
+- ✅ 新增「**校招助手**」Skill — 目标校筛选 / 策略报告 / ROI估算 / 流向分析
+- ✅ 新增「**择校分析**」Skill — 难度评估 / 性价比推荐 / 调剂建议
+- ✅ 三 Skill 联合测试通过（数据一致性验证 ✅）
+
 ### v2.3.0 (2025-04) — Phase 2 功能增强
 
 - ✅ 新增 scores.db SQLite 录取分数线数据库
