@@ -197,6 +197,12 @@ university-info-skill/
 
 ## 📋 版本记录
 
+### 🔜 Phase 6 — 数据补充（规划中）
+
+12项任务，预估31天。详见[飞书任务看板](https://mi.feishu.cn/base/TddQbNoTzaUPJKsI7YfckU91nTe)「Phase 6 数据补充」表。
+
+重点：师资数据逐校核实 / 49学科评估补全 / 录取分数线扩充12省 / 109所非985就业数据
+
 ### v2.5.0 (2025-04) — Phase 5 架构优化
 
 - ✅ SKILL.md 瘦身 **436行→75行**（拆分 references/ 目录，节省80% token）
