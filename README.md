@@ -5,7 +5,7 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.3.0-brightgreen.svg)](#版本记录)
+[![Version](https://img.shields.io/badge/version-2.4.0-brightgreen.svg)](#版本记录)
 
 > 中国高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
 
@@ -94,13 +94,32 @@ git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skill
 ## 📁 项目结构
 
 ```
-高校信息检索/
-├── SKILL.md                    # Skill 主指令文件（含查询路由、输出模板、线上搜索策略）
-└── data/
-    ├── universities.json       # 148所高校多维度信息（含就业/科研/师资/生源）
-    ├── disciplines.csv         # 学科评估数据（95学科 1483条 A+/A/A-/B+）
-    ├── rankings.csv            # 软科2024中国大学排名 TOP240
-    └── config.yaml             # 985/211/双一流完整名单 + 分类配置
+university-info-skill/
+├── 高校信息检索/                ← 主 Skill (14种查询类型)
+│   ├── SKILL.md
+│   └── data/
+│       ├── universities.json   # 148所高校（就业/科研/师资/生源）
+│       ├── disciplines.csv     # 1483条学科评估 (95学科 A+/A/A-/B+)
+│       ├── rankings.csv        # 软科2024排名 TOP240
+│       ├── scores.db           # 录取分数线 (SQLite)
+│       └── config.yaml         # 985/211/双一流名单
+├── 校招助手/                    ← HR 校招决策 Skill
+│   ├── SKILL.md
+│   └── data/
+│       ├── recruitment.json    # 10行业目标校映射 + ROI模型
+│       └── talent_flow.csv     # 32校毕业生流向
+├── 择校分析/                    ← 学生择校 Skill
+│   ├── SKILL.md
+│   └── data/
+│       ├── admission.db        # 考研报录比 (SQLite)
+│       └── programs.json       # 6学科择校指南
+├── scripts/                    # 自动化脚本
+│   ├── validate_data.py
+│   └── crawl_rankings.py
+├── docs/                       # 设计文档
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+└── LICENSE
 ```
 
 ---
