@@ -5,7 +5,7 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.5.0-brightgreen.svg)](#版本记录)
+[![Version](https://img.shields.io/badge/version-2.6.0-brightgreen.svg)](#版本记录)
 
 > 中国高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
 
@@ -197,11 +197,14 @@ university-info-skill/
 
 ## 📋 版本记录
 
-### 🔜 Phase 6 — 数据补充（规划中）
+### v2.6.0 (2025-04) — Phase 6 数据补充
 
-12项任务，预估31天。详见[飞书任务看板](https://mi.feishu.cn/base/TddQbNoTzaUPJKsI7YfckU91nTe)「Phase 6 数据补充」表。
-
-重点：师资数据逐校核实 / 49学科评估补全 / 录取分数线扩充12省 / 109所非985就业数据
+- ✅ 师资数据百度百科核实 **37/39所**精确院士数
+- ✅ 实验室精确名单 **11→37/39所**
+- ✅ 毕业生流向 **39所985全覆盖**（+北邮/西电 = 41条）
+- ✅ 录取分数线 **31/31省全覆盖**（149条）
+- ✅ URL验证 + 排名抽检 + 一流学科抽检
+- ✅ 新增「**按需实时补充**」策略 — 本地数据不足时自动 web search 获取精确值
 
 ### v2.5.0 (2025-04) — Phase 5 架构优化
 
