@@ -5,7 +5,7 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.4.0-brightgreen.svg)](#版本记录)
+[![Version](https://img.shields.io/badge/version-2.5.0-brightgreen.svg)](#版本记录)
 
 > 中国高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
 
@@ -196,6 +196,15 @@ university-info-skill/
 ---
 
 ## 📋 版本记录
+
+### v2.5.0 (2025-04) — 架构优化 (dev→master)
+
+- ✅ SKILL.md 瘦身 **436行→75行**（拆分 references/ 目录，节省80% token）
+- ✅ 可视化输出增强（占比条/星级雷达/进度条/三梯队模板）
+- ✅ 数据层升级 **universities.db** SQLite（5表，支持复杂 SQL JOIN）
+- ✅ 分数线数据扩展至 **38校116条**
+- ✅ 11所985 **国家重点实验室精确名单**（85个实验室）
+- ✅ 新增爬虫脚本 `crawl_employment.py` + `crawl_faculty.py`
 
 ### v2.4.0 (2025-04) — Phase 3 场景化拆分
 
