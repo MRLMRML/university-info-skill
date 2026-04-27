@@ -1,0 +1,74 @@
+{
+  "说明": "顶级赛事数据 - 分国际/国内，按领域分类",
+  "数据来源": "各赛事官网、教育部A类赛事目录",
+  "更新日期": "2026-04-27",
+  "国际赛事": {
+    "编程/算法": [
+      {"name": "ACM-ICPC", "full_name": "国际大学生程序设计竞赛", "level": "顶级", "organizer": "ACM", "participants": "全球5万+队伍", "china_performance": "清华/北大/浙大/上交常年进World Finals", "registration_period": "每年9月", "final_date": "每年11月", "website": "https://icpc.global", "description": "3人组队，5小时解题，全球最权威编程竞赛"},
+      {"name": "Google Code Jam", "full_name": "Google Code Jam", "level": "顶级", "organizer": "Google", "participants": "全球数万选手", "china_performance": "中国选手多次进入决赛", "registration_period": "每年3月", "final_date": "每年8月", "website": "https://codingcompetitions.withgoogle.com", "description": "个人赛，多轮淘汰，奖金$15K"},
+      {"name": "Facebook Hacker Cup", "full_name": "Meta Hacker Cup", "level": "顶级", "organizer": "Meta", "participants": "全球数万选手", "china_performance": "中国选手表现优异", "registration_period": "每年7月", "final_date": "每年10月", "website": "https://www.facebook.com/hackercup", "description": "个人赛，算法竞赛"},
+      {"name": "IOI", "full_name": "国际信息学奥林匹克竞赛", "level": "顶级", "organizer": "IOI", "participants": "80+国家/地区", "china_performance": "中国队历年奖牌数领先", "registration_period": "各国选拔", "final_date": "每年8-9月", "website": "https://ioinformatics.org", "description": "中学生最高级别信息学竞赛"}
+    ],
+    "数学": [
+      {"name": "IMO", "full_name": "国际数学奥林匹克竞赛", "level": "顶级", "organizer": "IMO Foundation", "participants": "100+国家/地区", "china_performance": "中国队总成绩常年前三", "registration_period": "各国选拔", "final_date": "每年7月", "website": "https://www.imo-official.org", "description": "中学生最高级别数学竞赛"},
+      {"name": "PUTNAM", "full_name": "William Lowell Putnam Mathematical Competition", "level": "顶级", "organizer": "MAA", "participants": "北美4000+", "china_performance": "MIT/Harvard为主", "registration_period": "每年9月", "final_date": "每年12月", "website": "https://maa.org", "description": "北美大学生最高级别数学竞赛"}
+    ],
+    "数据科学/AI": [
+      {"name": "Kaggle Competitions", "full_name": "Kaggle Data Science Competitions", "level": "顶级", "organizer": "Google", "participants": "全球百万+数据科学家", "china_performance": "中国选手活跃，多支队伍获金牌", "registration_period": "随时", "final_date": "持续", "website": "https://www.kaggle.com/competitions", "description": "全球最大数据科学竞赛平台"},
+      {"name": "KDD Cup", "full_name": "ACM SIGKDD Cup", "level": "顶级", "organizer": "ACM SIGKDD", "participants": "全球数据科学团队", "china_performance": "腾讯/阿里/字节等常获奖", "registration_period": "每年4月", "final_date": "每年8月", "website": "https://kdd.org/kdd-cup", "description": "数据挖掘领域最权威竞赛"},
+      {"name": "NeurIPS Competitions", "full_name": "NeurIPS Competition Track", "level": "顶级", "organizer": "NeurIPS", "participants": "全球ML研究团队", "china_performance": "中国团队表现活跃", "registration_period": "每年6-7月", "final_date": "每年12月", "website": "https://neurips.cc", "description": "机器学习顶会附属竞赛"}
+    ],
+    "创新创业": [
+      {"name": "MIT $100K", "full_name": "MIT Entrepreneurship Competition", "level": "顶级", "organizer": "MIT", "participants": "全球初创团队", "china_performance": "中国留学生团队参与", "registration_period": "每年9月", "final_date": "每年5月", "website": "https://mit100k.mit.edu", "description": "全球最知名大学创业竞赛"},
+      {"name": "Hult Prize", "full_name": "Hult Prize", "level": "顶级", "organizer": "Hult/UN", "participants": "全球10万+学生", "china_performance": "中国高校团队积极参与", "registration_period": "每年9月", "final_date": "每年9月", "website": "https://www.hultprize.org", "description": "联合国支持的社会创新竞赛"},
+      {"name": "MassChallenge", "full_name": "MassChallenge", "level": "顶级", "organizer": "MassChallenge", "participants": "全球初创企业", "china_performance": "中国团队有参与", "registration_period": "每年1月", "final_date": "每年10月", "website": "https://masschallenge.org", "description": "全球顶级加速器竞赛"}
+    ],
+    "设计": [
+      {"name": "Red Dot", "full_name": "Red Dot Design Award", "level": "顶级", "organizer": "Red Dot", "participants": "全球设计机构", "china_performance": "中国企业/设计公司获奖增多", "registration_period": "每年3-6月", "final_date": "每年10月", "website": "https://www.red-dot.org", "description": "全球三大设计奖之一"},
+      {"name": "iF Design", "full_name": "iF Design Award", "level": "顶级", "organizer": "iF", "participants": "全球设计机构", "china_performance": "中国企业积极参与", "registration_period": "每年6-10月", "final_date": "每年3月", "website": "https://ifdesign.com", "description": "全球三大设计奖之一"},
+      {"name": "IDEA", "full_name": "International Design Excellence Awards", "level": "顶级", "organizer": "IDSA", "participants": "全球设计师", "china_performance": "中国团队有获奖记录", "registration_period": "每年1-3月", "final_date": "每年8月", "website": "https://www.idsa.org", "description": "美国工业设计最高奖"}
+    ],
+    "商业/案例": [
+      {"name": "HBS Case Competition", "full_name": "Harvard Business School Case Competition", "level": "顶级", "organizer": "HBS", "participants": "全球商学院", "china_performance": "中国MBA团队参与", "registration_period": "每年9月", "final_date": "每年11月", "website": "https://www.hbs.edu", "description": "哈佛商学院案例竞赛"},
+      {"name": "Kellogg Case Competition", "full_name": "Kellogg Business Case Competition", "level": "顶级", "organizer": "Kellogg/Northwestern", "participants": "全球商学院", "china_performance": "中国团队有参与", "registration_period": "每年10月", "final_date": "每年2月", "website": "https://www.kellogg.northwestern.edu", "description": "Kellogg商学院案例竞赛"}
+    ]
+  },
+  "国内赛事": {
+    "综合创新": [
+      {"name": "挑战杯（大挑）", "full_name": "\"挑战杯\"全国大学生课外学术科技作品竞赛", "level": "A类", "organizer": "共青团中央", "participants": "全国2000+高校", "cycle": "两年一届（奇数年）", "registration_period": "每年3-4月校赛", "final_date": "每年10-11月", "website": "https://tiaozhanbei.net", "description": "中国大学生科技创新最高赛事，被誉为科创奥林匹克"},
+      {"name": "挑战杯（小挑）", "full_name": "\"挑战杯\"中国大学生创业计划竞赛", "level": "A类", "organizer": "共青团中央", "participants": "全国2000+高校", "cycle": "两年一届（偶数年）", "registration_period": "每年3-4月校赛", "final_date": "每年10-11月", "website": "https://tiaozhanbei.net", "description": "中国大学生创业最高赛事"},
+      {"name": "互联网+", " "full_name": "中国国际大学生创新大赛（原互联网+）", "level": "A类", "organizer": "教育部", "participants": "全国3000+高校", "cycle": "每年一届", "registration_period": "每年4-6月", "final_date": "每年10-11月", "website": "https://cy.ncss.cn", "description": "教育部主办，参赛规模最大，分高教/红旅/职教/产业赛道"}
+    ],
+    "数学建模": [
+      {"name": "国赛（CUMCM）", "full_name": "全国大学生数学建模竞赛", "level": "A类", "organizer": "中国工业与应用数学学会", "participants": "全国1600+高校/5万+队", "cycle": "每年一届", "registration_period": "每年6月", "final_date": "每年9月(3天)", "website": "http://www.mcm.edu.cn", "description": "国内规模最大数学建模竞赛，3人组队72小时"},
+      {"name": "美赛（MCM/ICM）", "full_name": "美国大学生数学建模竞赛", "level": "A类", "organizer": "COMAP", "participants": "全球2万+队", "cycle": "每年一届", "registration_period": "每年11月", "final_date": "每年2月(4天)", "website": "https://www.comap.com", "description": "国际最知名数学建模竞赛，分MCM/ICM两赛道"}
+    ],
+    "编程/算法": [
+      {"name": "蓝桥杯", "full_name": "蓝桥杯全国软件和信息技术专业人才大赛", "level": "A类", "organizer": "工信部人才交流中心", "participants": "全国1600+高校", "cycle": "每年一届", "registration_period": "每年10-12月", "final_date": "每年6月", "website": "https://dasai.lanqiao.cn", "description": "分C/C++/Java/Python等语言，分省赛+国赛"},
+      {"name": "计算机设计大赛", "full_name": "中国大学生计算机设计大赛", "level": "A类", "organizer": "教育部高等学校计算机类专业教学指导委员会", "participants": "全国600+高校", "cycle": "每年一届", "registration_period": "每年1-3月", "final_date": "每年7-8月", "website": "https://jsjds.blcu.edu.cn", "description": "分软件/硬件/数媒/大数据/AI等赛道"},
+      {"name": "CCF-CSP", "full_name": "CCF计算机软件能力认证", "level": "重要", "organizer": "CCF", "participants": "全国高校/企业", "cycle": "每年多次", "registration_period": "随时", "final_date": "每月一次", "website": "https://www.cspro.org", "description": "CCF主办的编程能力认证，部分985保研认可"}
+    ],
+    "创新创业/产品": [
+      {"name": "创青春", "full_name": "中国青年创新创业大赛", "level": "A类", "organizer": "共青团中央", "participants": "全国创业青年", "cycle": "每年一届", "registration_period": "每年6-8月", "final_date": "每年11月", "website": "https://cqc.casicloud.com", "description": "共青团主办的创业大赛"},
+      {"name": "三创赛", "full_name": "全国大学生电子商务创新创意创业挑战赛", "level": "A类", "organizer": "教育部高等学校电子商务类专业教学指导委员会", "participants": "全国800+高校", "cycle": "每年一届", "registration_period": "每年3月", "final_date": "每年7月", "website": "https://www.3chuang.net", "description": "电商/互联网创新方向"},
+      {"name": "服务外包大赛", "full_name": "中国大学生服务外包创新创业大赛", "level": "A类", "organizer": "教育部/商务部", "participants": "全国700+高校", "cycle": "每年一届", "registration_period": "每年12月", "final_date": "每年5月", "website": "https://fwwb.org.cn", "description": "面向企业真实需求的创新竞赛"}
+    ],
+    "硬件/工程": [
+      {"name": "电子设计大赛", "full_name": "全国大学生电子设计竞赛", "level": "A类", "organizer": "教育部高等教育司", "participants": "全国1100+高校", "cycle": "每年一届(单数年全国赛)", "registration_period": "每年6月", "final_date": "每年9月(4天)", "website": "https://nuedc.sjtu.edu.cn", "description": "电子信息类最高赛事，3人组队4天3夜"},
+      {"name": "机械创新设计大赛", "full_name": "全国大学生机械创新设计大赛", "level": "A类", "organizer": "教育部高等学校机械基础课程教学指导分委员会", "participants": "全国700+高校", "cycle": "两年一届", "registration_period": "每年3-5月", "final_date": "每年10-11月", "website": "https://www.umic.cn", "description": "机械类最高赛事"},
+      {"name": "机器人大赛（RoboMaster）", "full_name": "全国大学生机器人大赛 RoboMaster", "level": "A类", "organizer": "DJI/共青团中央", "participants": "全国300+高校", "cycle": "每年一届", "registration_period": "每年10月", "final_date": "每年8月", "website": "https://www.robomaster.com", "description": "DJI主办的机器人对抗赛，5v5对战"}
+    ],
+    "英语/语言": [
+      {"name": "英语竞赛（NECCS）", "full_name": "全国大学生英语竞赛", "level": "B类", "organizer": "高等学校大学外语教学指导委员会", "participants": "全国1000+高校", "cycle": "每年一届", "registration_period": "每年12月", "final_date": "每年4月(初赛)+5月(决赛)", "website": "https://www.chinaneccs.cn", "description": "分A/B/C/D四类，覆盖面最广的英语竞赛"},
+      {"name": "外研社杯", "full_name": "外研社杯全国英语演讲/写作/阅读大赛", "level": "A类", "organizer": "外语教学与研究出版社", "participants": "全国1500+高校", "cycle": "每年一届", "registration_period": "每年9月", "final_date": "每年12月", "website": "https://uchallenge.unipus.cn", "description": "英语综合能力竞赛，分演讲/写作/阅读三赛道"}
+    ],
+    "设计/创意": [
+      {"name": "大广赛", "full_name": "全国大学生广告艺术大赛", "level": "A类", "organizer": "教育部高等教育司", "participants": "全国1500+高校", "cycle": "每年一届", "registration_period": "每年1-5月", "final_date": "每年6-11月", "website": "https://www.sun-ada.net", "description": "广告/设计类最大赛事"},
+      {"name": "学院奖", "full_name": "全国大学生广告艺术节学院奖", "level": "A类", "organizer": "中国广告协会", "participants": "全国1000+高校", "cycle": "每年一届", "registration_period": "每年3月", "final_date": "每年11月", "website": "https://www.collegestar.cn", "description": "广告创意类赛事"}
+    ],
+    "金融/商业": [
+      {"name": "大学生财会大赛", "full_name": "全国大学生财会职业能力大赛", "level": "A类", "organizer": "中国高等教育学会", "participants": "全国500+高校", "cycle": "每年一届", "registration_period": "每年9月", "final_date": "每年11月", "website": "https://www.hep.com.cn", "description": "财会类最高赛事"},
+      {"name": "商业精英挑战赛", "full_name": "全国高校商业精英挑战赛", "level": "A类", "organizer": "中国贸促会", "participants": "全国600+高校", "cycle": "每年一届", "registration_period": "每年4-6月", "final_date": "每年11-12月", "website": "https://www.ccpit-cberc.com", "description": "分品牌策划/国际贸易/商务谈判等赛道"}
+    ]
+  }
+}
