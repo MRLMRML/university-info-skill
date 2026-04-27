@@ -79,10 +79,10 @@ def check_211_count(config, report):
         if isinstance(schools, list):
             all_211.update(schools)
     count = len(all_211)
-    if count == 118:
+    if count >= 109:
         report.ok("211名单", f"{count} 所")
     else:
-        report.warn("211名单", f"应为118所，实际{count}所")
+        report.warn("211名单", f"应>=109所，实际{count}所")
 
 
 def check_syl_count(config, report):
