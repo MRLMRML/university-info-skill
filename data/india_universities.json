@@ -1,0 +1,678 @@
+{
+  "说明": "印度TOP20高校数据",
+  "数据来源": "QS/NIRF/各校官网",
+  "更新日期": "2026-04-28",
+  "高校": [
+    {
+      "name": "Indian Institute of Technology Bombay",
+      "name_cn": "印度理工学院孟买分校",
+      "abbreviation": "IIT Bombay",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Mumbai",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 118,
+        "nirf_2025": 3
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "材料科学"
+      ],
+      "enrollment": {
+        "total": 12000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~2%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "咨询",
+          "金融"
+        ],
+        "top_employers": [
+          "Google",
+          "Microsoft",
+          "Goldman Sachs"
+        ]
+      },
+      "notable": "印度最难进大学，IIT系统旗舰",
+      "website": "https://www.iitb.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Delhi",
+      "name_cn": "印度理工学院德里分校",
+      "abbreviation": "IIT Delhi",
+      "country": "印度",
+      "region": "南亚",
+      "city": "New Delhi",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 150,
+        "nirf_2025": 2
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "设计"
+      ],
+      "enrollment": {
+        "total": 11000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~2%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "咨询",
+          "制造"
+        ]
+      },
+      "notable": "印度理工系统排名最高，CS/工程顶尖",
+      "website": "https://home.iitd.ac.in"
+    },
+    {
+      "name": "Indian Institute of Science",
+      "name_cn": "印度科学研究所",
+      "abbreviation": "IISc",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Bangalore",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 211,
+        "nirf_2025": 1
+      },
+      "strengths": [
+        "物理",
+        "化学",
+        "工程",
+        "生物"
+      ],
+      "enrollment": {
+        "total": 4000,
+        "international_ratio": "5%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "KVPY/JEE/GATE"
+      },
+      "employment": {
+        "top_industries": [
+          "科研",
+          "科技",
+          "制药"
+        ]
+      },
+      "notable": "印度科研最强，爱因斯坦曾访问",
+      "website": "https://www.iisc.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Madras",
+      "name_cn": "印度理工学院马德拉斯分校",
+      "abbreviation": "IIT Madras",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Chennai",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 227,
+        "nirf_2025": 1
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "航天"
+      ],
+      "enrollment": {
+        "total": 10000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~2%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "汽车",
+          "航天"
+        ]
+      },
+      "notable": "NIRF排名连续多年第一，创业氛围最浓",
+      "website": "https://www.iitm.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Kanpur",
+      "name_cn": "印度理工学院坎普尔分校",
+      "abbreviation": "IIT Kanpur",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Kanpur",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 263,
+        "nirf_2025": 4
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "航空"
+      ],
+      "enrollment": {
+        "total": 8000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~2%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "航空",
+          "制造"
+        ]
+      },
+      "notable": "印度航空工程最强",
+      "website": "https://www.iitk.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Kharagpur",
+      "name_cn": "印度理工学院卡拉格普尔分校",
+      "abbreviation": "IIT Kharagpur",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Kharagpur",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 270,
+        "nirf_2025": 5
+      },
+      "strengths": [
+        "工程",
+        "法学",
+        "管理"
+      ],
+      "enrollment": {
+        "total": 13000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~2%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "制造",
+          "法律"
+        ]
+      },
+      "notable": "IIT系统最古老、规模最大",
+      "website": "https://www.iitkgp.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Roorkee",
+      "name_cn": "印度理工学院鲁尔基分校",
+      "abbreviation": "IIT Roorkee",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Roorkee",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 350,
+        "nirf_2025": 6
+      },
+      "strengths": [
+        "工程",
+        "水利",
+        "建筑"
+      ],
+      "enrollment": {
+        "total": 8000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "建筑",
+          "水利"
+        ]
+      },
+      "notable": "印度最古老技术大学(1847年)",
+      "website": "https://www.iitr.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Guwahati",
+      "name_cn": "印度理工学院古瓦哈提分校",
+      "abbreviation": "IIT Guwahati",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Guwahati",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 370,
+        "nirf_2025": 7
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "设计"
+      ],
+      "enrollment": {
+        "total": 7000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "设计",
+          "制造"
+        ]
+      },
+      "notable": "印度最美IIT校园",
+      "website": "https://www.iitg.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Hyderabad",
+      "name_cn": "印度理工学院海德拉巴分校",
+      "abbreviation": "IIT Hyderabad",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Hyderabad",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 380,
+        "nirf_2025": 8
+      },
+      "strengths": [
+        "工程",
+        "AI",
+        "设计"
+      ],
+      "enrollment": {
+        "total": 5000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "JEE Advanced"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "AI",
+          "芯片"
+        ]
+      },
+      "notable": "印度AI研究新星，与日本合作紧密",
+      "website": "https://www.iith.ac.in"
+    },
+    {
+      "name": "Indian Institute of Management Ahmedabad",
+      "name_cn": "印度管理学院艾哈迈达巴德分校",
+      "abbreviation": "IIM Ahmedabad",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Ahmedabad",
+      "type": "公立",
+      "rankings": {
+        "qs_mba_2026": 50,
+        "nirf_2025": 1
+      },
+      "strengths": [
+        "MBA",
+        "金融",
+        "咨询"
+      ],
+      "enrollment": {
+        "total": 1200,
+        "international_ratio": "5%"
+      },
+      "admission": {
+        "acceptance": "~1%",
+        "exam": "CAT"
+      },
+      "employment": {
+        "top_industries": [
+          "咨询",
+          "金融",
+          "科技"
+        ],
+        "avg_salary_usd": 45000
+      },
+      "notable": "印度商学院第一名，哈佛合作",
+      "website": "https://www.iima.ac.in"
+    },
+    {
+      "name": "Indian Institute of Management Bangalore",
+      "name_cn": "印度管理学院班加罗尔分校",
+      "abbreviation": "IIM Bangalore",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Bangalore",
+      "type": "公立",
+      "rankings": {
+        "qs_mba_2026": 55,
+        "nirf_2025": 2
+      },
+      "strengths": [
+        "MBA",
+        "科技管理",
+        "创业"
+      ],
+      "enrollment": {
+        "total": 1000,
+        "international_ratio": "5%"
+      },
+      "admission": {
+        "acceptance": "~1%",
+        "exam": "CAT"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "咨询",
+          "创业"
+        ]
+      },
+      "notable": "位于印度硅谷，科技管理最强",
+      "website": "https://www.iimb.ac.in"
+    },
+    {
+      "name": "Indian Institute of Technology Delhi (IIIT Delhi)",
+      "name_cn": "德里信息科技学院",
+      "abbreviation": "IIIT Delhi",
+      "country": "印度",
+      "region": "南亚",
+      "city": "New Delhi",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 450,
+        "nirf_2025": 15
+      },
+      "strengths": [
+        "计算机科学",
+        "AI",
+        "数据科学"
+      ],
+      "enrollment": {
+        "total": 3000,
+        "international_ratio": "5%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "JEE Main"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "AI",
+          "数据"
+        ]
+      },
+      "notable": "印度CS研究最强非IIT院校",
+      "website": "https://www.iiitd.ac.in"
+    },
+    {
+      "name": "BITS Pilani",
+      "name_cn": "比尔拉理工学院",
+      "abbreviation": "BITS Pilani",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Pilani",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 600,
+        "nirf_2025": 25
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "药学"
+      ],
+      "enrollment": {
+        "total": 18000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~3%",
+        "exam": "BITSAT"
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "制药",
+          "咨询"
+        ]
+      },
+      "notable": "印度私立大学第一，硅谷校友网络强",
+      "website": "https://www.bits-pilani.ac.in"
+    },
+    {
+      "name": "Delhi University",
+      "name_cn": "德里大学",
+      "abbreviation": "DU",
+      "country": "印度",
+      "region": "南亚",
+      "city": "New Delhi",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 500,
+        "nirf_2025": 12
+      },
+      "strengths": [
+        "文科",
+        "商学",
+        "法学",
+        "理学"
+      ],
+      "enrollment": {
+        "total": 150000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~10%",
+        "exam": "CUET"
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "金融",
+          "教育"
+        ]
+      },
+      "notable": "印度规模最大的大学",
+      "website": "http://www.du.ac.in"
+    },
+    {
+      "name": "University of Mumbai",
+      "name_cn": "孟买大学",
+      "abbreviation": "MU",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Mumbai",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 700
+      },
+      "strengths": [
+        "商学",
+        "工程",
+        "文科"
+      ],
+      "enrollment": {
+        "total": 500000,
+        "international_ratio": "1%"
+      },
+      "admission": {
+        "acceptance": "~30%"
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "媒体",
+          "科技"
+        ]
+      },
+      "notable": "印度最古老大学之一，孟买金融中心",
+      "website": "https://mu.ac.in"
+    },
+    {
+      "name": "Anna University",
+      "name_cn": "安娜大学",
+      "abbreviation": "AU",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Chennai",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 650,
+        "nirf_2025": 18
+      },
+      "strengths": [
+        "工程",
+        "技术",
+        "建筑"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "exam": "TNEA"
+      },
+      "employment": {
+        "top_industries": [
+          "IT",
+          "制造",
+          "汽车"
+        ]
+      },
+      "notable": "南印度工程教育旗舰",
+      "website": "https://www.annauniv.edu"
+    },
+    {
+      "name": "Jadavpur University",
+      "name_cn": "贾达普尔大学",
+      "abbreviation": "JU",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Kolkata",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 750,
+        "nirf_2025": 10
+      },
+      "strengths": [
+        "工程",
+        "文科",
+        "理学"
+      ],
+      "enrollment": {
+        "total": 15000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~10%",
+        "exam": "WBJEE"
+      },
+      "employment": {
+        "top_industries": [
+          "IT",
+          "教育",
+          "研究"
+        ]
+      },
+      "notable": "东印度最强综合大学",
+      "website": "https://www.jaduniv.edu.in"
+    },
+    {
+      "name": "VIT University",
+      "name_cn": "VIT大学",
+      "abbreviation": "VIT",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Vellore",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 800,
+        "nirf_2025": 14
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "生物技术"
+      ],
+      "enrollment": {
+        "total": 35000,
+        "international_ratio": "5%"
+      },
+      "admission": {
+        "acceptance": "~10%",
+        "exam": "VITEEE"
+      },
+      "employment": {
+        "top_industries": [
+          "IT",
+          "制造",
+          "科技"
+        ]
+      },
+      "notable": "印度最大私立工程大学",
+      "website": "https://vit.ac.in"
+    },
+    {
+      "name": "Amrita Vishwa Vidyapeetham",
+      "name_cn": "阿姆里塔大学",
+      "abbreviation": "Amrita",
+      "country": "印度",
+      "region": "南亚",
+      "city": "Coimbatore",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 850,
+        "nirf_2025": 5
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "AI"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "3%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "exam": "AEEE"
+      },
+      "employment": {
+        "top_industries": [
+          "IT",
+          "医疗",
+          "AI"
+        ]
+      },
+      "notable": "印度进步最快的私立大学",
+      "website": "https://www.amrita.edu"
+    }
+  ]
+}
