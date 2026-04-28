@@ -1,6 +1,6 @@
 ---
 name: 高校信息检索
-description: 中国高校信息查询与情报分析工具。覆盖全国 985/211/双一流高校，支持基础信息、学科实力、科研水平、就业质量、生源结构、学术会议、竞赛赛事等多维度查询。当用户提到中国大学、高校查询、校园招聘、校企合作、学科评估、985/211/双一流筛选、高校对比、就业数据、毕业生去向、顶会、学术会议、竞赛、挑战杯、数学建模、Kaggle、ACM时，务必使用此 Skill。也适用于"XX大学怎么样"、"哪些学校XX学科强"、"某地区有哪些好大学"、"NeurIPS是什么级别的会议"、"互联网+和挑战杯哪个含金量高"等自然语言提问。
+description: 中国高校信息查询与情报分析工具。覆盖全国 985/211/双一流高校及全球 TOP100 国际高校，支持基础信息、学科实力、科研水平、就业质量、生源结构、学术会议、竞赛赛事、国际高校等多维度查询。当用户提到中国大学、高校查询、校园招聘、校企合作、学科评估、985/211/双一流筛选、高校对比、就业数据、毕业生去向、顶会、学术会议、竞赛、挑战杯、数学建模、Kaggle、ACM、MIT、斯坦福、牛津、剑桥、QS排名、留学、海归、海外校招时，务必使用此 Skill。也适用于"XX大学怎么样"、"哪些学校XX学科强"、"某地区有哪些好大学"、"NeurIPS是什么级别的会议"、"互联网+和挑战杯哪个含金量高"、"CMU和斯坦福CS哪个好"、"清华和MIT对比"、"CS硕士去美国哪些学校"等自然语言提问。
 ---
 
 # 高校信息检索 Skill
@@ -19,6 +19,7 @@ description: 中国高校信息查询与情报分析工具。覆盖全国 985/21
 | `data/config.yaml` | 985/211/双一流名单 | 直接读取 |
 | `data/conferences.json` | 国际+国内顶级学术会议（CCF-A/B等） | 直接读取 |
 | `data/competitions.json` | 国际+国内顶级赛事（A类/B类） | 直接读取 |
+| `data/international_universities.json` | 全球 TOP100 国际高校（QS 2026） | 直接读取 |
 
 **推荐使用 universities.db（SQLite）进行复杂查询**，支持 JOIN/WHERE/ORDER BY：
 ```bash
@@ -55,7 +56,7 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 - 搜不到时回退到本地估算值并标注"为概括性参考"
 - 详细搜索关键词模板见 `references/search_strategy.md`
 
-## 18 种查询类型
+## 24 种查询类型
 
 | # | 类型 | 触发词 | 数据源 |
 |---|------|--------|--------|
@@ -77,6 +78,12 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 | 16 | 会议对比/筛选 | CS顶会有哪些、AI领域顶会 | conferences.json |
 | 17 | 赛事查询 | 竞赛、挑战杯、数学建模、Kaggle | competitions.json |
 | 18 | 赛事对比/筛选 | A类赛事有哪些、创业类竞赛 | competitions.json |
+| 19 | 国际高校查询 | MIT排名、牛津怎么样 | international_universities.json |
+| 20 | 国际高校对比 | CMU和斯坦福哪个好、Oxford vs Cambridge | international_universities.json |
+| 21 | 中外高校对比 | 清华和MIT对比、北大vs哈佛 | universities.json + international_universities.json |
+| 22 | 留学择校推荐 | CS硕士去美国哪些学校、英国留学推荐 | international_universities.json |
+| 23 | 海归背景评估 | 帝国理工回国认可度、NUS回国好找工作吗 | international_universities.json |
+| 24 | 海外校招目标校 | 去美国哪些学校招人、英国校招目标校 | international_universities.json |
 
 ## 各类型处理要点
 
@@ -93,6 +100,10 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 **学术会议查询**：问"NeurIPS什么级别" → conferences.json 检索该会议，返回级别/领域/录用率/时间；问"CS顶会有哪些" → 按领域筛选 CCF-A 级别会议；问"哪些会议录用率低于20%" → 按录用率筛选。支持国际/国内分别展示。
 
 **赛事查询**：问"挑战杯是什么" → competitions.json 检索该赛事，返回级别/主办方/周期/描述；问"A类竞赛有哪些" → 按级别筛选；问"编程类竞赛" → 按领域筛选。支持国际/国内分别展示。国内赛事按教育部 A/B 类分级。
+
+**国际高校查询**：问"MIT排名" → international_universities.json 检索该校，返回QS/THE/ARWU排名+优势学科+录取要求；问"CS硕士去美国哪些学校" → 按学科+国家筛选；问"清华和MIT对比" → 同时读取两个数据文件，生成对比表。支持中英文名/简称匹配。
+
+**留学/海归场景**：留学推荐按学科排名+录取难度+就业数据综合排序；海归评估按QS排名+国内认可度+就业去向分析。
 
 ## 参考文件
 
