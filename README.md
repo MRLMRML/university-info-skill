@@ -5,88 +5,73 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
 [![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.6.0-brightgreen.svg)](#版本记录)
+[![Version](https://img.shields.io/badge/version-2.7.0-brightgreen.svg)](#版本记录)
 
-> 中国高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
+> 中国高校 + 全球 TOP100 国际高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
 
-覆盖全国 **147 所双一流高校**，支持 **14 种查询类型**，核心数据源自**教育部官方文件**。
+覆盖中国 **147 所双一流高校** + 全球 **149 所国际高校**（QS 2026），支持 **24 种查询类型**，核心数据源自**教育部官方文件**及 **QS/THE/ARWU 排名**。
 
 ---
 
 ## ✨ 特性
 
 - 🏛️ **权威数据** — 985/211/双一流名单、学科评估均源自教育部原始文件
-- 🔍 **7 种查询** — 基础信息 / 学科实力 / 科研水平 / 就业质量 / 生源结构 / 院校筛选 / 高校对比
+- 🌍 **全球覆盖** — 149 所国际高校（美50/英30/欧20/加10/澳10/亚27/其他2）
+- 🔍 **24 种查询** — 中国高校14种 + 学术会议4种 + 赛事2种 + 国际高校6种
 - 📖 **1483 条学科评估** — 95 个一级学科 A+/A/A-/B+ 四档全覆盖
-- 🏆 **软科排名** — 2024 中国大学排名 TOP240 集成
-- 👨‍🏫 **师资数据** — 39 所 985 院士/杰青/长江学者数量
-- 💬 **自然语言** — 支持 "北大就业怎么样？" 等口语化提问
-- 🗺️ **简称识别** — 内置 26 个常用简称（北大、清华、浙大、哈工大...）
+- 🏆 **软科排名** — 2026 中国大学排名 TOP239 集成
+- 🎓 **国际排名** — QS/THE/ARWU 三大排名全覆盖
+- 📊 **学术会议** — 40+ 国际顶会（CCF-A/B）+ 6 国内顶会
+- 🏅 **竞赛赛事** — 35+ 国际赛事 + 20+ 国内 A/B 类赛事
+- 👨‍🏫 **师资数据** — 69 所高校院士/杰青/长江学者数量
+- 💬 **自然语言** — 支持 "北大就业怎么样？"、"MIT排名多少？" 等口语化提问
+- 🗺️ **简称识别** — 内置 283 个别名（北大/MIT/斯坦福/牛津...）
 - 🌐 **智能补充** — 本地数据不足时自动通过 Web Search 获取最新信息
 
 ---
 
 ## 📦 安装
 
-本 Skill 遵循 [Anthropic Agent Skills Spec](https://docs.anthropic.com/en/docs/claude-code/skills)，兼容所有支持该规范的 AI Agent 平台。
-
-### OpenCode
-
 ```bash
-git clone https://github.com/MRLMRML/university-info-skill.git ~/.opencode/skills/高校信息检索
+mkdir -p ~/.opencode/skills
+git clone https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill
+cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
 ```
 
-### Claude Code
-
-```bash
-git clone https://github.com/MRLMRML/university-info-skill.git ~/.claude/skills/高校信息检索
-```
-
-### OpenClaw
-
-```bash
-git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skills/高校信息检索
-```
-
-> 也支持项目级安装：克隆到项目根目录的 `.opencode/skills/` 或 `.claude/skills/` 下即可。
-
-无需额外配置，开箱即用。
+> 兼容 OpenCode / Claude Code / OpenClaw。也支持项目级安装。
 
 ---
 
 ## 🚀 使用示例
 
-安装后，向 AI Agent 提问中国高校相关问题时 Skill 自动触发：
+### 中国高校
 
 ```
 > 北京大学的基本信息
 > 清华有哪些A+学科？
 > 计算机学科哪些学校最强？
 > 北航的毕业生主要去哪些公司？
-> 上海有哪些985高校？
 > 浙大和上交对比一下
-> 筛选:985|理工类|北京
 ```
 
-### 输出示例
+### 国际高校
 
 ```
-📚 北京大学
+> MIT的QS排名是多少？
+> CMU和斯坦福CS哪个好？
+> 清华和MIT工程专业对比
+> CS硕士去美国哪些学校好？
+> 帝国理工回国认可度怎么样？
+> 去英国哪些学校招人？
+```
 
-🏛️ 基础信息
-• 院校层次：985 | 211 | 双一流
-• 所在城市：北京
-• 高校类型：综合类
-• 官方网站：https://www.pku.edu.cn
+### 学术会议 & 赛事
 
-📖 学科实力
-• A+ 学科：哲学、政治学、社会学、数学、物理学、化学、生物学...
-• 双一流建设学科：自主确定建设学科
-
-💼 就业质量
-• 就业率：98%以上
-• 深造率：约80%
-• 主要去向：信息技术、金融、教育科研、公共管理
+```
+> NeurIPS是什么级别的会议？
+> CS领域CCF-A顶会有哪些？
+> 挑战杯和互联网+哪个含金量高？
+> 教育部A类竞赛有哪些？
 ```
 
 ---
@@ -95,172 +80,211 @@ git clone https://github.com/MRLMRML/university-info-skill.git ~/.openclaw/skill
 
 ```
 university-info-skill/
-├── 高校信息检索/                ← 主 Skill (14种查询类型)
+├── 高校信息检索/                        ← 主 Skill (24种查询类型)
 │   ├── SKILL.md
 │   └── data/
-│       ├── universities.json   # 148所高校（就业/科研/师资/生源）
-│       ├── disciplines.csv     # 1483条学科评估 (95学科 A+/A/A-/B+)
-│       ├── rankings.csv        # 软科2024排名 TOP240
-│       ├── scores.db           # 录取分数线 (SQLite)
-│       └── config.yaml         # 985/211/双一流名单
-├── 校招助手/                    ← HR 校招决策 Skill
+│       ├── universities.json           # 148所中国高校
+│       ├── international_universities.json  # 149所国际高校
+│       ├── disciplines.csv             # 1483条学科评估
+│       ├── rankings.csv                # 软科2026排名 TOP239
+│       ├── scores.db                   # 504条录取分数线
+│       ├── conferences.json            # 46个学术会议
+│       ├── competitions.json           # 35+个赛事
+│       └── config.yaml                 # 985/211/双一流名单
+│   └── references/
+│       ├── aliases.json                # 283个别名映射
+│       ├── templates.md                # 15种输出模板
+│       └── search_strategy.md          # Web Search策略
+├── 校招助手/                            ← HR 校招决策 Skill
 │   ├── SKILL.md
 │   └── data/
-│       ├── recruitment.json    # 10行业目标校映射 + ROI模型
-│       └── talent_flow.csv     # 32校毕业生流向
-├── 择校分析/                    ← 学生择校 Skill
+│       ├── recruitment.json            # 15行业目标校映射
+│       └── talent_flow.csv             # 41校毕业生流向
+├── 择校分析/                            ← 学生择校 Skill
 │   ├── SKILL.md
 │   └── data/
-│       ├── admission.db        # 考研报录比 (SQLite)
-│       └── programs.json       # 6学科择校指南
-├── scripts/                    # 自动化脚本
-│   ├── validate_data.py
-│   └── crawl_rankings.py
-├── docs/                       # 设计文档
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-└── LICENSE
+│       ├── admission.db                # 110条考研报录比
+│       └── programs.json               # 15学科择校指南
+└── scripts/
+    ├── validate_all.py                 # 17项数据校验
+    ├── sync_json_db.py                 # JSON↔SQLite同步
+    ├── backup_data.py                  # 自动备份
+    ├── import_scores.py                # 分数线导入
+    ├── import_admission.py             # 报录比导入
+    └── pipeline/
+        ├── run_all.py                  # 一键更新
+        └── check_updates.py            # 时效性检查
 ```
 
 ---
 
-## 📊 数据说明
+## 📊 数据覆盖
 
-### 数据来源与可信度
-
-| 数据类型 | 来源 | 可信度 | 更新频率 |
-|----------|------|--------|----------|
-| 985 高校名单（39所） | 教育部公开文件 | ✅ 权威 | 已定（不再新增） |
-| 211 高校名单（118所） | 教育部公开文件 | ✅ 权威 | 已定（不再新增） |
-| 双一流名单（147所） | 教育部 2022 年第二轮评审 | ✅ 权威 | ~5年一轮 |
-| 学科评估（A+/A/A-/B+） | 教育部第四轮学科评估（2017） | ✅ 权威 | ~4-5年一轮 |
-| 大学排名 | 软科中国大学排名（2024） | ✅ 权威第三方 | 年度 |
-| 就业/科研/师资概况 | 各校公开年度报告概括 | ⚠️ 近似参考 | 年度 |
-
-### 覆盖范围
+### 中国高校
 
 | 维度 | 数据量 |
 |------|--------|
-| 高校总数 | 148 所（含全部 39 所 985 + 全部 147 所双一流） |
-| 学科评估记录 | 1483 条（95 个学科的 A+/A/A-/B+ 四档全覆盖） |
-| 大学排名 | 240 所（软科 2024 排名+总分） |
-| 含就业数据高校 | 39 所（全部 985 覆盖） |
-| 含科研数据高校 | 39 所（全部 985 覆盖） |
-| 含师资数据高校 | 39 所（院士/杰青/长江学者） |
-| 含生源数据高校 | 13 所重点高校 |
-| 简称映射 | 26 个 |
+| 高校总数 | 148 所（含全部 147 所双一流） |
+| 学科评估 | 1483 条（95 学科 A+/A/A-/B+） |
+| 大学排名 | 239 所（软科 2026） |
+| 录取分数线 | 504 条（79 校 31 省，2024+2025） |
+| 考研报录比 | 110 条（53 校 14 学科，2024+2025） |
+| 就业数据 | 57 所（985 全覆盖 + 部分 211） |
+| 师资数据 | 69 所（院士/杰青/长江学者） |
+| 生源数据 | 69 所（在校生规模/本硕博比例） |
+| 毕业生流向 | 41 校 |
+| 行业校招映射 | 15 行业 |
+| 择校学科指南 | 15 学科 |
+
+### 国际高校（QS 2026）
+
+| 区域 | 数量 | 代表院校 |
+|------|------|---------|
+| 美国 | 50 | MIT / Stanford / Harvard / CMU / Berkeley |
+| 英国 | 30 | Oxford / Cambridge / Imperial / UCL / Edinburgh |
+| 欧洲大陆 | 20 | ETH / TUM / EPFL / KTH / Sorbonne |
+| 加拿大 | 10 | Toronto / UBC / McGill / Waterloo |
+| 澳洲 | 10 | Melbourne / Sydney / ANU / UNSW |
+| 新加坡 | 5 | NUS / NTU / SMU / SUTD |
+| 日本 | 10 | 东大 / 京大 / 东工大 / 名古屋 / 早稻田 |
+| 韩国 | 4 | 首尔大 / KAIST / 延世 / 高丽 |
+| 中国香港 | 5 | 港大 / 港中文 / 港科大 / 港城大 / 港理工 |
+| 其他 | 5 | 马来亚 / 台大 / 奥克兰 / KFUPM / UBA |
+
+### 学术会议
+
+| 领域 | 会议 |
+|------|------|
+| AI/ML | NeurIPS / ICML / ICLR / AAAI / IJCAI |
+| CV | CVPR / ICCV / ECCV |
+| NLP | ACL / EMNLP / NAACL |
+| 系统 | OSDI / SOSP / SIGCOMM / NSDI |
+| 安全 | IEEE S&P / CCS / USENIX Security / NDSS |
+| SE | ICSE / FSE / ASE |
+| 数据库 | SIGMOD / VLDB / ICDE |
+
+### 竞赛赛事
+
+| 类型 | 赛事 |
+|------|------|
+| 综合创新 | 挑战杯 / 互联网+ / 创青春 |
+| 数学建模 | 国赛(CUMCM) / 美赛(MCM/ICM) |
+| 编程 | ACM-ICPC / 蓝桥杯 / Kaggle |
+| 硬件 | 电子设计大赛 / RoboMaster |
+| 国际 | MIT $100K / Hult Prize / Red Dot |
 
 ---
 
-## 🎯 支持的查询类型
+## 🎯 24 种查询类型
 
 | # | 类型 | 触发词示例 | 数据源 |
 |---|------|-----------|--------|
-| 1 | 基础信息 | "基本信息"、"什么层次"、"是不是985" | universities.json |
-| 2 | 学科实力 | "A+学科"、"优势学科"、"学科排名" | disciplines.csv |
-| 3 | 科研水平 | "实验室"、"科研经费"、"研究方向" | universities.json |
-| 4 | 就业质量 | "毕业生去向"、"薪资"、"就业率" | universities.json |
-| 5 | 生源结构 | "多少学生"、"本硕博比例"、"男女比" | universities.json |
-| 6 | 院校筛选 | "有哪些"、"列表"、"筛选" | config.yaml |
-| 7 | 高校对比 | "对比"、"VS"、"哪个好" | 多文件聚合 |
-| 8 | 录取分数线 | "多少分能上"、"分数线"、"录取位次" | scores.db (SQLite) |
-| 9 | 大学排名 | "排名"、"排第几"、"软科排名" | rankings.csv |
-| 10 | 师资实力 | "院士"、"杰青"、"师资力量" | universities.json |
-| 11 | 智能推荐 | "推荐学校"、"目标校"、"哪些学校适合" | 多源聚合 |
-| 12 | 报告生成 | "校招策略"、"择校报告"、"分析报告" | 全量数据 |
-| 13 | 学科交叉 | "同时XX和XX都强"、"跨学科" | disciplines.csv |
-| 14 | 综合画像 | "怎么样"、"介绍一下" | 全量数据聚合 |
+| 1 | 基础信息 | "基本信息"、"什么层次" | universities.json |
+| 2 | 学科实力 | "A+学科"、"学科排名" | disciplines.csv |
+| 3 | 科研水平 | "实验室"、"科研经费" | universities.json |
+| 4 | 就业质量 | "就业率"、"毕业生去向" | universities.json |
+| 5 | 生源结构 | "多少学生"、"男女比" | universities.json |
+| 6 | 院校筛选 | "985有哪些"、"北京211" | config.yaml |
+| 7 | 高校对比 | "浙大和上交对比" | 多文件聚合 |
+| 8 | 录取分数线 | "多少分能上" | scores.db |
+| 9 | 大学排名 | "软科排名" | rankings.csv |
+| 10 | 师资实力 | "院士"、"杰青" | universities.json |
+| 11 | 智能推荐 | "推荐学校"、"目标校" | 多源聚合 |
+| 12 | 报告生成 | "校招策略"、"择校报告" | 全量数据 |
+| 13 | 学科交叉 | "XX和XX都强" | disciplines.csv |
+| 14 | 综合画像 | "怎么样"、"介绍一下" | 全量数据 |
+| 15 | 学术会议 | "NeurIPS什么级别" | conferences.json |
+| 16 | 会议对比 | "CS顶会有哪些" | conferences.json |
+| 17 | 赛事查询 | "挑战杯是什么" | competitions.json |
+| 18 | 赛事对比 | "A类竞赛有哪些" | competitions.json |
+| 19 | 国际高校 | "MIT排名"、"牛津怎么样" | international_universities.json |
+| 20 | 国际对比 | "CMU和斯坦福哪个好" | international_universities.json |
+| 21 | 中外对比 | "清华和MIT对比" | 两源聚合 |
+| 22 | 留学择校 | "CS硕士去美国哪些学校" | international_universities.json |
+| 23 | 海归评估 | "帝国理工回国认可度" | international_universities.json |
+| 24 | 海外校招 | "去英国哪些学校招人" | international_universities.json |
 
 ---
 
-## 🏷️ 简称映射
+## 🏷️ 简称映射（283 个）
 
-内置 26 个常用高校简称，自然输入即可识别：
+### 中国高校（示例）
 
 | 简称 | 全称 | 简称 | 全称 |
 |------|------|------|------|
 | 北大 | 北京大学 | 清华 | 清华大学 |
 | 复旦 | 复旦大学 | 上交/交大 | 上海交通大学 |
 | 浙大 | 浙江大学 | 南大 | 南京大学 |
-| 中科大 | 中国科学技术大学 | 哈工大 | 哈尔滨工业大学 |
-| 西交 | 西安交通大学 | 北航 | 北京航空航天大学 |
-| 华科 | 华中科技大学 | 武大 | 武汉大学 |
-| 人大 | 中国人民大学 | 北师大 | 北京师范大学 |
-| 川大 | 四川大学 | 成电 | 电子科技大学 |
-| 北邮 | 北京邮电大学 | 西电 | 西安电子科技大学 |
-| 西工大 | 西北工业大学 | 中大 | 中山大学 |
-| 东南 | 东南大学 | 同济 | 同济大学 |
-| 农大 | 中国农业大学 | 北理 | 北京理工大学 |
-| 国防科大 | 国防科技大学 | 华师 | 华东师范大学 |
+| 北理/BIT | 北京理工大学 | 北邮 | 北京邮电大学 |
+| 华工/SCUT | 华南理工大学 | 成电 | 电子科技大学 |
+| 北交/BJTU | 北京交通大学 | 西电/XDU | 西安电子科技大学 |
+
+### 国际高校（示例）
+
+| 简称 | 全称 | 简称 | 全称 |
+|------|------|------|------|
+| MIT | Massachusetts Institute of Technology | 斯坦福 | Stanford University |
+| 哈佛 | Harvard University | CMU | Carnegie Mellon University |
+| 牛津 | University of Oxford | 剑桥 | University of Cambridge |
+| ETH | ETH Zurich | 帝国理工 | Imperial College London |
+| NUS | National University of Singapore | 港大 | The University of Hong Kong |
+| 东大 | The University of Tokyo | 首尔大学 | Seoul National University |
+| 滑铁卢 | University of Waterloo | 墨尔本 | University of Melbourne |
 
 ---
 
 ## 📋 版本记录
 
+### v2.7.0 (2026-04) — 国际高校 + 学术会议 + 赛事
+
+- ✅ **国际高校数据** — 149 所（美50/英30/欧20/加10/澳10/亚27），QS/THE/ARWU 三大排名
+- ✅ **学术会议数据** — 40+ 国际顶会（CCF-A/B）+ 6 国内顶会
+- ✅ **赛事数据** — 35+ 国际赛事 + 20+ 国内 A/B 类赛事
+- ✅ **查询类型扩展** — 14→24 种（+会议/赛事/国际高校/留学/海归）
+- ✅ **别名大幅扩充** — 26→283 个（含中国高校英文缩写 + 国际高校中英文简称）
+- ✅ **软科排名更新** — 2024→2026，TOP239
+- ✅ **录取分数线扩充** — 149→504 条（含 2025 年数据）
+- ✅ **考研报录比扩充** — 30→110 条（含 2025 年数据）
+- ✅ **就业/师资/生源扩充** — 就业57校/师资69校/生源69校
+- ✅ **校招行业扩充** — 10→15 行业（+AI/新能源/芯片/游戏/电商）
+- ✅ **双一流名单修正** — 54→147 所，消除 A/B 重叠
+- ✅ **211 名单校验** — 移除 8 所非 211，118→109
+- ✅ **新增 5 个自动化脚本** — validate/sync/backup/import_scores/import_admission
+- ✅ **数据更新 Pipeline** — run_all.py + check_updates.py
+
 ### v2.6.0 (2025-04) — Phase 6 数据补充
 
 - ✅ 师资数据百度百科核实 **37/39所**精确院士数
 - ✅ 实验室精确名单 **11→37/39所**
-- ✅ 毕业生流向 **39所985全覆盖**（+北邮/西电 = 41条）
-- ✅ 录取分数线 **31/31省全覆盖**（149条）
-- ✅ URL验证 + 排名抽检 + 一流学科抽检
-- ✅ 新增「**按需实时补充**」策略 — 本地数据不足时自动 web search 获取精确值
+- ✅ 毕业生流向 **39所985全覆盖**
+- ✅ 录取分数线 **31/31省全覆盖**
+- ✅ 新增「**按需实时补充**」策略
 
 ### v2.5.0 (2025-04) — Phase 5 架构优化
 
-- ✅ SKILL.md 瘦身 **436行→75行**（拆分 references/ 目录，节省80% token）
-- ✅ 可视化输出增强（占比条/星级雷达/进度条/三梯队模板）
-- ✅ 数据层升级 **universities.db** SQLite（5表，支持复杂 SQL JOIN）
-- ✅ 分数线数据扩展至 **38校116条**
-- ✅ 11所985 **国家重点实验室精确名单**（85个实验室）
-- ✅ 新增爬虫脚本 `crawl_employment.py` + `crawl_faculty.py`
+- ✅ SKILL.md 瘦身 **436行→75行**
+- ✅ 数据层升级 **universities.db** SQLite
+- ✅ 新增爬虫脚本
 
 ### v2.4.0 (2025-04) — Phase 3 场景化拆分
 
-- ✅ 新增「**校招助手**」Skill — 目标校筛选 / 策略报告 / ROI估算 / 流向分析
-- ✅ 新增「**择校分析**」Skill — 难度评估 / 性价比推荐 / 调剂建议
-- ✅ 三 Skill 联合测试通过（数据一致性验证 ✅）
-
-### v2.3.0 (2025-04) — Phase 2 功能增强
-
-- ✅ 新增 scores.db SQLite 录取分数线数据库
-- ✅ 查询类型从 7 种扩展至 **14 种**
-- ✅ 新增：录取分数线 / 大学排名 / 师资实力 / 智能推荐 / 报告生成 / 学科交叉 / 综合画像
-
-### v2.2.0 (2025-04) — Phase 1 数据补全
-
-- ✅ disciplines.csv: 477 → **1483 条**（95 学科 A+/A/A-/B+ 全覆盖）
-- ✅ 新增 rankings.csv: **软科 2024 中国大学排名 TOP240**
-- ✅ 就业/科研/师资数据: 39 所 985 **全部覆盖**
-- ✅ 新增多平台兼容支持（Claude Code / OpenClaw）
-
-### v2.1.0 (2025-04) — 数据审计
-
-- ✅ universities.json 扩充至 148 所（覆盖全部 147 所双一流）
-- ✅ 逐校核实 985(39)/211/双一流(147) 层次标记准确性
-- ✅ 修正东北大学缺失、天津医科大学层次标记等数据错误
-
-### v2.0.0 (2025-04) — 架构重建
-
-- ✅ 新增 YAML frontmatter，支持 Skill 自动触发
-- ✅ 重写 SKILL.md：7 种查询类型 + 完整处理流程
-- ✅ 新增 2022 年第二轮双一流调整（7 所新增 + 15 所警示）
-- ✅ 新增 26 个常用简称映射
-- ✅ 新增 Web Search 线上补充策略
-
-### v1.0.0
-
-- 初始版本，基础信息查询
+- ✅ 新增「**校招助手**」Skill
+- ✅ 新增「**择校分析**」Skill
 
 ---
 
 ## 🔄 数据更新
 
-| 触发事件 | 更新动作 |
-|----------|----------|
-| 教育部发布新一轮双一流评审 | 更新 config.yaml + universities.json |
-| 新一轮学科评估结果公布 | 重建 disciplines.csv |
-| 各校发布年度就业/科研报告 | 更新 universities.json 对应字段 |
+```bash
+cd /tmp/uni-skill && git pull
+cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
+```
+
+或使用 Pipeline：
+```bash
+python3 scripts/pipeline/run_all.py          # 一键更新
+python3 scripts/pipeline/check_updates.py    # 检查时效性
+```
 
 ---
 
@@ -269,6 +293,7 @@ university-info-skill/
 - 本 Skill 专注信息检索，**不提供**志愿填报建议或录取分数预测
 - 不对高校做主观好坏评价或排名
 - 就业/科研数据为概括性参考，具体以各校官方发布为准
+- 国际排名数据标注年份，排名每年变化
 - 不收录任何个人隐私信息
 - 数据仅供参考，不作为正式决策依据
 
@@ -281,7 +306,7 @@ university-info-skill/
 - 补充更多高校的就业/科研/生源数据
 - 修正已有数据中的不准确信息（请附来源链接）
 - 新增高校简称映射
-- 优化查询处理逻辑
+- 补充国际高校数据
 
 ---
 

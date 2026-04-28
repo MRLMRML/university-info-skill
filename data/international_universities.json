@@ -3561,6 +3561,1892 @@
       },
       "notable": "南美最古老大学，5位诺贝尔奖得主",
       "website": "https://www.uba.ar"
+    },
+    {
+      "name": "University of Wisconsin-Madison",
+      "name_cn": "威斯康星大学麦迪逊分校",
+      "abbreviation": "UW-Madison",
+      "country": "美国",
+      "region": "北美",
+      "city": "Madison, WI",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 102,
+        "the_2026": 58
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "商学",
+        "教育",
+        "农业"
+      ],
+      "enrollment": {
+        "total": 47000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~57%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "医疗",
+          "农业",
+          "金融"
+        ]
+      },
+      "notable": "公立常春藤，核聚变研究发源地",
+      "website": "https://www.wisc.edu"
+    },
+    {
+      "name": "University of California, San Diego",
+      "name_cn": "加州大学圣地亚哥分校",
+      "abbreviation": "UCSD",
+      "country": "美国",
+      "region": "北美",
+      "city": "San Diego, CA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 66,
+        "the_2026": 37
+      },
+      "strengths": [
+        "生物",
+        "工程",
+        "医学",
+        "计算机科学",
+        "海洋科学"
+      ],
+      "enrollment": {
+        "total": 42000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~34%",
+        "toefl_min": 83
+      },
+      "employment": {
+        "top_industries": [
+          "生物技术",
+          "科技",
+          "医疗"
+        ]
+      },
+      "notable": "生物/医学研究顶尖，Salk研究所邻居",
+      "website": "https://ucsd.edu"
+    },
+    {
+      "name": "Rice University",
+      "name_cn": "莱斯大学",
+      "abbreviation": "Rice",
+      "country": "美国",
+      "region": "北美",
+      "city": "Houston, TX",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 108,
+        "the_2026": 85
+      },
+      "strengths": [
+        "工程",
+        "物理",
+        "音乐",
+        "商学"
+      ],
+      "enrollment": {
+        "total": 4000,
+        "international_ratio": "25%"
+      },
+      "admission": {
+        "acceptance": "~9%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "能源",
+          "科技",
+          "工程",
+          "咨询"
+        ]
+      },
+      "notable": "南方哈佛，师生比1:6",
+      "website": "https://www.rice.edu"
+    },
+    {
+      "name": "Emory University",
+      "name_cn": "埃默里大学",
+      "abbreviation": "Emory",
+      "country": "美国",
+      "region": "北美",
+      "city": "Atlanta, GA",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 120,
+        "the_2026": 82
+      },
+      "strengths": [
+        "医学",
+        "商学",
+        "公共卫生",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 15000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~13%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "金融",
+          "咨询"
+        ]
+      },
+      "notable": "CDC邻居，公共卫生全球顶尖",
+      "website": "https://www.emory.edu"
+    },
+    {
+      "name": "Vanderbilt University",
+      "name_cn": "范德堡大学",
+      "abbreviation": "Vanderbilt",
+      "country": "美国",
+      "region": "北美",
+      "city": "Nashville, TN",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 115,
+        "the_2026": 90
+      },
+      "strengths": [
+        "医学",
+        "教育",
+        "法学",
+        "工程",
+        "音乐"
+      ],
+      "enrollment": {
+        "total": 13000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~7%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "教育",
+          "金融",
+          "音乐"
+        ]
+      },
+      "notable": "南方贵族大学，医学/教育顶尖",
+      "website": "https://www.vanderbilt.edu"
+    },
+    {
+      "name": "Washington University in St. Louis",
+      "name_cn": "圣路易斯华盛顿大学",
+      "abbreviation": "WUSTL",
+      "country": "美国",
+      "region": "北美",
+      "city": "St. Louis, MO",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 105,
+        "the_2026": 68
+      },
+      "strengths": [
+        "医学",
+        "商学",
+        "工程",
+        "法学",
+        "社会工作"
+      ],
+      "enrollment": {
+        "total": 16000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~14%",
+        "toefl_min": 90
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "金融",
+          "咨询",
+          "科技"
+        ]
+      },
+      "notable": "医学院全美前5，校园最美之一",
+      "website": "https://wustl.edu"
+    },
+    {
+      "name": "University of Southern California",
+      "name_cn": "南加州大学",
+      "abbreviation": "USC",
+      "country": "美国",
+      "region": "北美",
+      "city": "Los Angeles, CA",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 116,
+        "the_2026": 63
+      },
+      "strengths": [
+        "电影",
+        "工程",
+        "商学",
+        "传播学",
+        "游戏设计"
+      ],
+      "enrollment": {
+        "total": 49000,
+        "international_ratio": "24%"
+      },
+      "admission": {
+        "acceptance": "~12%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "娱乐",
+          "科技",
+          "金融",
+          "媒体"
+        ]
+      },
+      "notable": "好莱坞人才库，电影学院全美第一",
+      "website": "https://www.usc.edu"
+    },
+    {
+      "name": "University of Virginia",
+      "name_cn": "弗吉尼亚大学",
+      "abbreviation": "UVA",
+      "country": "美国",
+      "region": "北美",
+      "city": "Charlottesville, VA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 118,
+        "the_2026": 105
+      },
+      "strengths": [
+        "商学",
+        "法学",
+        "医学",
+        "人文"
+      ],
+      "enrollment": {
+        "total": 26000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~21%",
+        "toefl_min": 90
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "咨询",
+          "法律",
+          "政府"
+        ]
+      },
+      "notable": "杰弗逊创建，Darden商学院顶尖",
+      "website": "https://www.virginia.edu"
+    },
+    {
+      "name": "University of North Carolina at Chapel Hill",
+      "name_cn": "北卡罗来纳大学教堂山分校",
+      "abbreviation": "UNC",
+      "country": "美国",
+      "region": "北美",
+      "city": "Chapel Hill, NC",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 110,
+        "the_2026": 60
+      },
+      "strengths": [
+        "公共卫生",
+        "商学",
+        "医学",
+        "新闻",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 32000,
+        "international_ratio": "8%"
+      },
+      "admission": {
+        "acceptance": "~20%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "金融",
+          "教育",
+          "科技"
+        ]
+      },
+      "notable": "公立常春藤，公共卫生全美TOP3",
+      "website": "https://www.unc.edu"
+    },
+    {
+      "name": "University of California, Davis",
+      "name_cn": "加州大学戴维斯分校",
+      "abbreviation": "UC Davis",
+      "country": "美国",
+      "region": "北美",
+      "city": "Davis, CA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 118,
+        "the_2026": 63
+      },
+      "strengths": [
+        "农业",
+        "兽医",
+        "环境科学",
+        "生物",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 40000,
+        "international_ratio": "16%"
+      },
+      "admission": {
+        "acceptance": "~46%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "农业",
+          "生物技术",
+          "科技",
+          "环保"
+        ]
+      },
+      "notable": "农业/兽医全球顶尖",
+      "website": "https://www.ucdavis.edu"
+    },
+    {
+      "name": "University of California, Santa Barbara",
+      "name_cn": "加州大学圣巴巴拉分校",
+      "abbreviation": "UCSB",
+      "country": "美国",
+      "region": "北美",
+      "city": "Santa Barbara, CA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 130,
+        "the_2026": 68
+      },
+      "strengths": [
+        "物理",
+        "材料科学",
+        "工程",
+        "环境科学"
+      ],
+      "enrollment": {
+        "total": 28000,
+        "international_ratio": "14%"
+      },
+      "admission": {
+        "acceptance": "~30%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "工程",
+          "研究"
+        ]
+      },
+      "notable": "材料科学/物理诺贝尔奖摇篮",
+      "website": "https://www.ucsb.edu"
+    },
+    {
+      "name": "Ohio State University",
+      "name_cn": "俄亥俄州立大学",
+      "abbreviation": "OSU",
+      "country": "美国",
+      "region": "北美",
+      "city": "Columbus, OH",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 140,
+        "the_2026": 85
+      },
+      "strengths": [
+        "工程",
+        "商学",
+        "医学",
+        "农业"
+      ],
+      "enrollment": {
+        "total": 65000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~53%",
+        "toefl_min": 79
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "金融",
+          "医疗"
+        ]
+      },
+      "notable": "美国最大大学之一，校友网络超强",
+      "website": "https://www.osu.edu"
+    },
+    {
+      "name": "University of Minnesota",
+      "name_cn": "明尼苏达大学",
+      "abbreviation": "UMN",
+      "country": "美国",
+      "region": "北美",
+      "city": "Minneapolis, MN",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 143,
+        "the_2026": 85
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "商学",
+        "化学"
+      ],
+      "enrollment": {
+        "total": 68000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~70%",
+        "toefl_min": 79
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "科技",
+          "金融",
+          "制造"
+        ]
+      },
+      "notable": "明尼苏达州旗舰，3M公司人才库",
+      "website": "https://umn.edu"
+    },
+    {
+      "name": "University of Maryland, College Park",
+      "name_cn": "马里兰大学帕克分校",
+      "abbreviation": "UMD",
+      "country": "美国",
+      "region": "北美",
+      "city": "College Park, MD",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 150,
+        "the_2026": 91
+      },
+      "strengths": [
+        "计算机科学",
+        "工程",
+        "商学",
+        "物理"
+      ],
+      "enrollment": {
+        "total": 41000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~44%",
+        "toefl_min": 95
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "政府",
+          "国防",
+          "金融"
+        ]
+      },
+      "notable": "紧邻DC，CS/工程全美TOP20",
+      "website": "https://www.umd.edu"
+    },
+    {
+      "name": "Michigan State University",
+      "name_cn": "密歇根州立大学",
+      "abbreviation": "MSU",
+      "country": "美国",
+      "region": "北美",
+      "city": "East Lansing, MI",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 152,
+        "the_2026": 100
+      },
+      "strengths": [
+        "商学",
+        "工程",
+        "传媒",
+        "农业",
+        "教育"
+      ],
+      "enrollment": {
+        "total": 49000,
+        "international_ratio": "14%"
+      },
+      "admission": {
+        "acceptance": "~76%",
+        "toefl_min": 79
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "科技",
+          "教育"
+        ]
+      },
+      "notable": "供应链管理全美第一",
+      "website": "https://msu.edu"
+    },
+    {
+      "name": "University of Florida",
+      "name_cn": "佛罗里达大学",
+      "abbreviation": "UF",
+      "country": "美国",
+      "region": "北美",
+      "city": "Gainesville, FL",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 155,
+        "the_2026": 100
+      },
+      "strengths": [
+        "工程",
+        "商学",
+        "农业",
+        "新闻"
+      ],
+      "enrollment": {
+        "total": 57000,
+        "international_ratio": "10%"
+      },
+      "admission": {
+        "acceptance": "~31%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "金融",
+          "医疗"
+        ]
+      },
+      "notable": "佛州旗舰，NASA合作紧密",
+      "website": "https://www.ufl.edu"
+    },
+    {
+      "name": "Arizona State University",
+      "name_cn": "亚利桑那州立大学",
+      "abbreviation": "ASU",
+      "country": "美国",
+      "region": "北美",
+      "city": "Tempe, AZ",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 160,
+        "the_2026": 130
+      },
+      "strengths": [
+        "工程",
+        "商学",
+        "传媒",
+        "设计"
+      ],
+      "enrollment": {
+        "total": 120000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~88%",
+        "toefl_min": 61
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "金融",
+          "教育"
+        ]
+      },
+      "notable": "全美最创新大学第一名，规模最大",
+      "website": "https://www.asu.edu"
+    },
+    {
+      "name": "University of Colorado Boulder",
+      "name_cn": "科罗拉多大学博尔德分校",
+      "abbreviation": "CU Boulder",
+      "country": "美国",
+      "region": "北美",
+      "city": "Boulder, CO",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 165,
+        "the_2026": 110
+      },
+      "strengths": [
+        "工程",
+        "物理",
+        "航天",
+        "环境科学"
+      ],
+      "enrollment": {
+        "total": 38000,
+        "international_ratio": "10%"
+      },
+      "admission": {
+        "acceptance": "~78%",
+        "toefl_min": 75
+      },
+      "employment": {
+        "top_industries": [
+          "航天",
+          "科技",
+          "能源"
+        ]
+      },
+      "notable": "航天/大气科学顶尖，NASA重要合作伙伴",
+      "website": "https://www.colorado.edu"
+    },
+    {
+      "name": "Indiana University Bloomington",
+      "name_cn": "印第安纳大学伯明顿分校",
+      "abbreviation": "IU",
+      "country": "美国",
+      "region": "北美",
+      "city": "Bloomington, IN",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 170,
+        "the_2026": 140
+      },
+      "strengths": [
+        "商学",
+        "音乐",
+        "公共事务",
+        "新闻"
+      ],
+      "enrollment": {
+        "total": 43000,
+        "international_ratio": "14%"
+      },
+      "admission": {
+        "acceptance": "~78%",
+        "toefl_min": 79
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "教育",
+          "科技"
+        ]
+      },
+      "notable": "Kelley商学院全美TOP10，Jacobs音乐学院顶尖",
+      "website": "https://www.indiana.edu"
+    },
+    {
+      "name": "University of Pittsburgh",
+      "name_cn": "匹兹堡大学",
+      "abbreviation": "Pitt",
+      "country": "美国",
+      "region": "北美",
+      "city": "Pittsburgh, PA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 175,
+        "the_2026": 110
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "哲学",
+        "信息科学"
+      ],
+      "enrollment": {
+        "total": 35000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~60%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "科技",
+          "工程"
+        ]
+      },
+      "notable": "医学院全美TOP10，器官移植发源地",
+      "website": "https://www.pitt.edu"
+    },
+    {
+      "name": "Virginia Tech",
+      "name_cn": "弗吉尼亚理工大学",
+      "abbreviation": "VT",
+      "country": "美国",
+      "region": "北美",
+      "city": "Blacksburg, VA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 180,
+        "the_2026": 200
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "建筑",
+        "农业"
+      ],
+      "enrollment": {
+        "total": 38000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~65%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "科技",
+          "国防"
+        ]
+      },
+      "notable": "工程全美TOP15，国防研究重要基地",
+      "website": "https://www.vt.edu"
+    },
+    {
+      "name": "University of California, Irvine",
+      "name_cn": "加州大学尔湾分校",
+      "abbreviation": "UCI",
+      "country": "美国",
+      "region": "北美",
+      "city": "Irvine, CA",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 185,
+        "the_2026": 95
+      },
+      "strengths": [
+        "计算机科学",
+        "工程",
+        "医学",
+        "商学"
+      ],
+      "enrollment": {
+        "total": 36000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~29%",
+        "toefl_min": 80
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "医疗",
+          "金融"
+        ]
+      },
+      "notable": "尔湾科技谷核心，游戏设计顶尖",
+      "website": "https://www.uci.edu"
+    },
+    {
+      "name": "University of Rochester",
+      "name_cn": "罗切斯特大学",
+      "abbreviation": "URochester",
+      "country": "美国",
+      "region": "北美",
+      "city": "Rochester, NY",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 190,
+        "the_2026": 130
+      },
+      "strengths": [
+        "光学",
+        "医学",
+        "音乐",
+        "经济学"
+      ],
+      "enrollment": {
+        "total": 12000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "acceptance": "~35%",
+        "toefl_min": 100
+      },
+      "employment": {
+        "top_industries": [
+          "光学",
+          "医疗",
+          "科技"
+        ]
+      },
+      "notable": "光学/激光发源地，伊士曼音乐学院顶尖",
+      "website": "https://www.rochester.edu"
+    },
+    {
+      "name": "Northeastern University",
+      "name_cn": "东北大学",
+      "abbreviation": "NEU",
+      "country": "美国",
+      "region": "北美",
+      "city": "Boston, MA",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 195,
+        "the_2026": 180
+      },
+      "strengths": [
+        "计算机科学",
+        "工程",
+        "商学",
+        "健康科学"
+      ],
+      "enrollment": {
+        "total": 28000,
+        "international_ratio": "25%"
+      },
+      "admission": {
+        "acceptance": "~18%",
+        "toefl_min": 92
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "金融",
+          "医疗",
+          "咨询"
+        ]
+      },
+      "notable": "Co-op实习教育全美第一，就业率极高",
+      "website": "https://www.northeastern.edu"
+    },
+    {
+      "name": "University of Leeds",
+      "name_cn": "利兹大学",
+      "abbreviation": "Leeds",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Leeds",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 86
+      },
+      "strengths": [
+        "商学",
+        "传媒",
+        "工程",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 38000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "媒体",
+          "工程"
+        ]
+      },
+      "notable": "传媒学英国前三",
+      "website": "https://www.leeds.ac.uk"
+    },
+    {
+      "name": "University of Southampton",
+      "name_cn": "南安普顿大学",
+      "abbreviation": "Southampton",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Southampton",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 87
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "海洋科学"
+      ],
+      "enrollment": {
+        "total": 25000,
+        "international_ratio": "35%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "科技",
+          "航运"
+        ]
+      },
+      "notable": "光纤通信发源地",
+      "website": "https://www.southampton.ac.uk"
+    },
+    {
+      "name": "University of Sheffield",
+      "name_cn": "谢菲尔德大学",
+      "abbreviation": "Sheffield",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Sheffield",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 92
+      },
+      "strengths": [
+        "工程",
+        "材料科学",
+        "新闻"
+      ],
+      "enrollment": {
+        "total": 30000,
+        "international_ratio": "33%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "科技",
+          "媒体"
+        ]
+      },
+      "notable": "英国工程最强校之一",
+      "website": "https://www.sheffield.ac.uk"
+    },
+    {
+      "name": "University of Nottingham",
+      "name_cn": "诺丁汉大学",
+      "abbreviation": "Nottingham",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Nottingham",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 97
+      },
+      "strengths": [
+        "工程",
+        "药学",
+        "商学"
+      ],
+      "enrollment": {
+        "total": 35000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "工程",
+          "制药",
+          "金融"
+        ]
+      },
+      "notable": "药学全球顶尖，中国宁波有校区",
+      "website": "https://www.nottingham.ac.uk"
+    },
+    {
+      "name": "University of St Andrews",
+      "name_cn": "圣安德鲁斯大学",
+      "abbreviation": "St Andrews",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "St Andrews",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 105
+      },
+      "strengths": [
+        "物理",
+        "国际关系",
+        "哲学",
+        "神学"
+      ],
+      "enrollment": {
+        "total": 10000,
+        "international_ratio": "45%"
+      },
+      "admission": {
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "教育",
+          "政府"
+        ]
+      },
+      "notable": "苏格兰最古老大学，威廉王子母校",
+      "website": "https://www.st-andrews.ac.uk"
+    },
+    {
+      "name": "University of Exeter",
+      "name_cn": "埃克塞特大学",
+      "abbreviation": "Exeter",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Exeter",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 110
+      },
+      "strengths": [
+        "商学",
+        "工程",
+        "人文",
+        "环境科学"
+      ],
+      "enrollment": {
+        "total": 30000,
+        "international_ratio": "28%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "教育",
+          "环保"
+        ]
+      },
+      "notable": "英国最美校园之一",
+      "website": "https://www.exeter.ac.uk"
+    },
+    {
+      "name": "University of Bath",
+      "name_cn": "巴斯大学",
+      "abbreviation": "Bath",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Bath",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 115
+      },
+      "strengths": [
+        "商学",
+        "工程",
+        "建筑",
+        "心理学"
+      ],
+      "enrollment": {
+        "total": 18000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "工程",
+          "咨询"
+        ]
+      },
+      "notable": "管理学院全英TOP5，实习机会最多",
+      "website": "https://www.bath.ac.uk"
+    },
+    {
+      "name": "University of York",
+      "name_cn": "约克大学",
+      "abbreviation": "York",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "York",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 120
+      },
+      "strengths": [
+        "计算机科学",
+        "心理学",
+        "教育",
+        "人文"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "28%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "教育",
+          "金融"
+        ]
+      },
+      "notable": "英国罗素集团，计算机科学英国TOP10",
+      "website": "https://www.york.ac.uk"
+    },
+    {
+      "name": "Cardiff University",
+      "name_cn": "卡迪夫大学",
+      "abbreviation": "Cardiff",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Cardiff",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 125
+      },
+      "strengths": [
+        "新闻",
+        "建筑",
+        "医学",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 33000,
+        "international_ratio": "25%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "媒体",
+          "医疗",
+          "工程"
+        ]
+      },
+      "notable": "威尔士首府旗舰，新闻学院英国顶尖",
+      "website": "https://www.cardiff.ac.uk"
+    },
+    {
+      "name": "Newcastle University",
+      "name_cn": "纽卡斯尔大学",
+      "abbreviation": "Newcastle",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Newcastle",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 130
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "建筑",
+        "翻译"
+      ],
+      "enrollment": {
+        "total": 28000,
+        "international_ratio": "25%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "工程",
+          "建筑"
+        ]
+      },
+      "notable": "翻译/口译全英第一",
+      "website": "https://www.ncl.ac.uk"
+    },
+    {
+      "name": "Lancaster University",
+      "name_cn": "兰卡斯特大学",
+      "abbreviation": "Lancaster",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Lancaster",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 135
+      },
+      "strengths": [
+        "商学",
+        "语言学",
+        "社会学",
+        "环境科学"
+      ],
+      "enrollment": {
+        "total": 15000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "教育",
+          "科技"
+        ]
+      },
+      "notable": "管理学院全英TOP5，三重认证",
+      "website": "https://www.lancaster.ac.uk"
+    },
+    {
+      "name": "University of Liverpool",
+      "name_cn": "利物浦大学",
+      "abbreviation": "Liverpool",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Liverpool",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 140
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "建筑",
+        "兽医"
+      ],
+      "enrollment": {
+        "total": 30000,
+        "international_ratio": "28%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "工程",
+          "教育"
+        ]
+      },
+      "notable": "9位诺贝尔奖得主，中国西交利物浦大学",
+      "website": "https://www.liverpool.ac.uk"
+    },
+    {
+      "name": "University of Reading",
+      "name_cn": "雷丁大学",
+      "abbreviation": "Reading",
+      "country": "英国",
+      "region": "欧洲",
+      "city": "Reading",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 145
+      },
+      "strengths": [
+        "商学",
+        "农业",
+        "气象学",
+        "食品科学"
+      ],
+      "enrollment": {
+        "total": 18000,
+        "international_ratio": "28%"
+      },
+      "admission": {
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "农业",
+          "气象"
+        ]
+      },
+      "notable": "Henley商学院三重认证，气象学全球顶尖",
+      "website": "https://www.reading.ac.uk"
+    },
+    {
+      "name": "University of Waterloo",
+      "name_cn": "滑铁卢大学",
+      "abbreviation": "Waterloo",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "Waterloo, ON",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 112,
+        "the_2026": 150
+      },
+      "strengths": [
+        "计算机科学",
+        "工程",
+        "数学",
+        "精算"
+      ],
+      "enrollment": {
+        "total": 42000,
+        "international_ratio": "28%"
+      },
+      "admission": {
+        "acceptance": "~53%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "金融",
+          "工程"
+        ]
+      },
+      "notable": "Co-op教育全球第一，硅谷加拿大人才库",
+      "website": "https://uwaterloo.ca"
+    },
+    {
+      "name": "McMaster University",
+      "name_cn": "麦克马斯特大学",
+      "abbreviation": "McMaster",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "Hamilton, ON",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 140,
+        "the_2026": 100
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "商学",
+        "健康科学"
+      ],
+      "enrollment": {
+        "total": 36000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~58%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "工程",
+          "科技"
+        ]
+      },
+      "notable": "问题导向学习(PBL)发源地",
+      "website": "https://www.mcmaster.ca"
+    },
+    {
+      "name": "Western University",
+      "name_cn": "西安大略大学",
+      "abbreviation": "Western",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "London, ON",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 150,
+        "the_2026": 200
+      },
+      "strengths": [
+        "商学",
+        "医学",
+        "工程",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 33000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~56%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "医疗",
+          "法律"
+        ]
+      },
+      "notable": "Ivey商学院加拿大第一",
+      "website": "https://www.uwo.ca"
+    },
+    {
+      "name": "University of Calgary",
+      "name_cn": "卡尔加里大学",
+      "abbreviation": "Calgary",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "Calgary, AB",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 175,
+        "the_2026": 200
+      },
+      "strengths": [
+        "工程",
+        "能源",
+        "商学",
+        "运动科学"
+      ],
+      "enrollment": {
+        "total": 36000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~60%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "能源",
+          "工程",
+          "科技"
+        ]
+      },
+      "notable": "加拿大能源研究重镇",
+      "website": "https://www.ucalgary.ca"
+    },
+    {
+      "name": "University of Ottawa",
+      "name_cn": "渥太华大学",
+      "abbreviation": "uOttawa",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "Ottawa, ON",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 180,
+        "the_2026": 170
+      },
+      "strengths": [
+        "法学",
+        "公共政策",
+        "医学",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 43000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~65%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "法律",
+          "科技"
+        ]
+      },
+      "notable": "加拿大首都大学，英法双语",
+      "website": "https://www.uottawa.ca"
+    },
+    {
+      "name": "Dalhousie University",
+      "name_cn": "达尔豪斯大学",
+      "abbreviation": "Dal",
+      "country": "加拿大",
+      "region": "北美",
+      "city": "Halifax, NS",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 200,
+        "the_2026": 250
+      },
+      "strengths": [
+        "海洋科学",
+        "医学",
+        "法学",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "22%"
+      },
+      "admission": {
+        "acceptance": "~70%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "海洋",
+          "医疗",
+          "政府"
+        ]
+      },
+      "notable": "加拿大海洋研究旗舰",
+      "website": "https://www.dal.ca"
+    },
+    {
+      "name": "Singapore Management University",
+      "name_cn": "新加坡管理大学",
+      "abbreviation": "SMU",
+      "country": "新加坡",
+      "region": "亚太",
+      "city": "Singapore",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 580
+      },
+      "strengths": [
+        "商学",
+        "会计",
+        "信息系统",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 10000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "咨询",
+          "科技"
+        ]
+      },
+      "notable": "新加坡商科最强，沃顿合作模式",
+      "website": "https://www.smu.edu.sg"
+    },
+    {
+      "name": "Singapore University of Technology and Design",
+      "name_cn": "新加坡科技设计大学",
+      "abbreviation": "SUTD",
+      "country": "新加坡",
+      "region": "亚太",
+      "city": "Singapore",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 430
+      },
+      "strengths": [
+        "工程",
+        "设计",
+        "建筑",
+        "信息系统"
+      ],
+      "enrollment": {
+        "total": 2000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "设计",
+          "工程"
+        ]
+      },
+      "notable": "MIT合作创办，设计思维为核心",
+      "website": "https://www.sutd.edu.sg"
+    },
+    {
+      "name": "Nanyang Technological University",
+      "name_cn": "南洋理工大学",
+      "abbreviation": "NTU",
+      "country": "新加坡",
+      "region": "亚太",
+      "city": "Singapore",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 12
+      },
+      "strengths": [
+        "工程",
+        "材料科学",
+        "计算机科学"
+      ],
+      "enrollment": {
+        "total": 33000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "acceptance": "~10%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "工程",
+          "金融"
+        ]
+      },
+      "notable": "亚洲顶尖理工，校园最美之一",
+      "website": "https://www.ntu.edu.sg"
+    },
+    {
+      "name": "Nagoya University",
+      "name_cn": "名古屋大学",
+      "abbreviation": "Nagoya",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Nagoya",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 120,
+        "the_2026": 201
+      },
+      "strengths": [
+        "物理",
+        "化学",
+        "工程",
+        "医学"
+      ],
+      "enrollment": {
+        "total": 16000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~15%"
+      },
+      "employment": {
+        "top_industries": [
+          "汽车",
+          "科技",
+          "制造"
+        ]
+      },
+      "notable": "丰田人才库，6位诺贝尔奖得主",
+      "website": "https://www.nagoya-u.ac.jp"
+    },
+    {
+      "name": "Tohoku University",
+      "name_cn": "东北大学",
+      "abbreviation": "Tohoku",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Sendai",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 110,
+        "the_2026": 130
+      },
+      "strengths": [
+        "材料科学",
+        "工程",
+        "医学",
+        "理学"
+      ],
+      "enrollment": {
+        "total": 18000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~12%"
+      },
+      "employment": {
+        "top_industries": [
+          "制造",
+          "科技",
+          "医疗"
+        ]
+      },
+      "notable": "日本材料科学最强，鲁迅母校",
+      "website": "https://www.tohoku.ac.jp"
+    },
+    {
+      "name": "Hokkaido University",
+      "name_cn": "北海道大学",
+      "abbreviation": "Hokkaido",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Sapporo",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 145,
+        "the_2026": 350
+      },
+      "strengths": [
+        "农业",
+        "兽医",
+        "化学",
+        "环境科学"
+      ],
+      "enrollment": {
+        "total": 18000,
+        "international_ratio": "10%"
+      },
+      "admission": {
+        "acceptance": "~15%"
+      },
+      "employment": {
+        "top_industries": [
+          "农业",
+          "食品",
+          "科研"
+        ]
+      },
+      "notable": "日本最美校园，农学顶尖",
+      "website": "https://www.hokudai.ac.jp"
+    },
+    {
+      "name": "Kyushu University",
+      "name_cn": "九州大学",
+      "abbreviation": "Kyushu",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Fukuoka",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 155,
+        "the_2026": 401
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "理学",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 19000,
+        "international_ratio": "12%"
+      },
+      "admission": {
+        "acceptance": "~15%"
+      },
+      "employment": {
+        "top_industries": [
+          "制造",
+          "医疗",
+          "科技"
+        ]
+      },
+      "notable": "九州地区最强，工程/医学顶尖",
+      "website": "https://www.kyushu-u.ac.jp"
+    },
+    {
+      "name": "Waseda University",
+      "name_cn": "早稻田大学",
+      "abbreviation": "Waseda",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Tokyo",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 180,
+        "the_2026": 601
+      },
+      "strengths": [
+        "政治学",
+        "文学",
+        "商学",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 50000,
+        "international_ratio": "10%"
+      },
+      "admission": {
+        "acceptance": "~15%"
+      },
+      "employment": {
+        "top_industries": [
+          "媒体",
+          "金融",
+          "政府"
+        ]
+      },
+      "notable": "日本私立双雄，政治家摇篮",
+      "website": "https://www.waseda.jp"
+    },
+    {
+      "name": "Keio University",
+      "name_cn": "庆应义塾大学",
+      "abbreviation": "Keio",
+      "country": "日本",
+      "region": "亚太",
+      "city": "Tokyo",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 188,
+        "the_2026": 601
+      },
+      "strengths": [
+        "商学",
+        "医学",
+        "法学",
+        "经济学"
+      ],
+      "enrollment": {
+        "total": 34000,
+        "international_ratio": "8%"
+      },
+      "admission": {
+        "acceptance": "~10%"
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "医疗",
+          "咨询"
+        ]
+      },
+      "notable": "日本私立双雄，CEO摇篮",
+      "website": "https://www.keio.ac.jp"
+    },
+    {
+      "name": "University of Technology Sydney",
+      "name_cn": "悉尼科技大学",
+      "abbreviation": "UTS",
+      "country": "澳大利亚",
+      "region": "亚太",
+      "city": "Sydney",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 96
+      },
+      "strengths": [
+        "计算机科学",
+        "工程",
+        "设计",
+        "护理"
+      ],
+      "enrollment": {
+        "total": 46000,
+        "international_ratio": "35%"
+      },
+      "admission": {
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "设计",
+          "医疗"
+        ]
+      },
+      "notable": "澳洲最年轻研究型大学",
+      "website": "https://www.uts.edu.au"
     }
   ]
 }
