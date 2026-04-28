@@ -59,7 +59,7 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 - 搜不到时回退到本地估算值并标注"为概括性参考"
 - 详细搜索关键词模板见 `references/search_strategy.md`
 
-## 28 种查询类型
+## 30 种查询类型
 
 | # | 类型 | 触发词 | 数据源 |
 |---|------|--------|--------|
@@ -91,6 +91,8 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 | 26 | 学费查询 | MIT学费多少、留学费用 | tuition_costs.json |
 | 27 | 生活成本查询 | 伦敦和纽约留学哪个贵 | tuition_costs.json |
 | 28 | 印度高校查询 | IIT Bombay排名、印度最好的大学 | india_universities.json |
+| 29 | 录取难度评估 | 我GPA3.5能冲CMU吗、MIT录取要求 | international_universities.json |
+| 30 | 海归评估增强 | 帝国理工回国认可度、NUS回国薪资 | international_universities.json |
 
 ## 各类型处理要点
 
@@ -111,6 +113,13 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 **国际高校查询**：问"MIT排名" → international_universities.json 检索该校，返回QS/THE/ARWU排名+优势学科+录取要求；问"CS硕士去美国哪些学校" → 按学科+国家筛选；问"清华和MIT对比" → 同时读取两个数据文件，生成对比表。支持中英文名/简称匹配。
 
 **留学/海归场景**：留学推荐按学科排名+录取难度+就业数据综合排序；海归评估按QS排名+国内认可度+就业去向分析。
+
+**留学选校推荐（冲/稳/保）**：解析用户背景（GPA/标化/专业）→ subject_rankings.json 匹配学科强校 → international_universities.json 筛选录取要求匹配的学校 → tuition_costs.json 计算费用 → 按冲/稳/保三梯队输出：
+- 冲刺校：录取率<15% 且 QS 排名高于用户背景匹配区间
+- 稳妥校：录取率 15-40% 且与用户背景匹配
+- 保底校：录取率>40% 且 QS 排名仍具价值
+
+**印度高校查询**：IIT/IIM 等印度高校数据在 india_universities.json 中，支持查询排名/录取/就业。IIT 系统需通过 JEE Advanced 考试，IIM 需通过 CAT 考试。
 
 ## 参考文件
 

@@ -70,7 +70,11 @@
       },
       "admission": {
         "acceptance": "~15%",
-        "ielts_min": 7.0
+        "ielts_min": 7.0,
+        "gpa": "3.7+",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -110,7 +114,13 @@
       "admission": {
         "acceptance": "~4%",
         "avg_gpa": "3.9-4.0",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.9+",
+        "sat": "1500-1570",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "325+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -149,7 +159,11 @@
       },
       "admission": {
         "acceptance": "~17%",
-        "ielts_min": 7.0
+        "ielts_min": 7.0,
+        "gpa": "3.8+",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -189,7 +203,13 @@
       "admission": {
         "acceptance": "~4%",
         "avg_gpa": "3.9-4.0",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.9+",
+        "sat": "1490-1580",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "325+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -229,7 +249,11 @@
       },
       "admission": {
         "acceptance": "~21%",
-        "ielts_min": 7.0
+        "ielts_min": 7.0,
+        "gpa": "3.8+",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -269,7 +293,13 @@
       "admission": {
         "acceptance": "~4%",
         "avg_gpa": "3.9-4.0",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.9+",
+        "sat": "1530-1580",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "330+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -307,7 +337,13 @@
       "admission": {
         "acceptance": "~6%",
         "avg_gpa": "3.9-4.0",
-        "toefl_min": 104
+        "toefl_min": 104,
+        "gpa": "3.8+",
+        "sat": "1500-1570",
+        "toefl": "104+",
+        "ielts": "7.0+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -345,7 +381,13 @@
       },
       "admission": {
         "acceptance": "~7%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.8+",
+        "sat": "1480-1560",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -383,7 +425,13 @@
       },
       "admission": {
         "acceptance": "~9%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.7+",
+        "sat": "1450-1540",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "318+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -459,7 +507,13 @@
       },
       "admission": {
         "acceptance": "~9%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.7+",
+        "sat": "1480-1550",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "318+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -497,7 +551,13 @@
       },
       "admission": {
         "acceptance": "~6%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.9+",
+        "sat": "1500-1570",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "325+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -535,7 +595,13 @@
       },
       "admission": {
         "acceptance": "~4%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.9+",
+        "sat": "1500-1570",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "325+",
+        "difficulty": "极难"
       },
       "employment": {
         "top_industries": [
@@ -573,7 +639,13 @@
       },
       "admission": {
         "acceptance": "~7%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.7+",
+        "sat": "1460-1540",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "318+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -611,7 +683,13 @@
       },
       "admission": {
         "acceptance": "~4%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.8+",
+        "sat": "1490-1560",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -724,7 +802,13 @@
       },
       "admission": {
         "acceptance": "~21%",
-        "toefl_min": 95
+        "toefl_min": 95,
+        "gpa": "3.5+",
+        "sat": "1380-1500",
+        "toefl": "95+",
+        "ielts": "7.0+",
+        "gre": "315+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -762,7 +846,13 @@
       },
       "admission": {
         "acceptance": "~15%",
-        "toefl_min": 102
+        "toefl_min": 102,
+        "gpa": "3.8+",
+        "sat": "1490-1560",
+        "toefl": "102+",
+        "ielts": "7.5+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -800,7 +890,13 @@
       },
       "admission": {
         "acceptance": "~16%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.5+",
+        "sat": "1370-1500",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "315+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -838,7 +934,13 @@
       },
       "admission": {
         "acceptance": "~32%",
-        "toefl_min": 79
+        "toefl_min": 79,
+        "gpa": "3.5+",
+        "sat": "1300-1450",
+        "toefl": "79+",
+        "ielts": "6.5+",
+        "gre": "310+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -874,7 +976,13 @@
       },
       "admission": {
         "acceptance": "~60%",
-        "toefl_min": 80
+        "toefl_min": 80,
+        "gpa": "3.5+",
+        "sat": "1350-1480",
+        "toefl": "80+",
+        "ielts": "6.5+",
+        "gre": "310+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -946,7 +1054,13 @@
       },
       "admission": {
         "acceptance": "~6%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.8+",
+        "sat": "1480-1560",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -983,7 +1097,13 @@
       },
       "admission": {
         "acceptance": "~5%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.8+",
+        "sat": "1480-1550",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "320+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -1058,7 +1178,13 @@
       },
       "admission": {
         "acceptance": "~60%",
-        "toefl_min": 80
+        "toefl_min": 80,
+        "gpa": "3.3+",
+        "sat": "1200-1380",
+        "toefl": "80+",
+        "ielts": "6.5+",
+        "gre": "305+",
+        "difficulty": "中等"
       },
       "employment": {
         "top_industries": [
@@ -1132,7 +1258,11 @@
       },
       "admission": {
         "acceptance": "~48%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.5+",
+        "toefl": "92+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -1170,7 +1300,11 @@
       },
       "admission": {
         "acceptance": "~40%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.5+",
+        "toefl": "92+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -1657,7 +1791,10 @@
         "international_ratio": "40%"
       },
       "admission": {
-        "ielts_min": 7.0
+        "ielts_min": 7.0,
+        "gpa": "3.7+",
+        "ielts": "7.0+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -1729,7 +1866,10 @@
         "international_ratio": "30%"
       },
       "admission": {
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.3+",
+        "ielts": "6.5+",
+        "difficulty": "中等"
       },
       "employment": {
         "top_industries": [
@@ -2373,7 +2513,11 @@
       },
       "admission": {
         "acceptance": "~43%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.5+",
+        "toefl": "89+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -2411,7 +2555,11 @@
       },
       "admission": {
         "acceptance": "~46%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.5+",
+        "toefl": "90+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -2525,7 +2673,11 @@
       },
       "admission": {
         "acceptance": "~70%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.3+",
+        "toefl": "79+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -2600,7 +2752,11 @@
       },
       "admission": {
         "acceptance": "~70%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.3+",
+        "toefl": "85+",
+        "ielts": "6.5+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -2862,7 +3018,11 @@
       },
       "admission": {
         "acceptance": "~5%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.7+",
+        "toefl": "90+",
+        "ielts": "6.5+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -2899,7 +3059,11 @@
       },
       "admission": {
         "acceptance": "~10%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.6+",
+        "toefl": "90+",
+        "ielts": "6.5+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -2936,7 +3100,11 @@
       },
       "admission": {
         "acceptance": "~10%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.5+",
+        "toefl": "80+",
+        "ielts": "6.5+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -3120,7 +3288,11 @@
         "international_ratio": "15%"
       },
       "admission": {
-        "acceptance": "~5%"
+        "acceptance": "~5%",
+        "gpa": "3.5+",
+        "toefl": "80+",
+        "ielts": "6.0+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -3263,7 +3435,11 @@
         "international_ratio": "12%"
       },
       "admission": {
-        "acceptance": "~5%"
+        "acceptance": "~5%",
+        "gpa": "3.7+",
+        "toefl": "80+",
+        "ielts": "6.0+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -3299,7 +3475,11 @@
         "international_ratio": "10%"
       },
       "admission": {
-        "acceptance": "~5%"
+        "acceptance": "~5%",
+        "gpa": "3.5+",
+        "toefl": "83+",
+        "ielts": "6.5+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -3587,7 +3767,13 @@
       },
       "admission": {
         "acceptance": "~57%",
-        "toefl_min": 80
+        "toefl_min": 80,
+        "gpa": "3.4+",
+        "sat": "1300-1430",
+        "toefl": "80+",
+        "ielts": "6.5+",
+        "gre": "310+",
+        "difficulty": "中等"
       },
       "employment": {
         "top_industries": [
@@ -3811,7 +3997,13 @@
       },
       "admission": {
         "acceptance": "~12%",
-        "toefl_min": 100
+        "toefl_min": 100,
+        "gpa": "3.5+",
+        "sat": "1380-1500",
+        "toefl": "100+",
+        "ielts": "7.0+",
+        "gre": "315+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -3848,7 +4040,13 @@
       },
       "admission": {
         "acceptance": "~21%",
-        "toefl_min": 90
+        "toefl_min": 90,
+        "gpa": "3.6+",
+        "sat": "1380-1500",
+        "toefl": "90+",
+        "ielts": "7.0+",
+        "gre": "315+",
+        "difficulty": "较难"
       },
       "employment": {
         "top_industries": [
@@ -3997,7 +4195,13 @@
       },
       "admission": {
         "acceptance": "~53%",
-        "toefl_min": 79
+        "toefl_min": 79,
+        "gpa": "3.3+",
+        "sat": "1250-1400",
+        "toefl": "79+",
+        "ielts": "6.5+",
+        "gre": "305+",
+        "difficulty": "中等"
       },
       "employment": {
         "top_industries": [
@@ -4033,7 +4237,13 @@
       },
       "admission": {
         "acceptance": "~70%",
-        "toefl_min": 79
+        "toefl_min": 79,
+        "gpa": "3.3+",
+        "sat": "1250-1400",
+        "toefl": "79+",
+        "ielts": "6.5+",
+        "gre": "305+",
+        "difficulty": "中等"
       },
       "employment": {
         "top_industries": [
@@ -4180,7 +4390,13 @@
       },
       "admission": {
         "acceptance": "~88%",
-        "toefl_min": 61
+        "toefl_min": 61,
+        "gpa": "3.0+",
+        "sat": "1100-1300",
+        "toefl": "61+",
+        "ielts": "6.0+",
+        "gre": "300+",
+        "difficulty": "较易"
       },
       "employment": {
         "top_industries": [
@@ -5192,7 +5408,11 @@
       },
       "admission": {
         "acceptance": "~10%",
-        "ielts_min": 6.5
+        "ielts_min": 6.5,
+        "gpa": "3.6+",
+        "toefl": "90+",
+        "ielts": "6.5+",
+        "difficulty": "很难"
       },
       "employment": {
         "top_industries": [
@@ -5447,6 +5667,582 @@
       },
       "notable": "澳洲最年轻研究型大学",
       "website": "https://www.uts.edu.au"
+    },
+    {
+      "name": "King Abdullah University of Science and Technology",
+      "name_cn": "阿卜杜拉国王科技大学",
+      "abbreviation": "KAUST",
+      "country": "沙特阿拉伯",
+      "region": "中东",
+      "city": "Thuwal",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 120,
+        "the_2026": 180
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "环境科学",
+        "材料科学"
+      ],
+      "enrollment": {
+        "total": 2000,
+        "international_ratio": "80%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "石油",
+          "能源",
+          "科研"
+        ]
+      },
+      "notable": "沙特最顶尖研究型大学，全额奖学金，国际化程度最高",
+      "website": "https://www.kaust.edu.sa"
+    },
+    {
+      "name": "Khalifa University",
+      "name_cn": "哈利法大学",
+      "abbreviation": "KU",
+      "country": "阿联酋",
+      "region": "中东",
+      "city": "Abu Dhabi",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 230,
+        "the_2026": 250
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "石油工程"
+      ],
+      "enrollment": {
+        "total": 5000,
+        "international_ratio": "50%"
+      },
+      "admission": {
+        "acceptance": "~20%",
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "石油",
+          "科技",
+          "航空"
+        ]
+      },
+      "notable": "阿联酋第一大学，与MIT合作",
+      "website": "https://www.ku.ac.ae"
+    },
+    {
+      "name": "American University of Beirut",
+      "name_cn": "贝鲁特美国大学",
+      "abbreviation": "AUB",
+      "country": "黎巴嫩",
+      "region": "中东",
+      "city": "Beirut",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 250
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "商学"
+      ],
+      "enrollment": {
+        "total": 10000,
+        "international_ratio": "30%"
+      },
+      "admission": {
+        "acceptance": "~40%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "医疗",
+          "金融",
+          "咨询"
+        ]
+      },
+      "notable": "中东最古老美国式大学",
+      "website": "https://www.aub.edu.lb"
+    },
+    {
+      "name": "Qatar University",
+      "name_cn": "卡塔尔大学",
+      "abbreviation": "QU",
+      "country": "卡塔尔",
+      "region": "中东",
+      "city": "Doha",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 270
+      },
+      "strengths": [
+        "工程",
+        "石油",
+        "商学",
+        "教育"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "40%"
+      },
+      "admission": {
+        "acceptance": "~30%",
+        "ielts_min": 5.5
+      },
+      "employment": {
+        "top_industries": [
+          "石油",
+          "天然气",
+          "金融"
+        ]
+      },
+      "notable": "卡塔尔旗舰大学，石油工程强",
+      "website": "https://www.qu.edu.qa"
+    },
+    {
+      "name": "United Arab Emirates University",
+      "name_cn": "阿联酋大学",
+      "abbreviation": "UAEU",
+      "country": "阿联酋",
+      "region": "中东",
+      "city": "Al Ain",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 290
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "商学",
+        "教育"
+      ],
+      "enrollment": {
+        "total": 15000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~35%",
+        "ielts_min": 5.5
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "石油",
+          "教育"
+        ]
+      },
+      "notable": "阿联酋最古老大学",
+      "website": "https://www.uaeu.ac.ae"
+    },
+    {
+      "name": "King Saud University",
+      "name_cn": "沙特国王大学",
+      "abbreviation": "KSU",
+      "country": "沙特阿拉伯",
+      "region": "中东",
+      "city": "Riyadh",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 250
+      },
+      "strengths": [
+        "工程",
+        "医学",
+        "计算机科学"
+      ],
+      "enrollment": {
+        "total": 55000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~25%"
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "石油",
+          "医疗"
+        ]
+      },
+      "notable": "沙特最大大学，首都利雅得",
+      "website": "https://ksu.edu.sa"
+    },
+    {
+      "name": "American University of Sharjah",
+      "name_cn": "沙迦美国大学",
+      "abbreviation": "AUS",
+      "country": "阿联酋",
+      "region": "中东",
+      "city": "Sharjah",
+      "type": "私立",
+      "rankings": {
+        "qs_2026": 350
+      },
+      "strengths": [
+        "工程",
+        "商学",
+        "建筑"
+      ],
+      "enrollment": {
+        "total": 6000,
+        "international_ratio": "60%"
+      },
+      "admission": {
+        "acceptance": "~45%",
+        "ielts_min": 6.0
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "工程",
+          "建筑"
+        ]
+      },
+      "notable": "中东最美校园，美式教育",
+      "website": "https://www.aus.edu"
+    },
+    {
+      "name": "Technion - Israel Institute of Technology",
+      "name_cn": "以色列理工学院",
+      "abbreviation": "Technion",
+      "country": "以色列",
+      "region": "中东",
+      "city": "Haifa",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 150,
+        "the_2026": 200
+      },
+      "strengths": [
+        "工程",
+        "计算机科学",
+        "医学",
+        "物理"
+      ],
+      "enrollment": {
+        "total": 14000,
+        "international_ratio": "10%"
+      },
+      "admission": {
+        "acceptance": "~15%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "创业",
+          "国防"
+        ]
+      },
+      "notable": "以色列MIT，创业之国引擎，4位诺贝尔奖得主",
+      "website": "https://www.technion.ac.il"
+    },
+    {
+      "name": "Hebrew University of Jerusalem",
+      "name_cn": "耶路撒冷希伯来大学",
+      "abbreviation": "HUJI",
+      "country": "以色列",
+      "region": "中东",
+      "city": "Jerusalem",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 170,
+        "the_2026": 250
+      },
+      "strengths": [
+        "数学",
+        "物理",
+        "农业",
+        "法学"
+      ],
+      "enrollment": {
+        "total": 22000,
+        "international_ratio": "8%"
+      },
+      "admission": {
+        "acceptance": "~30%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科研",
+          "教育",
+          "法律"
+        ]
+      },
+      "notable": "以色列最古老大学，8位诺贝尔奖得主",
+      "website": "https://new.huji.ac.il"
+    },
+    {
+      "name": "Tel Aviv University",
+      "name_cn": "特拉维夫大学",
+      "abbreviation": "TAU",
+      "country": "以色列",
+      "region": "中东",
+      "city": "Tel Aviv",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 210,
+        "the_2026": 200
+      },
+      "strengths": [
+        "计算机科学",
+        "物理",
+        "生物",
+        "商学"
+      ],
+      "enrollment": {
+        "total": 30000,
+        "international_ratio": "8%"
+      },
+      "admission": {
+        "acceptance": "~35%",
+        "ielts_min": 6.5
+      },
+      "employment": {
+        "top_industries": [
+          "科技",
+          "创业",
+          "金融"
+        ]
+      },
+      "notable": "以色列最大综合大学，位于创业中心",
+      "website": "https://english.tau.ac.il"
+    },
+    {
+      "name": "Chulalongkorn University",
+      "name_cn": "朱拉隆功大学",
+      "abbreviation": "Chula",
+      "country": "泰国",
+      "region": "亚太",
+      "city": "Bangkok",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 220,
+        "the_2026": 601
+      },
+      "strengths": [
+        "商学",
+        "医学",
+        "工程",
+        "传媒"
+      ],
+      "enrollment": {
+        "total": 42000,
+        "international_ratio": "8%"
+      },
+      "admission": {
+        "acceptance": "~10%"
+      },
+      "employment": {
+        "top_industries": [
+          "金融",
+          "医疗",
+          "政府"
+        ]
+      },
+      "notable": "泰国第一大学，皇家赞助",
+      "website": "https://www.chula.ac.th"
+    },
+    {
+      "name": "Universiti Putra Malaysia",
+      "name_cn": "马来西亚博特拉大学",
+      "abbreviation": "UPM",
+      "country": "马来西亚",
+      "region": "亚太",
+      "city": "Serdang",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 148,
+        "the_2026": 601
+      },
+      "strengths": [
+        "农业",
+        "林业",
+        "兽医",
+        "工程"
+      ],
+      "enrollment": {
+        "total": 25000,
+        "international_ratio": "20%"
+      },
+      "admission": {
+        "acceptance": "~30%",
+        "ielts_min": 5.5
+      },
+      "employment": {
+        "top_industries": [
+          "农业",
+          "食品",
+          "环保"
+        ]
+      },
+      "notable": "东南亚农业最强",
+      "website": "https://www.upm.edu.my"
+    },
+    {
+      "name": "Universiti Kebangsaan Malaysia",
+      "name_cn": "马来西亚国民大学",
+      "abbreviation": "UKM",
+      "country": "马来西亚",
+      "region": "亚太",
+      "city": "Bangi",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 159,
+        "the_2026": 601
+      },
+      "strengths": [
+        "医学",
+        "工程",
+        "教育",
+        "社科"
+      ],
+      "enrollment": {
+        "total": 20000,
+        "international_ratio": "15%"
+      },
+      "admission": {
+        "acceptance": "~30%",
+        "ielts_min": 5.5
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "医疗",
+          "教育"
+        ]
+      },
+      "notable": "马来西亚国立大学，马来语教学为主",
+      "website": "https://www.ukm.my"
+    },
+    {
+      "name": "Universiti Sains Malaysia",
+      "name_cn": "马来西亚理科大学",
+      "abbreviation": "USM",
+      "country": "马来西亚",
+      "region": "亚太",
+      "city": "Penang",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 146,
+        "the_2026": 601
+      },
+      "strengths": [
+        "药学",
+        "工程",
+        "理学",
+        "医学"
+      ],
+      "enrollment": {
+        "total": 28000,
+        "international_ratio": "18%"
+      },
+      "admission": {
+        "acceptance": "~25%",
+        "ielts_min": 5.5
+      },
+      "employment": {
+        "top_industries": [
+          "制药",
+          "电子",
+          "医疗"
+        ]
+      },
+      "notable": "马来西亚研究型大学，槟城校区",
+      "website": "https://www.usm.my"
+    },
+    {
+      "name": "University of the Philippines",
+      "name_cn": "菲律宾大学",
+      "abbreviation": "UP",
+      "country": "菲律宾",
+      "region": "亚太",
+      "city": "Quezon City",
+      "type": "公立",
+      "rankings": {
+        "qs_2026": 370
+      },
+      "strengths": [
+        "法学",
+        "医学",
+        "工程",
+        "公共政策"
+      ],
+      "enrollment": {
+        "total": 60000,
+        "international_ratio": "2%"
+      },
+      "admission": {
+        "acceptance": "~5%",
+        "exam": "UPCAT"
+      },
+      "employment": {
+        "top_industries": [
+          "政府",
+          "医疗",
+          "教育"
+        ]
+      },
+      "notable": "菲律宾最高学府，入学考试极难",
+      "website": "https://www.up.edu.ph"
     }
-  ]
+  ],
+  "录取难度分级": {
+    "极难": {
+      "description": "录取率<10%，需要顶尖标化+突出背景",
+      "examples": [
+        "MIT",
+        "Stanford",
+        "Harvard",
+        "Caltech",
+        "Princeton"
+      ]
+    },
+    "很难": {
+      "description": "录取率10-20%，需要优秀标化+强背景",
+      "examples": [
+        "CMU",
+        "Columbia",
+        "Yale",
+        "Duke",
+        "Brown",
+        "UPenn"
+      ]
+    },
+    "较难": {
+      "description": "录取率20-40%，需要良好标化",
+      "examples": [
+        "NYU",
+        "USC",
+        "UMich",
+        "UVA",
+        "Georgia Tech"
+      ]
+    },
+    "中等": {
+      "description": "录取率40-70%，标化达标即可",
+      "examples": [
+        "OSU",
+        "Purdue",
+        "Penn State",
+        "ASU"
+      ]
+    },
+    "较易": {
+      "description": "录取率>70%，开放入学",
+      "examples": [
+        "部分州立大学"
+      ]
+    }
+  }
 }
