@@ -20,6 +20,7 @@ description: 中国高校信息查询与情报分析工具。覆盖全国 985/21
 | `data/conferences.json` | 国际+国内顶级学术会议（CCF-A/B等） | 直接读取 |
 | `data/competitions.json` | 国际+国内顶级赛事（A类/B类） | 直接读取 |
 | `data/international_universities.json` | 全球 TOP100 国际高校（QS 2026） | 直接读取 |
+| `data/subject_rankings.json` | QS 2026 学科排名（10学科 TOP10/30） | 直接读取 |
 
 **推荐使用 universities.db（SQLite）进行复杂查询**，支持 JOIN/WHERE/ORDER BY：
 ```bash
@@ -56,7 +57,7 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 - 搜不到时回退到本地估算值并标注"为概括性参考"
 - 详细搜索关键词模板见 `references/search_strategy.md`
 
-## 24 种查询类型
+## 25 种查询类型
 
 | # | 类型 | 触发词 | 数据源 |
 |---|------|--------|--------|
@@ -84,6 +85,7 @@ sqlite3 data/universities.db "SELECT u.name, f.academicians FROM universities u 
 | 22 | 留学择校推荐 | CS硕士去美国哪些学校、英国留学推荐 | international_universities.json |
 | 23 | 海归背景评估 | 帝国理工回国认可度、NUS回国好找工作吗 | international_universities.json |
 | 24 | 海外校招目标校 | 去美国哪些学校招人、英国校招目标校 | international_universities.json |
+| 25 | 学科排名查询 | CS全球TOP10是哪些、商学排名 | subject_rankings.json |
 
 ## 各类型处理要点
 
