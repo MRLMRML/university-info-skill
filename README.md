@@ -1,90 +1,175 @@
+<div align="center">
+
 # 🎓 全球高校信息检索 Skill
+
+**全球首个覆盖 300+ 高校、30 种查询、27 国数据的 AI Agent 高校情报系统**
 
 [![OpenCode](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://github.com/sst/opencode)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-purple.svg)](https://docs.anthropic.com/en/docs/claude-code)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
-[![Data Source](https://img.shields.io/badge/数据来源-教育部官方-green.svg)](https://www.moe.gov.cn/)
+[![Cursor](https://img.shields.io/badge/Cursor-Compatible-black.svg)](https://cursor.sh)
+[![Windsurf](https://img.shields.io/badge/Windsurf-Compatible-teal.svg)](https://codeium.com/windsurf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.8.0-brightgreen.svg)](#版本记录)
 
-> 中国高校 + 全球国际高校信息查询与情报分析工具 —— 让 AI Agent 成为你的高校情报助手。
+[中文](#-特性) | [English](README_en.md)
 
-覆盖中国 **148 所高校** + 全球 **164 所国际高校**（27 国），支持 **30 种查询类型**，核心数据源自**教育部官方文件**及 **QS/THE/ARWU 排名**。
+> 🚀 **全球首个** AI Agent 高校情报系统 —— 让你的 AI 成为最懂高校的专家
+>
+> 📊 覆盖 **148 所中国高校** + **164 所国际高校** + **42 个顶会** + **37 个赛事**
+>
+> 🎯 支持 **30 种查询类型**，从"北大就业怎么样"到"MIT学费多少"，一句话搞定
+
+</div>
+
+---
+
+## 🏆 为什么选择我们？
+
+<div align="center">
+
+| 🥇 全球首个 | 📊 数据最全 | 🔍 查询最多 | 🌍 覆盖最广 |
+|:---:|:---:|:---:|:---:|
+| AI Agent 高校情报系统 | 300+ 高校多维数据 | 30 种查询类型 | 27 个国家/地区 |
+| **首个**集成 QS/THE/ARWU | **首个**支持实验室查询 | **首个**留学费用对比 | **首个**赛事会议查询 |
+
+</div>
 
 ---
 
 ## ✨ 特性
 
-- 🏛️ **权威数据** — 985/211/双一流名单、学科评估均源自教育部原始文件
-- 🌍 **全球覆盖** — 164 所国际高校（美50/英30/加10/澳10/日10/德5/新加坡5/港5/印度19/中东11/东南亚5）
-- 🔍 **30 种查询** — 中国高校14种 + 学术会议4种 + 赛事2种 + 国际高校10种
+### 🏛️ 权威数据，官方来源
+
+- 📜 **教育部官方** — 985/211/双一流名单、学科评估均源自教育部原始文件
+- 🏅 **三大排名** — QS/THE/ARWU 全球排名全覆盖，10 学科 TOP20
+- 📊 **软科排名** — 2026 中国大学排名 TOP239 集成
+- 👨‍🏫 **师资数据** — 69 所高校院士/杰青/长江学者数量
+
+### 🌍 全球视野，一网打尽
+
+- 🇺🇸 **美国 50 校** — MIT/Stanford/Harvard/CMU 等，含 GPA+TOEFL+GRE 要求
+- 🇬🇧 **英国 30 校** — Oxford/Cambridge/Imperial 等，含 IELTS 要求
+- 🇨🇦🇦🇺🇯🇰🇸🇬🇪🇺 **更多国家** — 加拿大/澳洲/日本/新加坡/欧洲/印度/中东/东南亚
+- 💰 **留学费用** — 10 国学费 + 16 城市生活成本 + 9 国奖学金
+
+### 🔍 查询能力，业界最强
+
 - 📖 **1483 条学科评估** — 95 个一级学科 A+/A/A-/B+ 四档全覆盖
-- 🏆 **软科排名** — 2026 中国大学排名 TOP239 集成
-- 🎓 **国际排名** — QS/THE/ARWU 三大排名全覆盖 + 10 学科排名 TOP20
+- 🎯 **录取评估** — 49 校含 GRE/GMAT 要求，5 级难度分级
 - 📊 **学术会议** — 42 个国际顶会（CCF-A/B）+ 6 国内顶会
 - 🏅 **竞赛赛事** — 37 个国际赛事 + 20+ 国内 A/B 类赛事
-- 💰 **留学费用** — 10 国学费 + 16 城市生活成本 + 9 国奖学金
-- 🎯 **录取评估** — 49 校含 GRE/GMAT 要求，5 级难度分级
-- 👨‍🏫 **师资数据** — 69 所高校院士/杰青/长江学者数量
-- 💬 **自然语言** — 支持 "北大就业怎么样？"、"MIT排名多少？" 等口语化提问
+- 🏫 **实验室信息** — 国内外高校重点实验室、研究方向查询
+
+### 💬 智能交互，自然语言
+
+- 🗣️ **口语化提问** — "北大就业怎么样？"、"MIT排名多少？"
 - 🗺️ **简称识别** — 内置 283 个别名（北大/MIT/斯坦福/牛津/BIT/SCUT...）
 - 🌐 **智能补充** — 本地数据不足时自动通过 Web Search 获取最新信息
+- 🔄 **实时更新** — 支持一键更新数据，保持信息时效性
 
 ---
 
-## 📦 安装
+## 🚀 快速开始
+
+### 安装
 
 ```bash
+# 一键安装
 mkdir -p ~/.opencode/skills
 git clone https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill
 cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
+
+# 验证安装
+ls ~/.opencode/skills/university-info-skill
 ```
 
-> 兼容 OpenCode / Claude Code / OpenClaw。也支持项目级安装。
+### 更新
+
+```bash
+# 拉取最新数据
+cd ~/.opencode/skills/university-info-skill && git pull
+
+# 或使用 Pipeline 一键更新
+python3 scripts/pipeline/run_all.py
+```
 
 ---
 
-## 🚀 使用示例
+## 📖 使用示例
 
-### 中国高校
+### 🇨🇳 中国高校查询
 
 ```
+# 基础信息
 > 北京大学的基本信息
+> 清华是什么层次的学校？
+> 浙大和上交对比一下
+
+# 学科实力
 > 清华有哪些A+学科？
 > 计算机学科哪些学校最强？
+> 北航的王牌专业是什么？
+
+# 就业与科研
 > 北航的毕业生主要去哪些公司？
-> 浙大和上交对比一下
+> 复旦的科研经费有多少？
+> 上交的实验室有哪些？
+
+# 录取与排名
+> 多少分能上浙大？
+> 软科排名前10是哪些？
+> 北大和清华哪个更难考？
 ```
 
-### 国际高校 & 留学
+### 🌍 国际高校 & 留学
 
 ```
+# 排名查询
 > MIT的QS排名是多少？
-> CMU和斯坦福CS哪个好？
-> 清华和MIT工程专业对比
+> 牛津和剑桥哪个好？
+> CMU和斯坦福CS哪个强？
+
+# 留学规划
 > CS硕士去美国哪些学校好？
 > 我GPA3.5能冲CMU吗？
 > 帝国理工回国认可度怎么样？
-> 去英国哪些学校招人？
+
+# 费用对比
 > MIT学费多少？有奖学金吗？
 > 伦敦和纽约留学哪个贵？
+> 去英国读研一年要多少钱？
+
+# 海归评估
+> NUS回国薪资大概多少？
+> 去英国哪些学校招人？
+> 海归就业有什么优势？
 ```
 
-### 学术会议 & 赛事
+### 📊 学术会议 & 赛事
 
 ```
+# 会议查询
 > NeurIPS是什么级别的会议？
 > CS领域CCF-A顶会有哪些？
-> 挑战杯和互联网+哪个含金量高？
+> CVPR和ICCV哪个更难中？
+
+# 赛事查询
+> 挑战杯是什么？
+> 互联网+和挑战杯哪个含金量高？
 > 教育部A类竞赛有哪些？
 ```
 
-### 印度高校
+### 🏫 实验室查询（新增）
 
 ```
-> IIT Bombay排名多少？
-> 印度最好的大学有哪些？
-> IIT和IIM有什么区别？
+# 国内实验室
+> 清华有哪些重点实验室？
+> 北大计算机系有哪些研究方向？
+> 浙大AI实验室的研究方向是什么？
+
+# 国际实验室
+> MIT CSAIL有哪些研究方向？
+> Stanford AI Lab的研究重点是什么？
+> CMU Robotics Institute怎么样？
 ```
 
 ---
@@ -101,6 +186,7 @@ university-info-skill/
 │       ├── india_universities.json     # 印度TOP20高校
 │       ├── subject_rankings.json       # QS学科排名(10学科TOP20)
 │       ├── tuition_costs.json          # 留学费用(10国+16城市)
+│       ├── labs.json                   # 国内外高校实验室信息（新增）
 │       ├── disciplines.csv             # 1483条学科评估
 │       ├── rankings.csv                # 软科2026排名 TOP239
 │       ├── scores.db                   # 504条录取分数线
@@ -148,6 +234,7 @@ university-info-skill/
 | 就业数据 | 57 所（985 全覆盖 + 部分 211） | 2023+2024 |
 | 师资数据 | 69 所（院士/杰青/长江学者） | 2024 |
 | 生源数据 | 69 所（在校生规模/本硕博比例） | 2024 |
+| 实验室数据 | 50+ 所（国家重点实验室/研究方向） | 2024 |
 
 ### 国际高校（164 所, 27 国）
 
@@ -235,7 +322,31 @@ university-info-skill/
 | 27 | 生活成本 | "伦敦和纽约留学哪个贵" | tuition_costs.json |
 | 28 | 印度高校 | "IIT Bombay排名" | india_universities.json |
 | 29 | 录取难度 | "我GPA3.5能冲CMU吗" | international_universities.json |
-| 30 | 海归增强 | "NUS回国薪资" | international_universities.json |
+| 30 | 实验室查询 | "清华重点实验室" | labs.json |
+
+---
+
+## 🏫 实验室信息（新增）
+
+### 国内高校实验室
+
+| 高校 | 重点实验室 | 研究方向 |
+|------|-----------|---------|
+| 清华大学 | 智能技术与系统国家重点实验室 | 人工智能、机器学习、计算机视觉 |
+| 北京大学 | 机器感知与智能教育部重点实验室 | 计算机视觉、模式识别、多媒体 |
+| 浙江大学 | 工业控制技术国家重点实验室 | 工业自动化、智能控制、机器人 |
+| 上海交通大学 | 区域光纤通信网与新型光通信系统国家重点实验室 | 光通信、网络技术、信息安全 |
+| 中国科学技术大学 | 多媒体计算与通信教育部重点实验室 | 多媒体、计算机视觉、图形学 |
+
+### 国际高校实验室
+
+| 高校 | 实验室 | 研究方向 |
+|------|--------|---------|
+| MIT | CSAIL (计算机科学与人工智能实验室) | AI、机器人、NLP、计算机视觉 |
+| Stanford | Stanford AI Lab (SAL) | 机器学习、深度学习、NLP |
+| CMU | Robotics Institute | 机器人、计算机视觉、机器学习 |
+| UC Berkeley | BAIR (Berkeley AI Research) | 强化学习、机器人、NLP |
+| ETH Zurich | Computer Vision Lab | 计算机视觉、3D重建、自动驾驶 |
 
 ---
 
@@ -266,66 +377,17 @@ university-info-skill/
 
 ---
 
-## 📋 版本记录
-
-### v2.8.0 (2026-04) — 全面升级：数据标准化 + 模板国际化
-
-- ✅ **国际高校数据标准化** — 164 校全部补全 GPA/TOEFL/IELTS/难度分级/QS/THE/ARWU
-- ✅ **GRE/GMAT 要求** — 49 校含 GRE/GMAT 录取要求
-- ✅ **学科排名扩展** — 10 学科全部 TOP20（CS 保持 TOP30）
-- ✅ **输出模板国际化** — 新增国际高校/留学选校/中外对比/学科排名/费用模板
-- ✅ **搜索策略国际化** — 新增国际高校/会议赛事搜索关键词
-- ✅ **海外校招能力** — 校招助手新增海外目标校筛选 + 海归评估
-- ✅ **中东高校扩展** — +10 所（KAUST/Technion/TAU 等）
-- ✅ **东南亚高校扩展** — +5 所（朱拉隆功/UPM 等）
-- ✅ **留学费用数据** — 10 国学费 + 16 城市生活成本 + 9 国奖学金
-- ✅ **印度高校数据** — 19 所（IIT×9 / IIM×2 / BITS 等）
-- ✅ **competitions.json 修复** — JSON 语法错误
-
-### v2.7.0 (2026-04) — 国际高校 + 学术会议 + 赛事
-
-- ✅ 国际高校数据 149 所，QS/THE/ARWU 三大排名
-- ✅ 学术会议 42 个（CCF-A/B）+ 国内 6 个
-- ✅ 赛事 37 个（国际+国内 A/B 类）
-- ✅ 查询类型 14→24 种
-- ✅ 别名 26→283 个
-- ✅ 软科排名 2024→2026
-- ✅ 录取分数线 149→504 条
-- ✅ 考研报录比 30→110 条
-- ✅ 双一流名单修正 54→147 所
-- ✅ 新增 5 个自动化脚本 + Pipeline
-
-### v2.6.0 (2025-04) — Phase 6 数据补充
-
-- ✅ 师资数据百度百科核实 37/39 所精确院士数
-- ✅ 毕业生流向 39 所 985 全覆盖
-- ✅ 录取分数线 31/31 省全覆盖
-- ✅ 新增「按需实时补充」策略
-
-### v2.5.0 (2025-04) — Phase 5 架构优化
-
-- ✅ SKILL.md 瘦身 436→75 行
-- ✅ 数据层升级 universities.db SQLite
-- ✅ 新增爬虫脚本
-
-### v2.4.0 (2025-04) — Phase 3 场景化拆分
-
-- ✅ 新增「校招助手」Skill
-- ✅ 新增「择校分析」Skill
-
----
-
 ## 🔄 数据更新
 
 ```bash
-cd /tmp/uni-skill && git pull
-cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
-```
+# 方式一：Git 拉取
+cd ~/.opencode/skills/university-info-skill && git pull
 
-或使用 Pipeline：
-```bash
-python3 scripts/pipeline/run_all.py          # 一键更新
-python3 scripts/pipeline/check_updates.py    # 检查时效性
+# 方式二：Pipeline 一键更新
+python3 scripts/pipeline/run_all.py
+
+# 方式三：检查时效性
+python3 scripts/pipeline/check_updates.py
 ```
 
 ---
@@ -345,13 +407,47 @@ python3 scripts/pipeline/check_updates.py    # 检查时效性
 
 欢迎提交 PR 补充数据或修正错误：
 
-- 补充更多高校的就业/科研/生源数据
+- 补充更多高校的就业/科研/生源/实验室数据
 - 修正已有数据中的不准确信息（请附来源链接）
 - 新增高校简称映射
 - 补充国际高校数据
+
+详见 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📞 商务合作
+
+<div align="center">
+
+**🤝 商务合作 | 数据采购 | 定制开发**
+
+📧 **邮箱**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
+
+> 请注明来意，我们将在 24 小时内回复
+
+**合作形式**：
+- 📊 **数据采购** — 批量高校数据、定制数据集
+- 🛠️ **定制开发** — 企业级高校情报系统
+- 🤝 **战略合作** — 教育行业深度合作
+- 📚 **学术合作** — 科研数据共享、联合研究
+
+</div>
 
 ---
 
 ## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+<div align="center">
+
+**⭐ 如果这个项目对你有帮助，请给我们一个 Star！⭐**
+
+**🔗 项目链接**: [https://github.com/MRLMRML/university-info-skill](https://github.com/MRLMRML/university-info-skill)
+
+**📧 联系我们**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
+
+</div>
