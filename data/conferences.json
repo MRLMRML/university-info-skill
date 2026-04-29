@@ -1,69 +1,557 @@
 {
-  "说明": "顶级学术会议数据 - 分国际/国内，按领域分类",
+  "说明": "国际+国内顶级学术会议",
   "数据来源": "CCF推荐目录、各会议官网",
-  "更新日期": "2026-04-27",
-  "国际会议": {
-    "人工智能/机器学习": [
-      {"name": "NeurIPS", "full_name": "Neural Information Processing Systems", "level": "CCF-A", "field": "AI/ML", "acceptance_rate": "~26%", "submission_deadline": "每年5月", "conference_date": "每年12月", "location": "轮换(温哥华/新奥尔良等)", "website": "https://neurips.cc"},
-      {"name": "ICML", "full_name": "International Conference on Machine Learning", "level": "CCF-A", "field": "AI/ML", "acceptance_rate": "~28%", "submission_deadline": "每年1月", "conference_date": "每年7月", "location": "轮换", "website": "https://icml.cc"},
-      {"name": "ICLR", "full_name": "International Conference on Learning Representations", "level": "CCF-A", "field": "AI/ML", "acceptance_rate": "~32%", "submission_deadline": "每年9月", "conference_date": "每年4-5月", "location": "轮换", "website": "https://iclr.cc"},
-      {"name": "AAAI", "full_name": "Association for the Advancement of Artificial Intelligence", "level": "CCF-A", "field": "AI", "acceptance_rate": "~24%", "submission_deadline": "每年8月", "conference_date": "每年2月", "location": "北美为主", "website": "https://aaai.org"},
-      {"name": "IJCAI", "full_name": "International Joint Conference on Artificial Intelligence", "level": "CCF-A", "field": "AI", "acceptance_rate": "~15%", "submission_deadline": "每年1月", "conference_date": "每年8月", "location": "轮换", "website": "https://ijcai.org"},
-      {"name": "UAI", "full_name": "Uncertainty in Artificial Intelligence", "level": "CCF-B", "field": "AI/概率推理", "acceptance_rate": "~30%", "submission_deadline": "每年3月", "conference_date": "每年8月", "location": "轮换", "website": "https://auai.org"}
-    ],
-    "计算机视觉/多媒体": [
-      {"name": "CVPR", "full_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition", "level": "CCF-A", "field": "计算机视觉", "acceptance_rate": "~25%", "submission_deadline": "每年11月", "conference_date": "每年6月", "location": "美国轮换", "website": "https://cvpr.thecvf.com"},
-      {"name": "ICCV", "full_name": "International Conference on Computer Vision", "level": "CCF-A", "field": "计算机视觉", "acceptance_rate": "~27%", "submission_deadline": "每年3月", "conference_date": "每年10月(奇数年)", "location": "轮换", "website": "https://iccv.thecvf.com"},
-      {"name": "ECCV", "full_name": "European Conference on Computer Vision", "level": "CCF-B", "field": "计算机视觉", "acceptance_rate": "~28%", "submission_deadline": "每年3月", "conference_date": "每年10月(偶数年)", "location": "欧洲", "website": "https://eccv.ecva.net"},
-      {"name": "ACM MM", "full_name": "ACM International Conference on Multimedia", "level": "CCF-A", "field": "多媒体", "acceptance_rate": "~30%", "submission_deadline": "每年4月", "conference_date": "每年10月", "location": "轮换", "website": "https://acmmm.org"}
-    ],
-    "自然语言处理": [
-      {"name": "ACL", "full_name": "Annual Meeting of the Association for Computational Linguistics", "level": "CCF-A", "field": "NLP", "acceptance_rate": "~25%", "submission_deadline": "每年1月", "conference_date": "每年7月", "location": "轮换", "website": "https://www.aclweb.org"},
-      {"name": "EMNLP", "full_name": "Empirical Methods in Natural Language Processing", "level": "CCF-B", "field": "NLP", "acceptance_rate": "~25%", "submission_deadline": "每年6月", "conference_date": "每年11月", "location": "轮换", "website": "https://2024.emnlp.org"},
-      {"name": "NAACL", "full_name": "North American Chapter of ACL", "level": "CCF-B", "field": "NLP", "acceptance_rate": "~28%", "submission_deadline": "每年10月", "conference_date": "每年6月", "location": "北美", "website": "https://2024.naacl.org"},
-      {"name": "COLING", "full_name": "International Conference on Computational Linguistics", "level": "CCF-B", "field": "NLP", "acceptance_rate": "~30%", "submission_deadline": "每年5月", "conference_date": "每年10月(偶数年)", "location": "轮换", "website": "https://coling2025.org"}
-    ],
-    "数据管理/数据库": [
-      {"name": "SIGMOD", "full_name": "ACM SIGMOD Conference", "level": "CCF-A", "field": "数据库", "acceptance_rate": "~25%", "submission_deadline": "每年10月", "conference_date": "每年6月", "location": "轮换", "website": "https://sigmod.org"},
-      {"name": "VLDB", "full_name": "Very Large Data Bases", "level": "CCF-A", "field": "数据库", "acceptance_rate": "~25%", "submission_deadline": "滚动截止(每月1日)", "conference_date": "每年8月", "location": "轮换", "website": "https://vldb.org"},
-      {"name": "ICDE", "full_name": "IEEE International Conference on Data Engineering", "level": "CCF-A", "field": "数据工程", "acceptance_rate": "~25%", "submission_deadline": "每年7月", "conference_date": "每年4月", "location": "轮换", "website": "https://icde2025.github.io"}
-    ],
-    "系统/网络": [
-      {"name": "OSDI", "full_name": "USENIX Symposium on Operating Systems Design and Implementation", "level": "CCF-A", "field": "操作系统", "acceptance_rate": "~18%", "submission_deadline": "每年5月/11月", "conference_date": "每年7月/10月", "location": "美国", "website": "https://www.usenix.org/conference/osdi24"},
-      {"name": "SOSP", "full_name": "ACM Symposium on Operating Systems Principles", "level": "CCF-A", "field": "操作系统", "acceptance_rate": "~16%", "submission_deadline": "每年4月", "conference_date": "每年10月(奇数年)", "location": "轮换", "website": "https://sosp.org"},
-      {"name": "SIGCOMM", "full_name": "ACM SIGCOMM Conference", "level": "CCF-A", "field": "计算机网络", "acceptance_rate": "~20%", "submission_deadline": "每年2月/6月", "conference_date": "每年9月", "location": "轮换", "website": "https://sigcomm.org"},
-      {"name": "NSDI", "full_name": "USENIX Symposium on Networked Systems Design and Implementation", "level": "CCF-A", "field": "网络系统", "acceptance_rate": "~18%", "submission_deadline": "每年9月/3月", "conference_date": "每年4月/10月", "location": "美国", "website": "https://www.usenix.org/conference/nsdi24"}
-    ],
-    "安全": [
-      {"name": "IEEE S&P", "full_name": "IEEE Symposium on Security and Privacy", "level": "CCF-A", "field": "信息安全", "acceptance_rate": "~15%", "submission_deadline": "每年6月", "conference_date": "每年5月", "location": "旧金山", "website": "https://sp2025.ieee-security.org"},
-      {"name": "CCS", "full_name": "ACM Conference on Computer and Communications Security", "level": "CCF-A", "field": "信息安全", "acceptance_rate": "~20%", "submission_deadline": "每年1月/5月", "conference_date": "每年10月", "location": "轮换", "website": "https://www.sigsac.org/ccs.html"},
-      {"name": "USENIX Security", "full_name": "USENIX Security Symposium", "level": "CCF-A", "field": "信息安全", "acceptance_rate": "~20%", "submission_deadline": "每年2月/6月/10月", "conference_date": "每年8月", "location": "美国", "website": "https://www.usenix.org/conference/usenixsecurity24"},
-      {"name": "NDSS", "full_name": "Network and Distributed System Security Symposium", "level": "CCF-A", "field": "网络安全", "acceptance_rate": "~17%", "submission_deadline": "每年7月/10月", "conference_date": "每年2月", "location": "圣地亚哥", "website": "https://www.ndss-symposium.org"}
-    ],
-    "软件工程/编程语言": [
-      {"name": "ICSE", "full_name": "International Conference on Software Engineering", "level": "CCF-A", "field": "软件工程", "acceptance_rate": "~25%", "submission_deadline": "每年9月", "conference_date": "每年5月", "location": "轮换", "website": "https://conf.researchr.org/home/icse-2025"},
-      {"name": "FSE", "full_name": "ACM SIGSOFT Symposium on the Foundation of Software Engineering", "level": "CCF-A", "field": "软件工程", "acceptance_rate": "~25%", "submission_deadline": "每年2月/5月", "conference_date": "每年11月", "location": "轮换", "website": "https://2024.esec-fse.org"},
-      {"name": "ASE", "full_name": "IEEE/ACM International Conference on Automated Software Engineering", "level": "CCF-A", "field": "自动化软件工程", "acceptance_rate": "~25%", "submission_deadline": "每年5月", "conference_date": "每年10月", "location": "轮换", "website": "https://conf.researchr.org/home/ase-2024"},
-      {"name": "PLDI", "full_name": "ACM SIGPLAN Conference on Programming Language Design and Implementation", "level": "CCF-A", "field": "编程语言", "acceptance_rate": "~25%", "submission_deadline": "每年11月", "conference_date": "每年6月", "location": "轮换", "website": "https://pldi24.sigplan.org"},
-      {"name": "POPL", "full_name": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages", "level": "CCF-A", "field": "编程语言", "acceptance_rate": "~30%", "submission_deadline": "每年7月", "conference_date": "每年1月", "location": "轮换", "website": "https://popl25.sigplan.org"}
-    ],
-    "人机交互/信息检索": [
-      {"name": "CHI", "full_name": "ACM Conference on Human Factors in Computing Systems", "level": "CCF-A", "field": "人机交互", "acceptance_rate": "~25%", "submission_deadline": "每年9月", "conference_date": "每年4月", "location": "轮换", "website": "https://chi2025.acm.org"},
-      {"name": "SIGIR", "full_name": "ACM SIGIR Conference on Research and Development in Information Retrieval", "level": "CCF-A", "field": "信息检索", "acceptance_rate": "~25%", "submission_deadline": "每年1月", "conference_date": "每年7月", "location": "轮换", "website": "https://sigir.org"},
-      {"name": "TheWebConf/WWW", "full_name": "The Web Conference", "level": "CCF-A", "field": "Web/信息检索", "acceptance_rate": "~20%", "submission_deadline": "每年10月", "conference_date": "每年4月", "location": "轮换", "website": "https://www2025.thewebconf.org"}
-    ],
-    "数据挖掘/知识工程": [
-      {"name": "KDD", "full_name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining", "level": "CCF-A", "field": "数据挖掘", "acceptance_rate": "~20%", "submission_deadline": "每年2月/8月", "conference_date": "每年8月", "location": "轮换", "website": "https://kdd.org"},
-      {"name": "WSDM", "full_name": "Web Search and Data Mining", "level": "CCF-B", "field": "搜索/数据挖掘", "acceptance_rate": "~18%", "submission_deadline": "每年8月", "conference_date": "每年3月", "location": "轮换", "website": "https://www.wsdm-conference.org"},
-      {"name": "RecSys", "full_name": "ACM Conference on Recommender Systems", "level": "CCF-B", "field": "推荐系统", "acceptance_rate": "~25%", "submission_deadline": "每年5月", "conference_date": "每年10月", "location": "轮换", "website": "https://recsys.acm.org"}
-    ]
+  "更新日期": "2026-04-28",
+  "数据时效": {
+    "ccf目录": "2022年版",
+    "录用率": "2024-2025年数据"
   },
+  "国际会议": [
+    {
+      "name": "NeurIPS",
+      "full_name": "Neural Information Processing Systems",
+      "field": "人工智能",
+      "ccf_level": "A",
+      "acceptance_rate": "~26%",
+      "deadline": "每年5月",
+      "conference_date": "每年12月",
+      "location": "轮换举办",
+      "website": "https://neurips.cc"
+    },
+    {
+      "name": "ICML",
+      "full_name": "International Conference on Machine Learning",
+      "field": "机器学习",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年1月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://icml.cc"
+    },
+    {
+      "name": "ICLR",
+      "full_name": "International Conference on Learning Representations",
+      "field": "机器学习",
+      "ccf_level": "A",
+      "acceptance_rate": "~30%",
+      "deadline": "每年9月",
+      "conference_date": "每年5月",
+      "location": "轮换举办",
+      "website": "https://iclr.cc"
+    },
+    {
+      "name": "AAAI",
+      "full_name": "Association for the Advancement of Artificial Intelligence",
+      "field": "人工智能",
+      "ccf_level": "A",
+      "acceptance_rate": "~24%",
+      "deadline": "每年8月",
+      "conference_date": "每年2月",
+      "location": "北美",
+      "website": "https://aaai.org"
+    },
+    {
+      "name": "IJCAI",
+      "full_name": "International Joint Conference on Artificial Intelligence",
+      "field": "人工智能",
+      "ccf_level": "A",
+      "acceptance_rate": "~15%",
+      "deadline": "每年1月",
+      "conference_date": "每年8月",
+      "location": "轮换举办",
+      "website": "https://ijcai.org"
+    },
+    {
+      "name": "AISTATS",
+      "full_name": "International Conference on Artificial Intelligence and Statistics",
+      "field": "机器学习",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年10月",
+      "conference_date": "每年4月",
+      "location": "轮换举办",
+      "website": "https://aistats.org"
+    },
+    {
+      "name": "UAI",
+      "full_name": "Conference on Uncertainty in Artificial Intelligence",
+      "field": "人工智能",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年3月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://auai.org"
+    },
+    {
+      "name": "COLT",
+      "full_name": "Conference on Learning Theory",
+      "field": "机器学习",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年1月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://learning-theory.org"
+    },
+    {
+      "name": "ALT",
+      "full_name": "Algorithmic Learning Theory",
+      "field": "机器学习",
+      "ccf_level": "B",
+      "acceptance_rate": "~35%",
+      "deadline": "每年9月",
+      "conference_date": "每年3月",
+      "location": "轮换举办",
+      "website": "https://alt2024.algorithmic-learning-theory.org"
+    },
+    {
+      "name": "CVPR",
+      "full_name": "Computer Vision and Pattern Recognition",
+      "field": "计算机视觉",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年11月",
+      "conference_date": "每年6月",
+      "location": "北美",
+      "website": "https://cvpr.thecvf.com"
+    },
+    {
+      "name": "ICCV",
+      "full_name": "International Conference on Computer Vision",
+      "field": "计算机视觉",
+      "ccf_level": "A",
+      "acceptance_rate": "~26%",
+      "deadline": "每年3月",
+      "conference_date": "每年10月",
+      "location": "轮换举办",
+      "website": "https://iccv.thecvf.com"
+    },
+    {
+      "name": "ECCV",
+      "full_name": "European Conference on Computer Vision",
+      "field": "计算机视觉",
+      "ccf_level": "A",
+      "acceptance_rate": "~28%",
+      "deadline": "每年3月",
+      "conference_date": "每年10月",
+      "location": "欧洲",
+      "website": "https://eccv.ecva.net"
+    },
+    {
+      "name": "BMVC",
+      "full_name": "British Machine Vision Conference",
+      "field": "计算机视觉",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年5月",
+      "conference_date": "每年9月",
+      "location": "英国",
+      "website": "https://bmvc2024.org"
+    },
+    {
+      "name": "WACV",
+      "full_name": "Winter Conference on Applications of Computer Vision",
+      "field": "计算机视觉",
+      "ccf_level": "B",
+      "acceptance_rate": "~35%",
+      "deadline": "每年8月",
+      "conference_date": "每年1月",
+      "location": "北美",
+      "website": "https://wacv.thecvf.com"
+    },
+    {
+      "name": "ACL",
+      "full_name": "Association for Computational Linguistics",
+      "field": "自然语言处理",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年1月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://www.aclweb.org"
+    },
+    {
+      "name": "EMNLP",
+      "full_name": "Empirical Methods in Natural Language Processing",
+      "field": "自然语言处理",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年6月",
+      "conference_date": "每年11月",
+      "location": "轮换举办",
+      "website": "https://2024.emnlp.org"
+    },
+    {
+      "name": "NAACL",
+      "full_name": "North American Chapter of the ACL",
+      "field": "自然语言处理",
+      "ccf_level": "B",
+      "acceptance_rate": "~28%",
+      "deadline": "每年10月",
+      "conference_date": "每年6月",
+      "location": "北美",
+      "website": "https://2024.naacl.org"
+    },
+    {
+      "name": "COLING",
+      "full_name": "International Conference on Computational Linguistics",
+      "field": "自然语言处理",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年5月",
+      "conference_date": "每年1月",
+      "location": "轮换举办",
+      "website": "https://coling2025.org"
+    },
+    {
+      "name": "EACL",
+      "full_name": "European Chapter of the ACL",
+      "field": "自然语言处理",
+      "ccf_level": "B",
+      "acceptance_rate": "~30%",
+      "deadline": "每年10月",
+      "conference_date": "每年3月",
+      "location": "欧洲",
+      "website": "https://2024.eacl.org"
+    },
+    {
+      "name": "OSDI",
+      "full_name": "USENIX Symposium on Operating Systems Design and Implementation",
+      "field": "操作系统",
+      "ccf_level": "A",
+      "acceptance_rate": "~18%",
+      "deadline": "每年5月",
+      "conference_date": "每年7月",
+      "location": "北美",
+      "website": "https://www.usenix.org/conference/osdi24"
+    },
+    {
+      "name": "SOSP",
+      "full_name": "ACM Symposium on Operating Systems Principles",
+      "field": "操作系统",
+      "ccf_level": "A",
+      "acceptance_rate": "~18%",
+      "deadline": "每年4月",
+      "conference_date": "每年10月",
+      "location": "轮换举办",
+      "website": "https://sosp2024.org"
+    },
+    {
+      "name": "EuroSys",
+      "full_name": "European Conference on Computer Systems",
+      "field": "计算机系统",
+      "ccf_level": "B",
+      "acceptance_rate": "~20%",
+      "deadline": "每年10月",
+      "conference_date": "每年4月",
+      "location": "欧洲",
+      "website": "https://2024.eurosys.org"
+    },
+    {
+      "name": "ATC",
+      "full_name": "USENIX Annual Technical Conference",
+      "field": "计算机系统",
+      "ccf_level": "A",
+      "acceptance_rate": "~20%",
+      "deadline": "每年1月",
+      "conference_date": "每年7月",
+      "location": "北美",
+      "website": "https://www.usenix.org/conference/atc24"
+    },
+    {
+      "name": "FAST",
+      "full_name": "USENIX Conference on File and Storage Technologies",
+      "field": "存储系统",
+      "ccf_level": "A",
+      "acceptance_rate": "~20%",
+      "deadline": "每年9月",
+      "conference_date": "每年2月",
+      "location": "北美",
+      "website": "https://www.usenix.org/conference/fast24"
+    },
+    {
+      "name": "NSDI",
+      "full_name": "USENIX Symposium on Networked Systems Design and Implementation",
+      "field": "网络系统",
+      "ccf_level": "A",
+      "acceptance_rate": "~18%",
+      "deadline": "每年9月",
+      "conference_date": "每年4月",
+      "location": "北美",
+      "website": "https://www.usenix.org/conference/nsdi24"
+    },
+    {
+      "name": "CCS",
+      "full_name": "ACM Conference on Computer and Communications Security",
+      "field": "网络安全",
+      "ccf_level": "A",
+      "acceptance_rate": "~16%",
+      "deadline": "每年1月",
+      "conference_date": "每年10月",
+      "location": "轮换举办",
+      "website": "https://www.sigsac.org/ccs/CCS2024"
+    },
+    {
+      "name": "USENIX Security",
+      "full_name": "USENIX Security Symposium",
+      "field": "网络安全",
+      "ccf_level": "A",
+      "acceptance_rate": "~18%",
+      "deadline": "每年2月",
+      "conference_date": "每年8月",
+      "location": "北美",
+      "website": "https://www.usenix.org/conference/usenixsecurity24"
+    },
+    {
+      "name": "S&P",
+      "full_name": "IEEE Symposium on Security and Privacy",
+      "field": "网络安全",
+      "ccf_level": "A",
+      "acceptance_rate": "~15%",
+      "deadline": "每年6月",
+      "conference_date": "每年5月",
+      "location": "北美",
+      "website": "https://sp2024.ieee-security.org"
+    },
+    {
+      "name": "NDSS",
+      "full_name": "Network and Distributed System Security Symposium",
+      "field": "网络安全",
+      "ccf_level": "A",
+      "acceptance_rate": "~17%",
+      "deadline": "每年7月",
+      "conference_date": "每年2月",
+      "location": "北美",
+      "website": "https://www.ndss-symposium.org"
+    },
+    {
+      "name": "RAID",
+      "full_name": "International Symposium on Recent Advances in Intrusion Detection",
+      "field": "网络安全",
+      "ccf_level": "B",
+      "acceptance_rate": "~22%",
+      "deadline": "每年4月",
+      "conference_date": "每年9月",
+      "location": "轮换举办",
+      "website": "https://raid2024.org"
+    },
+    {
+      "name": "ICSE",
+      "full_name": "International Conference on Software Engineering",
+      "field": "软件工程",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年9月",
+      "conference_date": "每年5月",
+      "location": "轮换举办",
+      "website": "https://conf.researchr.org/home/icse-2025"
+    },
+    {
+      "name": "FSE",
+      "full_name": "ACM SIGSOFT Symposium on the Foundation of Software Engineering",
+      "field": "软件工程",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年2月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://2024.esec-fse.org"
+    },
+    {
+      "name": "ASE",
+      "full_name": "IEEE/ACM International Conference on Automated Software Engineering",
+      "field": "软件工程",
+      "ccf_level": "A",
+      "acceptance_rate": "~22%",
+      "deadline": "每年5月",
+      "conference_date": "每年10月",
+      "location": "轮换举办",
+      "website": "https://conf.researchr.org/home/ase-2024"
+    },
+    {
+      "name": "ISSTA",
+      "full_name": "International Symposium on Software Testing and Analysis",
+      "field": "软件工程",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年2月",
+      "conference_date": "每年7月",
+      "location": "轮换举办",
+      "website": "https://conf.researchr.org/home/issta-2024"
+    },
+    {
+      "name": "SIGMOD",
+      "full_name": "ACM SIGMOD Conference",
+      "field": "数据库",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年10月",
+      "conference_date": "每年6月",
+      "location": "轮换举办",
+      "website": "https://sigmod2024.org"
+    },
+    {
+      "name": "VLDB",
+      "full_name": "International Conference on Very Large Data Bases",
+      "field": "数据库",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年3月",
+      "conference_date": "每年8月",
+      "location": "轮换举办",
+      "website": "https://vldb.org/2024"
+    },
+    {
+      "name": "ICDE",
+      "full_name": "IEEE International Conference on Data Engineering",
+      "field": "数据库",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年7月",
+      "conference_date": "每年4月",
+      "location": "轮换举办",
+      "website": "https://icde2024.github.io"
+    },
+    {
+      "name": "CHI",
+      "full_name": "ACM Conference on Human Factors in Computing Systems",
+      "field": "人机交互",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年9月",
+      "conference_date": "每年4月",
+      "location": "轮换举办",
+      "website": "https://chi2024.acm.org"
+    },
+    {
+      "name": "UIST",
+      "full_name": "ACM Symposium on User Interface Software and Technology",
+      "field": "人机交互",
+      "ccf_level": "A",
+      "acceptance_rate": "~25%",
+      "deadline": "每年4月",
+      "conference_date": "每年10月",
+      "location": "轮换举办",
+      "website": "https://uist.acm.org"
+    },
+    {
+      "name": "CSCW",
+      "full_name": "ACM Conference on Computer-Supported Cooperative Work",
+      "field": "人机交互",
+      "ccf_level": "A",
+      "acceptance_rate": "~30%",
+      "deadline": "每年1月",
+      "conference_date": "每年11月",
+      "location": "轮换举办",
+      "website": "https://cscw.acm.org"
+    },
+    {
+      "name": "KDD",
+      "full_name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "field": "数据挖掘",
+      "ccf_level": "A",
+      "acceptance_rate": "~20%",
+      "deadline": "每年2月",
+      "conference_date": "每年8月",
+      "location": "轮换举办",
+      "website": "https://kdd.org/kdd2024"
+    },
+    {
+      "name": "ICDM",
+      "full_name": "IEEE International Conference on Data Mining",
+      "field": "数据挖掘",
+      "ccf_level": "A",
+      "acceptance_rate": "~22%",
+      "deadline": "每年6月",
+      "conference_date": "每年12月",
+      "location": "轮换举办",
+      "website": "https://icdm2024.org"
+    },
+    {
+      "name": "SDM",
+      "full_name": "SIAM International Conference on Data Mining",
+      "field": "数据挖掘",
+      "ccf_level": "B",
+      "acceptance_rate": "~25%",
+      "deadline": "每年10月",
+      "conference_date": "每年4月",
+      "location": "北美",
+      "website": "https://www.siam.org/conferences/cm/conference/sdm24"
+    },
+    {
+      "name": "WSDM",
+      "full_name": "ACM International Conference on Web Search and Data Mining",
+      "field": "数据挖掘",
+      "ccf_level": "B",
+      "acceptance_rate": "~20%",
+      "deadline": "每年8月",
+      "conference_date": "每年3月",
+      "location": "轮换举办",
+      "website": "https://www.wsdm-conference.org/2024"
+    }
+  ],
   "国内会议": [
-    {"name": "CNCC", "full_name": "中国计算机大会", "level": "国内顶级", "field": "计算机综合", "organizer": "中国计算机学会(CCF)", "conference_date": "每年10月", "location": "轮换", "website": "https://cncc.ccf.org.cn"},
-    {"name": "CCAI", "full_name": "中国人工智能大会", "level": "国内顶级", "field": "人工智能", "organizer": "中国人工智能学会", "conference_date": "每年7月", "location": "轮换", "website": "https://caai.cn"},
-    {"name": "NLPCC", "full_name": "全国知识图谱与语义计算大会", "level": "国内重要", "field": "NLP/知识图谱", "organizer": "中国计算机学会", "conference_date": "每年10月", "location": "轮换", "website": "https://tcci.ccf.org.cn"},
-    {"name": "ChinaSys", "full_name": "全国计算机体系结构学术年会", "level": "国内重要", "field": "体系结构", "organizer": "中国计算机学会", "conference_date": "每年10月", "location": "轮换", "website": "https://www.chinasys.org"},
-    {"name": "CCF-GAIR", "full_name": "CCF全球人工智能与机器人峰会", "level": "国内重要", "field": "AI/机器人", "organizer": "CCF/雷峰网", "conference_date": "每年8月", "location": "深圳", "website": "https://www.leiphone.com"},
-    {"name": "VALSE", "full_name": "视觉与学习青年学者研讨会", "level": "国内重要", "field": "计算机视觉/ML", "organizer": "VALSE", "conference_date": "每年5月", "location": "轮换", "website": "https://valser.org"}
+    {
+      "name": "CNCC",
+      "full_name": "中国计算机大会",
+      "field": "计算机",
+      "level": "国内顶级",
+      "organizer": "中国计算机学会",
+      "frequency": "每年",
+      "location": "轮换举办",
+      "website": "https://cncc.ccf.org.cn"
+    },
+    {
+      "name": "CCAI",
+      "full_name": "中国人工智能大会",
+      "field": "人工智能",
+      "level": "国内顶级",
+      "organizer": "中国人工智能学会",
+      "frequency": "每年",
+      "location": "轮换举办",
+      "website": "https://www.ccpa.org.cn"
+    },
+    {
+      "name": "NLPCC",
+      "full_name": "全国计算语言学学术会议",
+      "field": "自然语言处理",
+      "level": "国内顶级",
+      "organizer": "中国计算机学会",
+      "frequency": "每年",
+      "location": "轮换举办",
+      "website": "https://tcci.ccf.org.cn/conference/2024"
+    },
+    {
+      "name": "ChinaSys",
+      "full_name": "全国计算机体系结构学术会议",
+      "field": "计算机体系结构",
+      "level": "国内顶级",
+      "organizer": "中国计算机学会",
+      "frequency": "每年",
+      "location": "轮换举办",
+      "website": "https://www.chinasys.org"
+    },
+    {
+      "name": "CCF-GAIR",
+      "full_name": "CCF全球人工智能与机器人大会",
+      "field": "人工智能",
+      "level": "国内顶级",
+      "organizer": "中国计算机学会",
+      "frequency": "每年",
+      "location": "深圳",
+      "website": "https://www.gaia.ac.cn"
+    },
+    {
+      "name": "VALSE",
+      "full_name": "视觉与学习青年学者研讨会",
+      "field": "计算机视觉",
+      "level": "国内顶级",
+      "organizer": "VALSE委员会",
+      "frequency": "每年",
+      "location": "轮换举办",
+      "website": "https://valser.org"
+    }
   ]
 }

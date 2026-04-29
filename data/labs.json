@@ -1,0 +1,862 @@
+{
+  "说明": "国内外高校重点实验室信息",
+  "数据来源": "教育部、各校官网",
+  "更新日期": "2026-04-28",
+  "国内实验室": [
+    {
+      "university": "清华大学",
+      "lab_name": "智能技术与系统国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "人工智能",
+        "机器学习",
+        "计算机视觉",
+        "自然语言处理"
+      ],
+      "key_faculty": [
+        "张钹",
+        "孙茂松"
+      ],
+      "website": "https://www.cs.tsinghua.edu.cn/"
+    },
+    {
+      "university": "清华大学",
+      "lab_name": "集成光电子学国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "光电子",
+        "半导体",
+        "集成电路"
+      ],
+      "key_faculty": [
+        "罗毅",
+        "黄翊东"
+      ],
+      "website": "https://www.ee.tsinghua.edu.cn/"
+    },
+    {
+      "university": "清华大学",
+      "lab_name": "精密测试技术及仪器国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "精密测量",
+        "光学仪器",
+        "传感器"
+      ],
+      "key_faculty": [
+        "尤政",
+        "雒建斌"
+      ],
+      "website": "https://www.mee.tsinghua.edu.cn/"
+    },
+    {
+      "university": "清华大学",
+      "lab_name": "热科学与动力工程教育部重点实验室",
+      "lab_type": "教育部重点实验室",
+      "research_areas": [
+        "热能工程",
+        "动力机械",
+        "新能源"
+      ],
+      "key_faculty": [
+        "姜培学",
+        "胥建群"
+      ],
+      "website": "https://www.ee.tsinghua.edu.cn/"
+    },
+    {
+      "university": "清华大学",
+      "lab_name": "水沙科学与水利水电工程国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "水利工程",
+        "河流动力学",
+        "水资源"
+      ],
+      "key_faculty": [
+        "王光谦",
+        "李庆斌"
+      ],
+      "website": "https://www.hy.tsinghua.edu.cn/"
+    },
+    {
+      "university": "北京大学",
+      "lab_name": "机器感知与智能教育部重点实验室",
+      "lab_type": "教育部重点实验室",
+      "research_areas": [
+        "计算机视觉",
+        "模式识别",
+        "多媒体",
+        "机器学习"
+      ],
+      "key_faculty": [
+        "查红彬",
+        "林宙辰"
+      ],
+      "website": "https://www.cs.pku.edu.cn/"
+    },
+    {
+      "university": "北京大学",
+      "lab_name": "人工微结构与介观物理国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "凝聚态物理",
+        "光学",
+        "材料科学"
+      ],
+      "key_faculty": [
+        "龚旗煌",
+        "刘运全"
+      ],
+      "website": "https://www.phy.pku.edu.cn/"
+    },
+    {
+      "university": "北京大学",
+      "lab_name": "湍流与复杂系统国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "流体力学",
+        "湍流",
+        "复杂系统"
+      ],
+      "key_faculty": [
+        "佘振苏",
+        "陈十一"
+      ],
+      "website": "https://www.mae.pku.edu.cn/"
+    },
+    {
+      "university": "北京大学",
+      "lab_name": "核物理与核技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "核物理",
+        "核技术",
+        "粒子物理"
+      ],
+      "key_faculty": [
+        "叶沿林"
+      ],
+      "website": "https://www.phy.pku.edu.cn/"
+    },
+    {
+      "university": "北京大学",
+      "lab_name": "稀土材料化学及应用国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "稀土化学",
+        "功能材料",
+        "纳米材料"
+      ],
+      "key_faculty": [
+        "严纯华",
+        "高松"
+      ],
+      "website": "https://www.chem.pku.edu.cn/"
+    },
+    {
+      "university": "浙江大学",
+      "lab_name": "工业控制技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "工业自动化",
+        "智能控制",
+        "机器人",
+        "过程控制"
+      ],
+      "key_faculty": [
+        "孙优贤",
+        "褚健"
+      ],
+      "website": "https://www.ict.zju.edu.cn/"
+    },
+    {
+      "university": "浙江大学",
+      "lab_name": "计算机辅助设计与图形学国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "计算机图形学",
+        "CAD",
+        "虚拟现实",
+        "可视化"
+      ],
+      "key_faculty": [
+        "鲍虎军",
+        "周昆"
+      ],
+      "website": "https://www.cad.zju.edu.cn/"
+    },
+    {
+      "university": "浙江大学",
+      "lab_name": "流体动力与机电系统国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "流体传动",
+        "机电控制",
+        "机器人"
+      ],
+      "key_faculty": [
+        "杨华勇"
+      ],
+      "website": "https://www.zju.edu.cn/"
+    },
+    {
+      "university": "浙江大学",
+      "lab_name": "能源清洁利用国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "清洁能源",
+        "燃烧技术",
+        "污染物控制"
+      ],
+      "key_faculty": [
+        "岑可法",
+        "倪明江"
+      ],
+      "website": "https://www.zju.edu.cn/"
+    },
+    {
+      "university": "上海交通大学",
+      "lab_name": "区域光纤通信网与新型光通信系统国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "光通信",
+        "光纤网络",
+        "光电子"
+      ],
+      "key_faculty": [
+        "胡卫生"
+      ],
+      "website": "https://www.sjtu.edu.cn/"
+    },
+    {
+      "university": "上海交通大学",
+      "lab_name": "海洋工程国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "海洋工程",
+        "船舶设计",
+        "水下机器人"
+      ],
+      "key_faculty": [
+        "杨建民"
+      ],
+      "website": "https://www.sjtu.edu.cn/"
+    },
+    {
+      "university": "上海交通大学",
+      "lab_name": "机械系统与振动国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "机械振动",
+        "故障诊断",
+        "精密加工"
+      ],
+      "key_faculty": [
+        "陈进"
+      ],
+      "website": "https://www.me.sjtu.edu.cn/"
+    },
+    {
+      "university": "上海交通大学",
+      "lab_name": "金属基复合材料国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "复合材料",
+        "金属材料",
+        "纳米材料"
+      ],
+      "key_faculty": [
+        "张荻"
+      ],
+      "website": "https://www.sjtu.edu.cn/"
+    },
+    {
+      "university": "中国科学技术大学",
+      "lab_name": "多媒体计算与通信教育部重点实验室",
+      "lab_type": "教育部重点实验室",
+      "research_areas": [
+        "多媒体",
+        "计算机视觉",
+        "图形学",
+        "视频编码"
+      ],
+      "key_faculty": [
+        "吴枫",
+        "李厚强"
+      ],
+      "website": "https://www.ustc.edu.cn/"
+    },
+    {
+      "university": "中国科学技术大学",
+      "lab_name": "火灾科学国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "火灾科学",
+        "安全工程",
+        "消防技术"
+      ],
+      "key_faculty": [
+        "范维澄",
+        "刘乃安"
+      ],
+      "website": "https://www.ustc.edu.cn/"
+    },
+    {
+      "university": "中国科学技术大学",
+      "lab_name": "核探测与核电子学国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "核探测",
+        "核电子学",
+        "粒子物理"
+      ],
+      "key_faculty": [
+        "安琪"
+      ],
+      "website": "https://www.ustc.edu.cn/"
+    },
+    {
+      "university": "复旦大学",
+      "lab_name": "遗传工程国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "遗传学",
+        "基因工程",
+        "生物信息学"
+      ],
+      "key_faculty": [
+        "金力",
+        "毛裕民"
+      ],
+      "website": "https://www.fudan.edu.cn/"
+    },
+    {
+      "university": "复旦大学",
+      "lab_name": "应用表面物理国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "表面物理",
+        "薄膜技术",
+        "纳米科学"
+      ],
+      "key_faculty": [
+        "资剑"
+      ],
+      "website": "https://www.fudan.edu.cn/"
+    },
+    {
+      "university": "复旦大学",
+      "lab_name": "聚合物分子工程教育部重点实验室",
+      "lab_type": "教育部重点实验室",
+      "research_areas": [
+        "高分子化学",
+        "聚合物工程",
+        "功能材料"
+      ],
+      "key_faculty": [
+        "丁建东"
+      ],
+      "website": "https://www.fudan.edu.cn/"
+    },
+    {
+      "university": "南京大学",
+      "lab_name": "现代分析中心",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "分析化学",
+        "材料表征",
+        "纳米分析"
+      ],
+      "key_faculty": [
+        "陈洪渊"
+      ],
+      "website": "https://www.nju.edu.cn/"
+    },
+    {
+      "university": "南京大学",
+      "lab_name": "计算机软件新技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "软件工程",
+        "程序分析",
+        "智能软件"
+      ],
+      "key_faculty": [
+        "吕建",
+        "李宣东"
+      ],
+      "website": "https://www.nju.edu.cn/"
+    },
+    {
+      "university": "南京大学",
+      "lab_name": "内生金属矿床成矿机制研究国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "矿床学",
+        "地球化学",
+        "成矿作用"
+      ],
+      "key_faculty": [
+        "胡受奚"
+      ],
+      "website": "https://www.nju.edu.cn/"
+    },
+    {
+      "university": "华中科技大学",
+      "lab_name": "数字制造装备与技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "数字制造",
+        "智能制造",
+        "机器人"
+      ],
+      "key_faculty": [
+        "丁汉",
+        "周济"
+      ],
+      "website": "https://www.hust.edu.cn/"
+    },
+    {
+      "university": "华中科技大学",
+      "lab_name": "激光技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "激光技术",
+        "光电子",
+        "先进制造"
+      ],
+      "key_faculty": [
+        "骆清铭"
+      ],
+      "website": "https://www.hust.edu.cn/"
+    },
+    {
+      "university": "华中科技大学",
+      "lab_name": "材料成形与模具技术国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "材料加工",
+        "模具技术",
+        "3D打印"
+      ],
+      "key_faculty": [
+        "李德群"
+      ],
+      "website": "https://www.hust.edu.cn/"
+    },
+    {
+      "university": "西安交通大学",
+      "lab_name": "机械制造系统工程国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "机械制造",
+        "精密加工",
+        "智能制造"
+      ],
+      "key_faculty": [
+        "卢秉恒"
+      ],
+      "website": "https://www.xjtu.edu.cn/"
+    },
+    {
+      "university": "西安交通大学",
+      "lab_name": "电力设备电气绝缘国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "电气绝缘",
+        "电力设备",
+        "高压技术"
+      ],
+      "key_faculty": [
+        "王建华"
+      ],
+      "website": "https://www.xjtu.edu.cn/"
+    },
+    {
+      "university": "西安交通大学",
+      "lab_name": "金属材料强度国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "金属材料",
+        "力学性能",
+        "疲劳断裂"
+      ],
+      "key_faculty": [
+        "孙军"
+      ],
+      "website": "https://www.xjtu.edu.cn/"
+    },
+    {
+      "university": "哈尔滨工业大学",
+      "lab_name": "机器人技术与系统国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "机器人",
+        "人工智能",
+        "智能制造"
+      ],
+      "key_faculty": [
+        "刘宏",
+        "蔡鹤皋"
+      ],
+      "website": "https://www.hit.edu.cn/"
+    },
+    {
+      "university": "哈尔滨工业大学",
+      "lab_name": "先进焊接与连接国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "焊接技术",
+        "连接技术",
+        "增材制造"
+      ],
+      "key_faculty": [
+        "冯吉才"
+      ],
+      "website": "https://www.hit.edu.cn/"
+    },
+    {
+      "university": "哈尔滨工业大学",
+      "lab_name": "城市水资源与水环境国家重点实验室",
+      "lab_type": "国家重点实验室",
+      "research_areas": [
+        "水处理",
+        "环境工程",
+        "水资源"
+      ],
+      "key_faculty": [
+        "任南琪"
+      ],
+      "website": "https://www.hit.edu.cn/"
+    }
+  ],
+  "国际实验室": [
+    {
+      "university": "Massachusetts Institute of Technology",
+      "university_cn": "麻省理工学院",
+      "lab_name": "CSAIL",
+      "lab_full_name": "Computer Science and Artificial Intelligence Laboratory",
+      "research_areas": [
+        "AI",
+        "Robotics",
+        "NLP",
+        "Computer Vision",
+        "Machine Learning"
+      ],
+      "key_faculty": [
+        "Daniela Rus",
+        "Antonio Torralba"
+      ],
+      "website": "https://www.csail.mit.edu/"
+    },
+    {
+      "university": "Massachusetts Institute of Technology",
+      "university_cn": "麻省理工学院",
+      "lab_name": "Media Lab",
+      "lab_full_name": "MIT Media Laboratory",
+      "research_areas": [
+        "Human-Computer Interaction",
+        "Digital Media",
+        "Wearable Computing",
+        "Learning"
+      ],
+      "key_faculty": [
+        "Pattie Maes",
+        "Hiroshi Ishii"
+      ],
+      "website": "https://www.media.mit.edu/"
+    },
+    {
+      "university": "Massachusetts Institute of Technology",
+      "university_cn": "麻省理工学院",
+      "lab_name": "Lincoln Lab",
+      "lab_full_name": "MIT Lincoln Laboratory",
+      "research_areas": [
+        "Defense Technology",
+        "Radar",
+        "Cybersecurity",
+        "Space"
+      ],
+      "key_faculty": [
+        "Eric Evans"
+      ],
+      "website": "https://www.ll.mit.edu/"
+    },
+    {
+      "university": "Stanford University",
+      "university_cn": "斯坦福大学",
+      "lab_name": "SAIL",
+      "lab_full_name": "Stanford Artificial Intelligence Laboratory",
+      "research_areas": [
+        "AI",
+        "Machine Learning",
+        "NLP",
+        "Computer Vision",
+        "Robotics"
+      ],
+      "key_faculty": [
+        "Fei-Fei Li",
+        "Andrew Ng"
+      ],
+      "website": "https://ai.stanford.edu/"
+    },
+    {
+      "university": "Stanford University",
+      "university_cn": "斯坦福大学",
+      "lab_name": "HAI",
+      "lab_full_name": "Human-Centered Artificial Intelligence Institute",
+      "research_areas": [
+        "AI Ethics",
+        "Human-AI Interaction",
+        "AI Policy"
+      ],
+      "key_faculty": [
+        "Fei-Fei Li",
+        "John Etchemendy"
+      ],
+      "website": "https://hai.stanford.edu/"
+    },
+    {
+      "university": "Stanford University",
+      "university_cn": "斯坦福大学",
+      "lab_name": "Bio-X",
+      "lab_full_name": "Stanford Bio-X",
+      "research_areas": [
+        "Bioengineering",
+        "Genomics",
+        "Neuroscience",
+        "Biomedical"
+      ],
+      "key_faculty": [
+        "Karl Deisseroth"
+      ],
+      "website": "https://biox.stanford.edu/"
+    },
+    {
+      "university": "Carnegie Mellon University",
+      "university_cn": "卡内基梅隆大学",
+      "lab_name": "Robotics Institute",
+      "lab_full_name": "CMU Robotics Institute",
+      "research_areas": [
+        "Robotics",
+        "Computer Vision",
+        "Machine Learning",
+        "Autonomous Systems"
+      ],
+      "key_faculty": [
+        "Siddhartha Srinivasa",
+        "Matthew Johnson-Roberson"
+      ],
+      "website": "https://www.ri.cmu.edu/"
+    },
+    {
+      "university": "Carnegie Mellon University",
+      "university_cn": "卡内基梅隆大学",
+      "lab_name": "SCS",
+      "lab_full_name": "School of Computer Science",
+      "research_areas": [
+        "AI",
+        "Systems",
+        "Theory",
+        "HCI",
+        "Robotics"
+      ],
+      "key_faculty": [
+        "Manuela Veloso"
+      ],
+      "website": "https://www.cs.cmu.edu/"
+    },
+    {
+      "university": "Carnegie Mellon University",
+      "university_cn": "卡内基梅隆大学",
+      "lab_name": "LTI",
+      "lab_full_name": "Language Technologies Institute",
+      "research_areas": [
+        "NLP",
+        "Machine Translation",
+        "Speech Recognition",
+        "Information Retrieval"
+      ],
+      "key_faculty": [
+        "Yonatan Bisk",
+        "Graham Neubig"
+      ],
+      "website": "https://www.lti.cs.cmu.edu/"
+    },
+    {
+      "university": "University of California, Berkeley",
+      "university_cn": "加州大学伯克利分校",
+      "lab_name": "BAIR",
+      "lab_full_name": "Berkeley Artificial Intelligence Research",
+      "research_areas": [
+        "AI",
+        "Machine Learning",
+        "Robotics",
+        "NLP",
+        "Computer Vision"
+      ],
+      "key_faculty": [
+        "Pieter Abbeel",
+        "Sergey Levine"
+      ],
+      "website": "https://bair.berkeley.edu/"
+    },
+    {
+      "university": "University of California, Berkeley",
+      "university_cn": "加州大学伯克利分校",
+      "lab_name": "RISE Lab",
+      "lab_full_name": "Real-time Intelligent Secure Execution Lab",
+      "research_areas": [
+        "Cloud Computing",
+        "Security",
+        "Systems",
+        "Data Analytics"
+      ],
+      "key_faculty": [
+        "Ion Stoica"
+      ],
+      "website": "https://rise.cs.berkeley.edu/"
+    },
+    {
+      "university": "ETH Zurich",
+      "university_cn": "苏黎世联邦理工学院",
+      "lab_name": "CV Lab",
+      "lab_full_name": "Computer Vision Laboratory",
+      "research_areas": [
+        "Computer Vision",
+        "3D Reconstruction",
+        "Autonomous Driving",
+        "Medical Imaging"
+      ],
+      "key_faculty": [
+        "Luc Van Gool",
+        "Marc Pollefeys"
+      ],
+      "website": "https://www.vision.ee.ethz.ch/"
+    },
+    {
+      "university": "ETH Zurich",
+      "university_cn": "苏黎世联邦理工学院",
+      "lab_name": "NLP Lab",
+      "lab_full_name": "Natural Language Processing Lab",
+      "research_areas": [
+        "NLP",
+        "Machine Translation",
+        "Information Extraction"
+      ],
+      "key_faculty": [
+        "Ryan Cotterell"
+      ],
+      "website": "https://www.nlp.inf.ethz.ch/"
+    },
+    {
+      "university": "University of Oxford",
+      "university_cn": "牛津大学",
+      "lab_name": "Oxford Internet Institute",
+      "lab_full_name": "Oxford Internet Institute",
+      "research_areas": [
+        "AI Ethics",
+        "Digital Society",
+        "Internet Governance"
+      ],
+      "key_faculty": [
+        "Luciano Floridi"
+      ],
+      "website": "https://www.oii.ox.ac.uk/"
+    },
+    {
+      "university": "University of Oxford",
+      "university_cn": "牛津大学",
+      "lab_name": "Big Data Institute",
+      "lab_full_name": "Oxford Big Data Institute",
+      "research_areas": [
+        "Health Data",
+        "Genomics",
+        "Epidemiology"
+      ],
+      "key_faculty": [
+        "Gil McVean"
+      ],
+      "website": "https://www.bdi.ox.ac.uk/"
+    },
+    {
+      "university": "University of Cambridge",
+      "university_cn": "剑桥大学",
+      "lab_name": "Computer Lab",
+      "lab_full_name": "Cambridge Computer Laboratory",
+      "research_areas": [
+        "AI",
+        "Systems",
+        "Security",
+        "Programming Languages"
+      ],
+      "key_faculty": [
+        "Ann Copestake"
+      ],
+      "website": "https://www.cl.cam.ac.uk/"
+    },
+    {
+      "university": "University of Cambridge",
+      "university_cn": "剑桥大学",
+      "lab_name": "Machine Learning Group",
+      "lab_full_name": "Cambridge Machine Learning Group",
+      "research_areas": [
+        "Machine Learning",
+        "Bayesian Methods",
+        "Deep Learning"
+      ],
+      "key_faculty": [
+        "Zoubin Ghahramani"
+      ],
+      "website": "https://mlg.eng.cam.ac.uk/"
+    },
+    {
+      "university": "The University of Hong Kong",
+      "university_cn": "香港大学",
+      "lab_name": "AI Lab",
+      "lab_full_name": "HKU AI Lab",
+      "research_areas": [
+        "AI",
+        "Machine Learning",
+        "NLP",
+        "Computer Vision"
+      ],
+      "key_faculty": [
+        "Yizhou Sun"
+      ],
+      "website": "https://www.cs.hku.hk/"
+    },
+    {
+      "university": "National University of Singapore",
+      "university_cn": "新加坡国立大学",
+      "lab_name": "AI Lab",
+      "lab_full_name": "NUS AI Lab",
+      "research_areas": [
+        "AI",
+        "Machine Learning",
+        "NLP",
+        "Robotics"
+      ],
+      "key_faculty": [
+        "Min-Yen Kan"
+      ],
+      "website": "https://www.comp.nus.edu.sg/"
+    },
+    {
+      "university": "The University of Tokyo",
+      "university_cn": "东京大学",
+      "lab_name": "JSK Lab",
+      "lab_full_name": "JSK Robotics Laboratory",
+      "research_areas": [
+        "Humanoid Robotics",
+        "Robot Learning",
+        "Mechatronics"
+      ],
+      "key_faculty": [
+        "Masayuki Inaba"
+      ],
+      "website": "https://www.jsk.t.u-tokyo.ac.jp/"
+    }
+  ]
+}

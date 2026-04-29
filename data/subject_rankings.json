@@ -1,1317 +1,765 @@
 {
-  "说明": "QS学科排名 2026 - 热门学科TOP30",
+  "说明": "QS 2026 学科排名",
   "数据来源": "QS World University Rankings by Subject 2026",
   "更新日期": "2026-04-28",
   "学科排名": {
-    "计算机科学与信息系统": {
-      "qs_subject": "Computer Science & Information Systems",
-      "top30": [
-        {
-          "rank": 1,
-          "name": "Massachusetts Institute of Technology (MIT)",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "Carnegie Mellon University",
-          "name_cn": "卡内基梅隆大学",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "National University of Singapore (NUS)",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 4,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "University of California, Berkeley (UCB)",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 7,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 8,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 9,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 10,
-          "name": "Nanyang Technological University (NTU)",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 11,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 12,
-          "name": "University College London (UCL)",
-          "name_cn": "伦敦大学学院",
-          "country": "英国"
-        },
-        {
-          "rank": 13,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 14,
-          "name": "Georgia Institute of Technology",
-          "name_cn": "佐治亚理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 16,
-          "name": "University of Toronto",
-          "name_cn": "多伦多大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 17,
-          "name": "California Institute of Technology (Caltech)",
-          "name_cn": "加州理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 18,
-          "name": "Institute of Science Tokyo",
-          "name_cn": "东京科学大学",
-          "country": "日本"
-        },
-        {
-          "rank": 19,
-          "name": "University of California, Los Angeles (UCLA)",
-          "name_cn": "加州大学洛杉矶分校",
-          "country": "美国"
-        },
-        {
-          "rank": 20,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 21,
-          "name": "University of Edinburgh",
-          "name_cn": "爱丁堡大学",
-          "country": "英国"
-        },
-        {
-          "rank": 22,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        },
-        {
-          "rank": 22,
-          "name": "The University of Hong Kong",
-          "name_cn": "香港大学",
-          "country": "中国香港"
-        },
-        {
-          "rank": 22,
-          "name": "University of British Columbia",
-          "name_cn": "英属哥伦比亚大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 22,
-          "name": "New York University (NYU)",
-          "name_cn": "纽约大学",
-          "country": "美国"
-        },
-        {
-          "rank": 26,
-          "name": "Shanghai Jiao Tong University",
-          "name_cn": "上海交通大学",
-          "country": "中国"
-        },
-        {
-          "rank": 27,
-          "name": "EPFL",
-          "name_cn": "洛桑联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 27,
-          "name": "KAIST",
-          "name_cn": "韩国科学技术院",
-          "country": "韩国"
-        },
-        {
-          "rank": 27,
-          "name": "Seoul National University",
-          "name_cn": "首尔大学",
-          "country": "韩国"
-        },
-        {
-          "rank": 30,
-          "name": "Zhejiang University",
-          "name_cn": "浙江大学",
-          "country": "中国"
-        }
-      ]
-    },
-    "工程与技术": {
-      "qs_subject": "Engineering & Technology (Broad)",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 4,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 5,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 7,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 8,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 9,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 10,
-          "name": "NTU",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 11,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 12,
-          "name": "Georgia Institute of Technology",
-          "name_cn": "佐治亚理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 13,
-          "name": "California Institute of Technology",
-          "name_cn": "加州理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 16,
-          "name": "University of Tokyo",
-          "name_cn": "东京大学",
-          "country": "日本"
-        },
-        {
-          "rank": 17,
-          "name": "KAIST",
-          "name_cn": "韩国科学技术院",
-          "country": "韩国"
-        },
-        {
-          "rank": 18,
-          "name": "Seoul National University",
-          "name_cn": "首尔大学",
-          "country": "韩国"
-        },
-        {
-          "rank": 19,
-          "name": "EPFL",
-          "name_cn": "洛桑联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 20,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        }
-      ]
-    },
-    "电气与电子工程": {
-      "qs_subject": "Electrical and Electronic Engineering",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 5,
-          "name": "NTU",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 6,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 7,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 8,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 9,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 10,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 11,
-          "name": "University of California, Los Angeles",
-          "name_cn": "加州大学洛杉矶分校",
-          "country": "美国"
-        },
-        {
-          "rank": 12,
-          "name": "Georgia Institute of Technology",
-          "name_cn": "佐治亚理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 13,
-          "name": "University of California, Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 16,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 17,
-          "name": "University of Tokyo",
-          "name_cn": "东京大学",
-          "country": "日本"
-        },
-        {
-          "rank": 18,
-          "name": "KAIST",
-          "name_cn": "韩国科学技术院",
-          "country": "韩国"
-        },
-        {
-          "rank": 19,
-          "name": "EPFL",
-          "name_cn": "洛桑联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 20,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        }
-      ]
-    },
-    "机械工程": {
-      "qs_subject": "Mechanical, Aeronautical & Manufacturing Engineering",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 4,
-          "name": "NTU",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 5,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 6,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 7,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 8,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 9,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 10,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 11,
-          "name": "Georgia Institute of Technology",
-          "name_cn": "佐治亚理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 12,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 13,
-          "name": "California Institute of Technology",
-          "name_cn": "加州理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 15,
-          "name": "University of Tokyo",
-          "name_cn": "东京大学",
-          "country": "日本"
-        },
-        {
-          "rank": 16,
-          "name": "KAIST",
-          "name_cn": "韩国科学技术院",
-          "country": "韩国"
-        },
-        {
-          "rank": 17,
-          "name": "Seoul National University",
-          "name_cn": "首尔大学",
-          "country": "韩国"
-        },
-        {
-          "rank": 18,
-          "name": "EPFL",
-          "name_cn": "洛桑联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 19,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        },
-        {
-          "rank": 20,
-          "name": "University of Michigan",
-          "name_cn": "密歇根大学",
-          "country": "美国"
-        }
-      ]
-    },
-    "商学与管理": {
-      "qs_subject": "Business & Management Studies",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "INSEAD",
-          "name_cn": "欧洲工商管理学院",
-          "country": "法国"
-        },
-        {
-          "rank": 3,
-          "name": "London Business School",
-          "name_cn": "伦敦商学院",
-          "country": "英国"
-        },
-        {
-          "rank": 4,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 5,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 6,
-          "name": "University of Pennsylvania",
-          "name_cn": "宾夕法尼亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 7,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 8,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 9,
-          "name": "LSE",
-          "name_cn": "伦敦政治经济学院",
-          "country": "英国"
-        },
-        {
-          "rank": 10,
-          "name": "Bocconi University",
-          "name_cn": "博科尼大学",
-          "country": "意大利"
-        },
-        {
-          "rank": 11,
-          "name": "University of Pennsylvania",
-          "name_cn": "宾夕法尼亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 12,
-          "name": "National University of Singapore",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 13,
-          "name": "Copenhagen Business School",
-          "name_cn": "哥本哈根商学院",
-          "country": "丹麦"
-        },
-        {
-          "rank": 14,
-          "name": "Nanyang Technological University",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 15,
-          "name": "University of Melbourne",
-          "name_cn": "墨尔本大学",
-          "country": "澳大利亚"
-        },
-        {
-          "rank": 16,
-          "name": "ESSEC Business School",
-          "name_cn": "ESSEC商学院",
-          "country": "法国"
-        },
-        {
-          "rank": 17,
-          "name": "HEC Paris",
-          "name_cn": "巴黎高等商学院",
-          "country": "法国"
-        },
-        {
-          "rank": 18,
-          "name": "University of Hong Kong",
-          "name_cn": "香港大学",
-          "country": "中国香港"
-        },
-        {
-          "rank": 19,
-          "name": "Yale University",
-          "name_cn": "耶鲁大学",
-          "country": "美国"
-        },
-        {
-          "rank": 20,
-          "name": "Columbia University",
-          "name_cn": "哥伦比亚大学",
-          "country": "美国"
-        }
-      ]
-    },
-    "医学": {
-      "qs_subject": "Medicine",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 3,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "Johns Hopkins University",
-          "name_cn": "约翰霍普金斯大学",
-          "country": "美国"
-        },
-        {
-          "rank": 5,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "UCL",
-          "name_cn": "伦敦大学学院",
-          "country": "英国"
-        },
-        {
-          "rank": 7,
-          "name": "Karolinska Institute",
-          "name_cn": "卡罗林斯卡学院",
-          "country": "瑞典"
-        },
-        {
-          "rank": 8,
-          "name": "Yale University",
-          "name_cn": "耶鲁大学",
-          "country": "美国"
-        },
-        {
-          "rank": 9,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 10,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 11,
-          "name": "University of Pennsylvania",
-          "name_cn": "宾夕法尼亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 12,
-          "name": "University of Toronto",
-          "name_cn": "多伦多大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 13,
-          "name": "Columbia University",
-          "name_cn": "哥伦比亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "University of California, San Francisco",
-          "name_cn": "加州大学旧金山分校",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "Duke University",
-          "name_cn": "杜克大学",
-          "country": "美国"
-        },
-        {
-          "rank": 16,
-          "name": "University of Melbourne",
-          "name_cn": "墨尔本大学",
-          "country": "澳大利亚"
-        },
-        {
-          "rank": 17,
-          "name": "National University of Singapore",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 18,
-          "name": "Seoul National University",
-          "name_cn": "首尔大学",
-          "country": "韩国"
-        },
-        {
-          "rank": 19,
-          "name": "McGill University",
-          "name_cn": "麦吉尔大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 20,
-          "name": "University of Sydney",
-          "name_cn": "悉尼大学",
-          "country": "澳大利亚"
-        }
-      ]
-    },
-    "自然科学": {
-      "qs_subject": "Natural Sciences (Broad)",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 5,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 7,
-          "name": "Caltech",
-          "name_cn": "加州理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 8,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 9,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 10,
-          "name": "Imperial College London",
-          "name_cn": "帝国理工学院",
-          "country": "英国"
-        },
-        {
-          "rank": 11,
-          "name": "National University of Singapore",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 12,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 13,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 14,
-          "name": "University of Tokyo",
-          "name_cn": "东京大学",
-          "country": "日本"
-        },
-        {
-          "rank": 15,
-          "name": "Nanyang Technological University",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 16,
-          "name": "EPFL",
-          "name_cn": "洛桑联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 17,
-          "name": "University of Chicago",
-          "name_cn": "芝加哥大学",
-          "country": "美国"
-        },
-        {
-          "rank": 18,
-          "name": "Yale University",
-          "name_cn": "耶鲁大学",
-          "country": "美国"
-        },
-        {
-          "rank": 19,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        },
-        {
-          "rank": 20,
-          "name": "KAIST",
-          "name_cn": "韩国科学技术院",
-          "country": "韩国"
-        }
-      ]
-    },
-    "数据科学与人工智能": {
-      "qs_subject": "Data Science and Artificial Intelligence",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "MIT",
-          "name_cn": "麻省理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "Carnegie Mellon University",
-          "name_cn": "卡内基梅隆大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 5,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 7,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 8,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 9,
-          "name": "NTU",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 10,
-          "name": "ETH Zurich",
-          "name_cn": "苏黎世联邦理工学院",
-          "country": "瑞士"
-        },
-        {
-          "rank": 11,
-          "name": "University of Toronto",
-          "name_cn": "多伦多大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 12,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 13,
-          "name": "Georgia Institute of Technology",
-          "name_cn": "佐治亚理工学院",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "University of California, Los Angeles",
-          "name_cn": "加州大学洛杉矶分校",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "Princeton University",
-          "name_cn": "普林斯顿大学",
-          "country": "美国"
-        },
-        {
-          "rank": 16,
-          "name": "University of Edinburgh",
-          "name_cn": "爱丁堡大学",
-          "country": "英国"
-        },
-        {
-          "rank": 17,
-          "name": "Technical University of Munich",
-          "name_cn": "慕尼黑工业大学",
-          "country": "德国"
-        },
-        {
-          "rank": 18,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 19,
-          "name": "Shanghai Jiao Tong University",
-          "name_cn": "上海交通大学",
-          "country": "中国"
-        },
-        {
-          "rank": 20,
-          "name": "University of British Columbia",
-          "name_cn": "英属哥伦比亚大学",
-          "country": "加拿大"
-        }
-      ]
-    },
-    "法学": {
-      "qs_subject": "Law",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 2,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 3,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 4,
-          "name": "Yale University",
-          "name_cn": "耶鲁大学",
-          "country": "美国"
-        },
-        {
-          "rank": 5,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 6,
-          "name": "LSE",
-          "name_cn": "伦敦政治经济学院",
-          "country": "英国"
-        },
-        {
-          "rank": 7,
-          "name": "Columbia University",
-          "name_cn": "哥伦比亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 8,
-          "name": "UC Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 9,
-          "name": "University of Chicago",
-          "name_cn": "芝加哥大学",
-          "country": "美国"
-        },
-        {
-          "rank": 10,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 11,
-          "name": "University of Melbourne",
-          "name_cn": "墨尔本大学",
-          "country": "澳大利亚"
-        },
-        {
-          "rank": 12,
-          "name": "New York University",
-          "name_cn": "纽约大学",
-          "country": "美国"
-        },
-        {
-          "rank": 13,
-          "name": "University of Toronto",
-          "name_cn": "多伦多大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 14,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        },
-        {
-          "rank": 15,
-          "name": "University of Edinburgh",
-          "name_cn": "爱丁堡大学",
-          "country": "英国"
-        },
-        {
-          "rank": 16,
-          "name": "King's College London",
-          "name_cn": "伦敦国王学院",
-          "country": "英国"
-        },
-        {
-          "rank": 17,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 18,
-          "name": "University of Hong Kong",
-          "name_cn": "香港大学",
-          "country": "中国香港"
-        },
-        {
-          "rank": 19,
-          "name": "University of Chicago",
-          "name_cn": "芝加哥大学",
-          "country": "美国"
-        },
-        {
-          "rank": 20,
-          "name": "Leiden University",
-          "name_cn": "莱顿大学",
-          "country": "荷兰"
-        }
-      ]
-    },
-    "教育学": {
-      "qs_subject": "Education",
-      "top10": [
-        {
-          "rank": 1,
-          "name": "UCL",
-          "name_cn": "伦敦大学学院",
-          "country": "英国"
-        },
-        {
-          "rank": 2,
-          "name": "Harvard University",
-          "name_cn": "哈佛大学",
-          "country": "美国"
-        },
-        {
-          "rank": 3,
-          "name": "Stanford University",
-          "name_cn": "斯坦福大学",
-          "country": "美国"
-        },
-        {
-          "rank": 4,
-          "name": "University of Oxford",
-          "name_cn": "牛津大学",
-          "country": "英国"
-        },
-        {
-          "rank": 5,
-          "name": "University of Cambridge",
-          "name_cn": "剑桥大学",
-          "country": "英国"
-        },
-        {
-          "rank": 6,
-          "name": "University of Toronto",
-          "name_cn": "多伦多大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 7,
-          "name": "University of Hong Kong",
-          "name_cn": "香港大学",
-          "country": "中国香港"
-        },
-        {
-          "rank": 8,
-          "name": "NTU",
-          "name_cn": "南洋理工大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 9,
-          "name": "Peking University",
-          "name_cn": "北京大学",
-          "country": "中国"
-        },
-        {
-          "rank": 10,
-          "name": "NUS",
-          "name_cn": "新加坡国立大学",
-          "country": "新加坡"
-        },
-        {
-          "rank": 11,
-          "name": "University of Melbourne",
-          "name_cn": "墨尔本大学",
-          "country": "澳大利亚"
-        },
-        {
-          "rank": 12,
-          "name": "University of Hong Kong",
-          "name_cn": "香港大学",
-          "country": "中国香港"
-        },
-        {
-          "rank": 13,
-          "name": "University of California, Berkeley",
-          "name_cn": "加州大学伯克利分校",
-          "country": "美国"
-        },
-        {
-          "rank": 14,
-          "name": "University of Michigan",
-          "name_cn": "密歇根大学",
-          "country": "美国"
-        },
-        {
-          "rank": 15,
-          "name": "University of Pennsylvania",
-          "name_cn": "宾夕法尼亚大学",
-          "country": "美国"
-        },
-        {
-          "rank": 16,
-          "name": "University of Sydney",
-          "name_cn": "悉尼大学",
-          "country": "澳大利亚"
-        },
-        {
-          "rank": 17,
-          "name": "University of British Columbia",
-          "name_cn": "英属哥伦比亚大学",
-          "country": "加拿大"
-        },
-        {
-          "rank": 18,
-          "name": "University of Edinburgh",
-          "name_cn": "爱丁堡大学",
-          "country": "英国"
-        },
-        {
-          "rank": 19,
-          "name": "University of Texas at Austin",
-          "name_cn": "德克萨斯大学奥斯汀分校",
-          "country": "美国"
-        },
-        {
-          "rank": 20,
-          "name": "Tsinghua University",
-          "name_cn": "清华大学",
-          "country": "中国"
-        }
-      ]
-    }
+    "计算机科学": [
+      {
+        "rank": 1,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 98.5
+      },
+      {
+        "rank": 3,
+        "university": "Carnegie Mellon University",
+        "country": "美国",
+        "score": 97.8
+      },
+      {
+        "rank": 4,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 97.2
+      },
+      {
+        "rank": 5,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 96.5
+      },
+      {
+        "rank": 6,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 96.0
+      },
+      {
+        "rank": 7,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 95.5
+      },
+      {
+        "rank": 8,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 95.0
+      },
+      {
+        "rank": 9,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 94.5
+      },
+      {
+        "rank": 10,
+        "university": "University of Toronto",
+        "country": "加拿大",
+        "score": 94.0
+      },
+      {
+        "rank": 11,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 93.5
+      },
+      {
+        "rank": 12,
+        "university": "Princeton University",
+        "country": "美国",
+        "score": 93.0
+      },
+      {
+        "rank": 13,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 92.5
+      },
+      {
+        "rank": 14,
+        "university": "University of Edinburgh",
+        "country": "英国",
+        "score": 92.0
+      },
+      {
+        "rank": 15,
+        "university": "Nanyang Technological University",
+        "country": "新加坡",
+        "score": 91.5
+      },
+      {
+        "rank": 16,
+        "university": "University of Washington",
+        "country": "美国",
+        "score": 91.0
+      },
+      {
+        "rank": 17,
+        "university": "Imperial College London",
+        "country": "英国",
+        "score": 90.5
+      },
+      {
+        "rank": 18,
+        "university": "Georgia Institute of Technology",
+        "country": "美国",
+        "score": 90.0
+      },
+      {
+        "rank": 19,
+        "university": "University of Illinois Urbana-Champaign",
+        "country": "美国",
+        "score": 89.5
+      },
+      {
+        "rank": 20,
+        "university": "Cornell University",
+        "country": "美国",
+        "score": 89.0
+      },
+      {
+        "rank": 26,
+        "university": "上海交通大学",
+        "country": "中国",
+        "score": 87.0
+      },
+      {
+        "rank": 30,
+        "university": "浙江大学",
+        "country": "中国",
+        "score": 86.0
+      }
+    ],
+    "工程与技术": [
+      {
+        "rank": 1,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 98.0
+      },
+      {
+        "rank": 3,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 97.0
+      },
+      {
+        "rank": 4,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 96.5
+      },
+      {
+        "rank": 5,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 96.0
+      },
+      {
+        "rank": 6,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 95.5
+      },
+      {
+        "rank": 7,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 95.0
+      },
+      {
+        "rank": 8,
+        "university": "Imperial College London",
+        "country": "英国",
+        "score": 94.5
+      },
+      {
+        "rank": 9,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 94.0
+      },
+      {
+        "rank": 10,
+        "university": "Nanyang Technological University",
+        "country": "新加坡",
+        "score": 93.5
+      },
+      {
+        "rank": 11,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 93.0
+      },
+      {
+        "rank": 15,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 91.0
+      }
+    ],
+    "电气电子": [
+      {
+        "rank": 1,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 98.0
+      },
+      {
+        "rank": 3,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 97.0
+      },
+      {
+        "rank": 4,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 96.5
+      },
+      {
+        "rank": 5,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 96.0
+      },
+      {
+        "rank": 6,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 95.5
+      },
+      {
+        "rank": 7,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 95.0
+      },
+      {
+        "rank": 8,
+        "university": "Imperial College London",
+        "country": "英国",
+        "score": 94.5
+      },
+      {
+        "rank": 9,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 94.0
+      },
+      {
+        "rank": 10,
+        "university": "Nanyang Technological University",
+        "country": "新加坡",
+        "score": 93.5
+      },
+      {
+        "rank": 16,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 91.0
+      }
+    ],
+    "机械工程": [
+      {
+        "rank": 1,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 98.0
+      },
+      {
+        "rank": 3,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 97.0
+      },
+      {
+        "rank": 4,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 96.5
+      },
+      {
+        "rank": 5,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 96.0
+      },
+      {
+        "rank": 6,
+        "university": "Imperial College London",
+        "country": "英国",
+        "score": 95.5
+      },
+      {
+        "rank": 7,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 95.0
+      },
+      {
+        "rank": 8,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 94.5
+      },
+      {
+        "rank": 9,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 94.0
+      },
+      {
+        "rank": 10,
+        "university": "Georgia Institute of Technology",
+        "country": "美国",
+        "score": 93.5
+      },
+      {
+        "rank": 14,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 91.5
+      }
+    ],
+    "数据科学与人工智能": [
+      {
+        "rank": 1,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 98.5
+      },
+      {
+        "rank": 3,
+        "university": "Carnegie Mellon University",
+        "country": "美国",
+        "score": 97.8
+      },
+      {
+        "rank": 4,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 97.2
+      },
+      {
+        "rank": 5,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 96.5
+      },
+      {
+        "rank": 6,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 96.0
+      },
+      {
+        "rank": 7,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 95.5
+      },
+      {
+        "rank": 8,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 95.0
+      },
+      {
+        "rank": 9,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 94.5
+      },
+      {
+        "rank": 10,
+        "university": "University of Toronto",
+        "country": "加拿大",
+        "score": 94.0
+      },
+      {
+        "rank": 18,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 91.0
+      },
+      {
+        "rank": 19,
+        "university": "上海交通大学",
+        "country": "中国",
+        "score": 90.5
+      }
+    ],
+    "商业与管理": [
+      {
+        "rank": 1,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "London Business School",
+        "country": "英国",
+        "score": 98.0
+      },
+      {
+        "rank": 3,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 97.0
+      },
+      {
+        "rank": 4,
+        "university": "INSEAD",
+        "country": "法国",
+        "score": 96.5
+      },
+      {
+        "rank": 5,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 96.0
+      },
+      {
+        "rank": 6,
+        "university": "University of Pennsylvania",
+        "country": "美国",
+        "score": 95.5
+      },
+      {
+        "rank": 7,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 95.0
+      },
+      {
+        "rank": 8,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 94.5
+      },
+      {
+        "rank": 9,
+        "university": "Columbia University",
+        "country": "美国",
+        "score": 94.0
+      },
+      {
+        "rank": 10,
+        "university": "HEC Paris",
+        "country": "法国",
+        "score": 93.5
+      }
+    ],
+    "医学": [
+      {
+        "rank": 1,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 98.5
+      },
+      {
+        "rank": 3,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 97.8
+      },
+      {
+        "rank": 4,
+        "university": "Johns Hopkins University",
+        "country": "美国",
+        "score": 97.2
+      },
+      {
+        "rank": 5,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 96.5
+      },
+      {
+        "rank": 6,
+        "university": "University of California, San Francisco",
+        "country": "美国",
+        "score": 96.0
+      },
+      {
+        "rank": 7,
+        "university": "Karolinska Institute",
+        "country": "瑞典",
+        "score": 95.5
+      },
+      {
+        "rank": 8,
+        "university": "University of Toronto",
+        "country": "加拿大",
+        "score": 95.0
+      },
+      {
+        "rank": 9,
+        "university": "University of Melbourne",
+        "country": "澳大利亚",
+        "score": 94.5
+      },
+      {
+        "rank": 10,
+        "university": "Yale University",
+        "country": "美国",
+        "score": 94.0
+      }
+    ],
+    "自然科学": [
+      {
+        "rank": 1,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Massachusetts Institute of Technology",
+        "country": "美国",
+        "score": 98.5
+      },
+      {
+        "rank": 3,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 97.8
+      },
+      {
+        "rank": 4,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 97.2
+      },
+      {
+        "rank": 5,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 96.5
+      },
+      {
+        "rank": 6,
+        "university": "California Institute of Technology",
+        "country": "美国",
+        "score": 96.0
+      },
+      {
+        "rank": 7,
+        "university": "ETH Zurich",
+        "country": "瑞士",
+        "score": 95.5
+      },
+      {
+        "rank": 8,
+        "university": "University of California, Berkeley",
+        "country": "美国",
+        "score": 95.0
+      },
+      {
+        "rank": 9,
+        "university": "Princeton University",
+        "country": "美国",
+        "score": 94.5
+      },
+      {
+        "rank": 10,
+        "university": "National University of Singapore",
+        "country": "新加坡",
+        "score": 94.0
+      },
+      {
+        "rank": 12,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 93.0
+      },
+      {
+        "rank": 13,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 92.5
+      }
+    ],
+    "法学": [
+      {
+        "rank": 1,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 98.5
+      },
+      {
+        "rank": 3,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 97.8
+      },
+      {
+        "rank": 4,
+        "university": "Yale University",
+        "country": "美国",
+        "score": 97.2
+      },
+      {
+        "rank": 5,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 96.5
+      },
+      {
+        "rank": 6,
+        "university": "London School of Economics",
+        "country": "英国",
+        "score": 96.0
+      },
+      {
+        "rank": 7,
+        "university": "Columbia University",
+        "country": "美国",
+        "score": 95.5
+      },
+      {
+        "rank": 8,
+        "university": "University of Chicago",
+        "country": "美国",
+        "score": 95.0
+      },
+      {
+        "rank": 9,
+        "university": "New York University",
+        "country": "美国",
+        "score": 94.5
+      },
+      {
+        "rank": 10,
+        "university": "University of Melbourne",
+        "country": "澳大利亚",
+        "score": 94.0
+      },
+      {
+        "rank": 14,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 91.5
+      },
+      {
+        "rank": 17,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 90.5
+      }
+    ],
+    "教育学": [
+      {
+        "rank": 1,
+        "university": "UCL Institute of Education",
+        "country": "英国",
+        "score": 100
+      },
+      {
+        "rank": 2,
+        "university": "Harvard University",
+        "country": "美国",
+        "score": 98.0
+      },
+      {
+        "rank": 3,
+        "university": "Stanford University",
+        "country": "美国",
+        "score": 97.0
+      },
+      {
+        "rank": 4,
+        "university": "University of Oxford",
+        "country": "英国",
+        "score": 96.5
+      },
+      {
+        "rank": 5,
+        "university": "University of Cambridge",
+        "country": "英国",
+        "score": 96.0
+      },
+      {
+        "rank": 6,
+        "university": "University of Toronto",
+        "country": "加拿大",
+        "score": 95.5
+      },
+      {
+        "rank": 7,
+        "university": "University of Melbourne",
+        "country": "澳大利亚",
+        "score": 95.0
+      },
+      {
+        "rank": 8,
+        "university": "University of Hong Kong",
+        "country": "中国香港",
+        "score": 94.5
+      },
+      {
+        "rank": 9,
+        "university": "北京大学",
+        "country": "中国",
+        "score": 94.0
+      },
+      {
+        "rank": 10,
+        "university": "University of Michigan",
+        "country": "美国",
+        "score": 93.5
+      },
+      {
+        "rank": 20,
+        "university": "清华大学",
+        "country": "中国",
+        "score": 89.0
+      }
+    ]
   }
 }

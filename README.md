@@ -14,7 +14,7 @@
 
 > 🚀 **全球首个** AI Agent 高校情报系统 —— 让你的 AI 成为最懂高校的专家
 >
-> 📊 覆盖 **148 所中国高校** + **164 所国际高校** + **42 个顶会** + **37 个赛事**
+> 📊 覆盖 **148 所中国高校** + **175 所国际高校** + **50 个顶会** + **48 个赛事**
 >
 > 🎯 支持 **30 种查询类型**，从"北大就业怎么样"到"MIT学费多少"，一句话搞定
 
@@ -182,16 +182,16 @@ university-info-skill/
 │   ├── SKILL.md
 │   └── data/
 │       ├── universities.json           # 148所中国高校
-│       ├── international_universities.json  # 164所国际高校(27国)
+│       ├── international_universities.json  # 175所国际高校(27国)
 │       ├── india_universities.json     # 印度TOP20高校
 │       ├── subject_rankings.json       # QS学科排名(10学科TOP20)
 │       ├── tuition_costs.json          # 留学费用(10国+16城市)
-│       ├── labs.json                   # 国内外高校实验室信息（新增）
+│       ├── labs.json                   # 56个国内外高校实验室
 │       ├── disciplines.csv             # 1483条学科评估
 │       ├── rankings.csv                # 软科2026排名 TOP239
 │       ├── scores.db                   # 504条录取分数线
-│       ├── conferences.json            # 42个学术会议
-│       ├── competitions.json           # 37个赛事
+│       ├── conferences.json            # 50个学术会议
+│       ├── competitions.json           # 48个赛事
 │       └── config.yaml                 # 985/211/双一流名单
 │   └── references/
 │       ├── aliases.json                # 283个别名映射
@@ -234,13 +234,13 @@ university-info-skill/
 | 就业数据 | 57 所（985 全覆盖 + 部分 211） | 2023+2024 |
 | 师资数据 | 69 所（院士/杰青/长江学者） | 2024 |
 | 生源数据 | 69 所（在校生规模/本硕博比例） | 2024 |
-| 实验室数据 | 50+ 所（国家重点实验室/研究方向） | 2024 |
+| 实验室数据 | 36 个国内实验室 + 20 个国际实验室 | 2024 |
 
-### 国际高校（164 所, 27 国）
+### 国际高校（175 所, 27 国）
 
 | 区域 | 数量 | 代表院校 | 录取数据 |
 |------|------|---------|---------|
-| 美国 | 50 | MIT / Stanford / Harvard / CMU | ✅ GPA+TOEFL+GRE |
+| 美国 | 56 | MIT / Stanford / Harvard / CMU | ✅ GPA+TOEFL+GRE |
 | 英国 | 30 | Oxford / Cambridge / Imperial | ✅ IELTS |
 | 加拿大 | 10 | Toronto / UBC / McGill | ✅ IELTS |
 | 澳洲 | 10 | Melbourne / Sydney / ANU | ✅ IELTS |
@@ -270,9 +270,9 @@ university-info-skill/
 
 | 类型 | 量 | 覆盖 |
 |------|-----|------|
-| 国际会议 | 42 个 | AI/CV/NLP/系统/安全/SE/数据库/HCI/数据挖掘 |
+| 国际会议 | 44 个 | AI/CV/NLP/系统/安全/SE/数据库/HCI/数据挖掘 |
 | 国内会议 | 6 个 | CNCC/CCAI/NLPCC/ChinaSys/CCF-GAIR/VALSE |
-| 国际赛事 | 17 个 | 编程/数学/数据科学/创新/设计/商业 |
+| 国际赛事 | 28 个 | 编程/数学/数据科学/创新/设计/商业/机器人 |
 | 国内赛事 | 20 个 | A类/B类，综合创新/数学建模/编程/硬件/英语/设计/金融 |
 
 ### 留学费用
@@ -416,26 +416,6 @@ python3 scripts/pipeline/check_updates.py
 
 ---
 
-## 📞 商务合作
-
-<div align="center">
-
-**🤝 商务合作 | 数据采购 | 定制开发**
-
-📧 **邮箱**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
-
-> 请注明来意，我们将在 24 小时内回复
-
-**合作形式**：
-- 📊 **数据采购** — 批量高校数据、定制数据集
-- 🛠️ **定制开发** — 企业级高校情报系统
-- 🤝 **战略合作** — 教育行业深度合作
-- 📚 **学术合作** — 科研数据共享、联合研究
-
-</div>
-
----
-
 ## 📄 License
 
 [MIT](LICENSE)
@@ -447,7 +427,5 @@ python3 scripts/pipeline/check_updates.py
 **⭐ 如果这个项目对你有帮助，请给我们一个 Star！⭐**
 
 **🔗 项目链接**: [https://github.com/MRLMRML/university-info-skill](https://github.com/MRLMRML/university-info-skill)
-
-**📧 联系我们**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
 
 </div>

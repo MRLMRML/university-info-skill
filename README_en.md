@@ -14,7 +14,7 @@
 
 > 🚀 **The World's First** AI Agent University Intelligence System — Make Your AI the Ultimate University Expert
 >
-> 📊 Covering **148 Chinese Universities** + **164 International Universities** + **42 Top Conferences** + **37 Competitions**
+> 📊 Covering **148 Chinese Universities** + **175 International Universities** + **50 Top Conferences** + **48 Competitions**
 >
 > 🎯 Supporting **30 Query Types**, from "Peking University employment rate?" to "MIT tuition fees?", one sentence does it all
 
@@ -56,7 +56,7 @@
 - 📖 **1483 Discipline Evaluations** — 95 first-level disciplines A+/A/A-/B+ fully covered
 - 🎯 **Admission Assessment** — 49 schools with GRE/GMAT requirements, 5-level difficulty grading
 - 📊 **Academic Conferences** — 42 international top conferences (CCF-A/B) + 6 domestic
-- 🏅 **Competitions** — 37 international competitions + 20+ domestic A/B class
+- 🏅 **Competitions** — 28 international competitions + 20+ domestic A/B class
 - 🏫 **Lab Information** — Key laboratories and research directions for domestic and international universities
 
 ### 💬 Smart Interaction, Natural Language
@@ -182,7 +182,7 @@ university-info-skill/
 │   ├── SKILL.md
 │   └── data/
 │       ├── universities.json           # 148 Chinese Universities
-│       ├── international_universities.json  # 164 International (27 Countries)
+│       ├── international_universities.json  # 175 International (27 Countries)
 │       ├── india_universities.json     # India TOP20
 │       ├── subject_rankings.json       # QS Subject Rankings (10 Subjects TOP20)
 │       ├── tuition_costs.json          # Tuition Costs (10 Countries + 16 Cities)
@@ -190,8 +190,8 @@ university-info-skill/
 │       ├── disciplines.csv             # 1483 Discipline Evaluations
 │       ├── rankings.csv                # ShanghaiRanking 2026 TOP239
 │       ├── scores.db                   # 504 Admission Scores
-│       ├── conferences.json            # 42 Academic Conferences
-│       ├── competitions.json           # 37 Competitions
+│       ├── conferences.json            # 44 Academic Conferences
+│       ├── competitions.json           # 48 Competitions
 │       └── config.yaml                 # 985/211/Double First-Class Lists
 │   └── references/
 │       ├── aliases.json                # 283 Alias Mappings
@@ -415,23 +415,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details
 
 ---
 
-## 📞 Business Cooperation
-
-<div align="center">
-
-**🤝 Business Cooperation | Data Procurement | Custom Development**
-
-📧 **Email**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
-
-> Please indicate your purpose, we will reply within 24 hours
-
-**Cooperation Forms**:
-- 📊 **Data Procurement** — Bulk university data, custom datasets
-- 🛠️ **Custom Development** — Enterprise university intelligence systems
-- 🤝 **Strategic Cooperation** — Deep cooperation in education industry
-- 📚 **Academic Cooperation** — Research data sharing, joint research
-
-</div>
 
 ---
 
