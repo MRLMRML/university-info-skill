@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球高校信息检索 Skill · University Info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* 靛蓝瓷 (Indigo Porcelain) */
+    --ink:#0a1f3d;
+    --ink-rgb:10,31,61;
+    --paper:#f1f3f5;
+    --paper-rgb:241,243,245;
+    --paper-tint:#e4e8ec;
+    --ink-tint:#152a4a;
+
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --serif-en:"Playfair Display","Source Serif 4",Georgia,serif;
+    --serif-body-en:"Source Serif 4",Georgia,serif;
+    --serif-zh:"Noto Serif SC",source-han-serif-sc,serif;
+    --sans-zh:"Noto Sans SC",source-han-sans-sc,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:100%;height:100%;overflow:hidden;background:var(--ink);color:var(--paper);font-family:var(--sans-zh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+  canvas.bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;transition:opacity 1.2s ease}
+  canvas#bg-light{opacity:0}
+  canvas#bg-dark{opacity:1}
+  body.light-bg canvas#bg-light{opacity:1}
+  body.light-bg canvas#bg-dark{opacity:0}
+
+  #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .9s cubic-bezier(.77,0,.175,1);z-index:10;will-change:transform}
+  .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:6vh 6vw 10vh 6vw;display:flex;flex-direction:column;overflow:hidden}
+  .slide.light{color:var(--ink);background:var(--paper)}
+  .slide.dark{color:var(--paper);background:var(--ink)}
+
+  .slide::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;transition:background .7s ease}
+  .slide.light::before{background:rgba(var(--paper-rgb),.78);backdrop-filter:blur(3px)}
+  .slide.dark::before{background:rgba(var(--ink-rgb),.78);backdrop-filter:blur(3px)}
+  .slide.hero.light::before{background:rgba(var(--paper-rgb),.16);backdrop-filter:none}
+  .slide.hero.dark::before{background:rgba(var(--ink-rgb),.12);backdrop-filter:none}
+  .slide.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+  .slide.hero.light::after{background:linear-gradient(180deg,rgba(var(--paper-rgb),.28) 0%,rgba(var(--paper-rgb),0) 14%,rgba(var(--paper-rgb),0) 86%,rgba(var(--paper-rgb),.28) 100%)}
+  .slide.hero.dark::after{background:linear-gradient(180deg,rgba(var(--ink-rgb),.32) 0%,rgba(var(--ink-rgb),0) 14%,rgba(var(--ink-rgb),0) 86%,rgba(var(--ink-rgb),.32) 100%)}
+
+  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
+  .h-hero{font-family:var(--serif-zh);font-weight:900;font-size:10vw;line-height:.96;letter-spacing:-.02em}
+  .h-xl{font-family:var(--serif-zh);font-weight:700;font-size:6.2vw;line-height:1.08;letter-spacing:-.01em}
+  .h-sub{font-family:var(--serif-zh);font-weight:500;font-size:3.1vw;line-height:1.25;letter-spacing:0;opacity:.7}
+  .h-md{font-family:var(--serif-zh);font-weight:600;font-size:2.3vw;line-height:1.3}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.75vw;line-height:1.5;opacity:.86}
+  .meta-row{display:flex;gap:1.2em;align-items:baseline;flex-wrap:wrap;font-family:var(--mono);font-size:max(12px,.92vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+
+  .stat-card{display:flex;flex-direction:column;gap:.8vh;align-items:flex-start;padding-top:1.6vh;border-top:1px solid currentColor;border-color:rgba(127,127,127,.3)}
+  .stat-card .stat-label{font-family:var(--mono);font-size:max(10px,.78vw);letter-spacing:.24em;text-transform:uppercase;opacity:.55}
+  .stat-card .stat-nb{font-family:var(--serif-en);font-weight:800;font-size:5.8vw;line-height:.9;letter-spacing:-.03em;font-feature-settings:"tnum";margin-top:.4vh}
+  .stat-card .stat-nb .stat-unit{font-family:var(--serif-zh);font-weight:500;font-size:.38em;letter-spacing:0;opacity:.72;margin-left:.14em}
+  .stat-card .stat-note{font-family:var(--sans-zh);font-weight:400;font-size:max(13px,1.05vw);line-height:1.5;opacity:.72;margin-top:.6vh}
+
+  .grid-6{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:4vw 6vw;flex:1;align-content:center;padding:2vh 0}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw;flex:1;align-content:center}
+
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
+  .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
+  .callout-src{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+
+  .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
+  .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
+
+  .frame{flex:1;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  .grid-2-7-5{display:grid;grid-template-columns:7fr 5fr;gap:3vw 4vh;align-items:start}
+  .grid-2-6-6{display:grid;grid-template-columns:1fr 1fr;gap:3vw 4vh;align-items:start}
+
+  [data-anim]{opacity:1}
+  body.motion-ready [data-anim]{opacity:0}
+
+  #nav{position:fixed;left:50%;bottom:2.6vh;transform:translateX(-50%);z-index:30;display:flex;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.18);backdrop-filter:blur(10px)}
+  #nav .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s ease;border:0;padding:0}
+  #nav .dot:hover{background:rgba(255,255,255,.5);transform:scale(1.15)}
+  #nav .dot.active{background:rgba(255,255,255,.95);width:22px;border-radius:999px}
+  body.light-bg #nav{background:rgba(255,255,255,.25)}
+  body.light-bg #nav .dot{background:rgba(var(--ink-rgb),.25)}
+  body.light-bg #nav .dot.active{background:rgba(var(--ink-rgb),.9)}
+  #hint{position:fixed;bottom:3vh;right:3vw;z-index:30;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.4;mix-blend-mode:difference;color:#aaa}
+
+  @media (max-width:900px){
+    .h-hero{font-size:14vw}
+    .h-xl{font-size:9vw}
+    .grid-2-7-5,.grid-2-6-6{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="bg-dark" class="bg"></canvas>
+<canvas id="bg-light" class="bg"></canvas>
+<div id="hint">← → 翻页 · ESC 索引</div>
+
+<div id="deck">
+
+<!-- Slide 1: Cover -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>AI Agent Skill · 2026</div>
+    <div>Vol.01</div>
+  </div>
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>OpenCode · Claude Code · Cursor · Windsurf · OpenClaw</div>
+    <h1 class="h-hero" data-anim>高校信息检索</h1>
+    <h2 class="h-sub" data-anim>让 AI 成为你的高校情报助手</h2>
+    <p class="lead" style="max-width:60vw" data-anim>
+      覆盖 323+ 高校、30 种查询、27 国数据。从"北大就业怎么样"到"MIT学费多少"，一句话搞定。
+    </p>
+    <div class="meta-row" data-anim>
+      <span>github.com/MRLMRML/university-info-skill</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div>全球高校信息检索 Skill</div>
+    <div>— 2026 —</div>
+  </div>
+</section>
+
+<!-- Slide 2: Data Stats -->
+<section class="slide light">
+  <div class="chrome">
+    <div>数据覆盖 · Coverage</div>
+    <div>Act I · 02 / 08</div>
+  </div>
+  <div class="frame" style="padding-top:6vh">
+    <div class="kicker" data-anim>Hard Numbers</div>
+    <h2 class="h-xl" data-anim>数据一览</h2>
+    <p class="lead" style="margin-bottom:5vh" data-anim>教育部官方数据 + QS/THE/ARWU 全球排名</p>
+
+    <div class="grid-6" style="margin-top:6vh">
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Chinese Universities</div>
+        <div class="stat-nb">148 <span class="stat-unit">所</span></div>
+        <div class="stat-note">含全部 147 所双一流</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">International</div>
+        <div class="stat-nb">175 <span class="stat-unit">所</span></div>
+        <div class="stat-note">覆盖 27 个国家/地区</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Discipline Eval</div>
+        <div class="stat-nb">1483 <span class="stat-unit">条</span></div>
+        <div class="stat-note">95 学科 A+/A/A-/B+</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Conferences</div>
+        <div class="stat-nb">50 <span class="stat-unit">个</span></div>
+        <div class="stat-note">44 国际 + 6 国内顶会</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Competitions</div>
+        <div class="stat-nb">48 <span class="stat-unit">个</span></div>
+        <div class="stat-note">28 国际 + 20 国内赛事</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Labs</div>
+        <div class="stat-nb">56 <span class="stat-unit">个</span></div>
+        <div class="stat-note">36 国内 + 20 国际实验室</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>数据来源 · 教育部 / QS / THE / ARWU</div>
+    <div>Act I · Data</div>
+  </div>
+</section>
+
+<!-- Slide 3: Query Types -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>查询能力 · Queries</div>
+    <div>Act I · 03 / 08</div>
+  </div>
+  <div class="frame grid-2-6-6" style="padding-top:6vh">
+    <div>
+      <div class="kicker" data-anim>30 Query Types</div>
+      <h2 class="h-xl" style="white-space:nowrap; font-size:5.5vw" data-anim>
+        一句话搞定
+      </h2>
+      <p class="lead" style="margin-top:3vh" data-anim>
+        支持自然语言提问，内置 283 个别名，本地数据不足时自动 Web Search 补充。
+      </p>
+      <div class="callout" style="margin-top:3vh" data-anim>
+        "北大就业怎么样？"<br>
+        "MIT学费多少？"<br>
+        "CS硕士去美国哪些学校好？"
+        <div class="callout-src">— 真实查询示例</div>
+      </div>
+    </div>
+    <div data-anim>
+      <div class="rowline"><div class="k">基础信息</div><div class="v">层次、类型、城市</div><div class="m">universities.json</div></div>
+      <div class="rowline"><div class="k">学科实力</div><div class="v">A+ 学科、学科排名</div><div class="m">disciplines.csv</div></div>
+      <div class="rowline"><div class="k">就业质量</div><div class="v">就业率、去向、薪资</div><div class="m">universities.json</div></div>
+      <div class="rowline"><div class="k">录取分数</div><div class="v">分数线、位次</div><div class="m">scores.db</div></div>
+      <div class="rowline"><div class="k">国际高校</div><div class="v">QS/THE/ARWU 排名</div><div class="m">international.json</div></div>
+      <div class="rowline"><div class="k">留学费用</div><div class="v">学费、生活费、奖学金</div><div class="m">tuition_costs.json</div></div>
+      <div class="rowline"><div class="k">学术会议</div><div class="v">CCF 级别、录用率</div><div class="m">conferences.json</div></div>
+      <div class="rowline"><div class="k">竞赛赛事</div><div class="v">A/B 类、含金量</div><div class="m">competitions.json</div></div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>30 种查询类型 · 自然语言</div>
+    <div>Act I · Queries</div>
+  </div>
+</section>
+
+<!-- Slide 4: International Coverage -->
+<section class="slide light">
+  <div class="chrome">
+    <div>全球覆盖 · Global</div>
+    <div>Act II · 04 / 08</div>
+  </div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker" data-anim>27 Countries · 175 Universities</div>
+    <h2 class="h-xl" data-anim>全球高校</h2>
+
+    <div class="grid-3" style="margin-top:4vh">
+      <div data-anim>
+        <div class="rowline"><div class="k">美国</div><div class="v">MIT / Stanford / Harvard</div><div class="m">56 所</div></div>
+        <div class="rowline"><div class="k">英国</div><div class="v">Oxford / Cambridge</div><div class="m">30 所</div></div>
+        <div class="rowline"><div class="k">加拿大</div><div class="v">Toronto / UBC</div><div class="m">10 所</div></div>
+        <div class="rowline"><div class="k">澳洲</div><div class="v">Melbourne / Sydney</div><div class="m">10 所</div></div>
+      </div>
+      <div data-anim>
+        <div class="rowline"><div class="k">日本</div><div class="v">东大 / 京大 / 早稻田</div><div class="m">10 所</div></div>
+        <div class="rowline"><div class="k">欧洲</div><div class="v">ETH / TUM / KTH</div><div class="m">20 所</div></div>
+        <div class="rowline"><div class="k">新加坡/港</div><div class="v">NUS / NTU / 港大</div><div class="m">10 所</div></div>
+        <div class="rowline"><div class="k">印度</div><div class="v">IIT / IIM / BITS</div><div class="m">19 所</div></div>
+      </div>
+      <div data-anim>
+        <div class="callout">
+          含 GPA / TOEFL / IELTS / GRE 录取要求<br>
+          5 级难度分级（极难 → 较易）<br>
+          留学费用 10 国对比
+          <div class="callout-src">— 录取 & 费用数据</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>QS / THE / ARWU 三大排名</div>
+    <div>Act II · Global</div>
+  </div>
+</section>
+
+<!-- Slide 5: Subject Rankings -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>学科排名 · Rankings</div>
+    <div>Act II · 05 / 08</div>
+  </div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker" data-anim>QS 2026 · 10 Subjects</div>
+    <h2 class="h-xl" data-anim>学科排名 TOP20</h2>
+
+    <div class="grid-3" style="margin-top:4vh">
+      <div data-anim>
+        <div class="rowline"><div class="k">计算机科学</div><div class="v">清华 #11 / 北大 #13</div><div class="m">TOP30</div></div>
+        <div class="rowline"><div class="k">工程与技术</div><div class="v">清华 #11 / 北大 #15</div><div class="m">TOP20</div></div>
+        <div class="rowline"><div class="k">数据科学/AI</div><div class="v">清华 #7 / 北大 #18</div><div class="m">TOP20</div></div>
+      </div>
+      <div data-anim>
+        <div class="rowline"><div class="k">电气电子</div><div class="v">清华 #7 / 北大 #16</div><div class="m">TOP20</div></div>
+        <div class="rowline"><div class="k">机械工程</div><div class="v">清华 #7 / 北大 #14</div><div class="m">TOP20</div></div>
+        <div class="rowline"><div class="k">自然科学</div><div class="v">北大 #12 / 清华 #13</div><div class="m">TOP20</div></div>
+      </div>
+      <div data-anim>
+        <div class="rowline"><div class="k">法学</div><div class="v">清华 #14 / 北大 #17</div><div class="m">TOP20</div></div>
+        <div class="rowline"><div class="k">教育学</div><div class="v">北大 #9 / 清华 #20</div><div class="m">TOP20</div></div>
+        <div class="rowline"><div class="k">商学管理</div><div class="v">Harvard #1 / LBS #2</div><div class="m">TOP20</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>QS World University Rankings by Subject 2026</div>
+    <div>Act II · Rankings</div>
+  </div>
+</section>
+
+<!-- Slide 6: Labs -->
+<section class="slide light">
+  <div class="chrome">
+    <div>实验室 · Labs</div>
+    <div>Act III · 06 / 08</div>
+  </div>
+  <div class="frame grid-2-6-6" style="padding-top:6vh">
+    <div>
+      <div class="kicker" data-anim>Key Laboratories</div>
+      <h2 class="h-xl" data-anim>重点实验室</h2>
+      <p class="lead" style="margin-top:3vh" data-anim>
+        36 个国内实验室 + 20 个国际实验室，覆盖 AI、机器人、计算机视觉等方向。
+      </p>
+    </div>
+    <div data-anim>
+      <div class="rowline"><div class="k">清华</div><div class="v">智能技术与系统国家重点实验室</div><div class="m">AI</div></div>
+      <div class="rowline"><div class="k">北大</div><div class="v">机器感知与智能教育部重点实验室</div><div class="m">CV</div></div>
+      <div class="rowline"><div class="k">浙大</div><div class="v">工业控制技术国家重点实验室</div><div class="m">控制</div></div>
+      <div class="rowline"><div class="k">MIT</div><div class="v">CSAIL · 计算机科学与人工智能</div><div class="m">AI</div></div>
+      <div class="rowline"><div class="k">Stanford</div><div class="v">SAIL · 斯坦福人工智能实验室</div><div class="m">ML</div></div>
+      <div class="rowline"><div class="k">CMU</div><div class="v">Robotics Institute</div><div class="m">Robot</div></div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>国内外高校重点实验室</div>
+    <div>Act III · Labs</div>
+  </div>
+</section>
+
+<!-- Slide 7: Installation -->
+<section class="slide hero light">
+  <div class="chrome">
+    <div>快速开始 · Quick Start</div>
+    <div>Act III · 07 / 08</div>
+  </div>
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>Install & Update</div>
+    <h1 class="h-hero" style="font-size:7vw" data-anim>一行命令安装</h1>
+    <div class="callout" style="max-width:70vw; font-family:var(--mono); font-size:max(14px,1.1vw)" data-anim>
+      mkdir -p ~/.opencode/skills<br>
+      git clone https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill<br>
+      cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
+      <div class="callout-src">— 安装命令</div>
+    </div>
+    <p class="lead" style="max-width:55vw" data-anim>
+      兼容 OpenCode / Claude Code / Cursor / Windsurf / OpenClaw
+    </p>
+  </div>
+  <div class="foot">
+    <div>MIT License · 开源免费</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- Slide 8: Closing -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>University Info Skill</div>
+    <div>08 / 08</div>
+  </div>
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>The End</div>
+    <h1 class="h-hero" style="font-size:8vw">
+      <span data-anim style="display:block">让 AI</span>
+      <span data-anim style="display:block">秒懂高校</span>
+    </h1>
+    <p class="lead" style="max-width:50vw" data-anim>
+      github.com/MRLMRML/university-info-skill
+    </p>
+  </div>
+  <div class="foot">
+    <div>Star on GitHub</div>
+    <div>— 2026 —</div>
+  </div>
+</section>
+
+</div>
+
+<div id="nav"></div>
+
+<script>
+const VS = `attribute vec2 position;void main(){gl_Position=vec4(position,0.0,1.0);}`;
+
+const FS_DARK = `precision highp float;
+uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;
+vec3 palette(float t,vec3 a,vec3 b,vec3 c,vec3 d){return a+b*cos(6.28318*(c*t+d));}
+void main(){
+  vec2 uv=gl_FragCoord.xy/u_resolution.xy;
+  vec2 p=uv*2.0-1.0;p.x*=u_resolution.x/u_resolution.y;
+  vec2 m=u_mouse*2.0-1.0;m.x*=u_resolution.x/u_resolution.y;
+  float md=length(p-m);
+  float mr=sin(md*15.0-u_time*4.0)*exp(-md*3.0);p+=mr*0.08;
+  vec2 p0=p;
+  for(float i=1.0;i<4.0;i++){
+    p.x+=0.1/i*sin(i*3.0*p.y+u_time*0.4)+0.05;
+    p.y+=0.1/i*cos(i*2.0*p.x+u_time*0.3)-0.05;
+  }
+  float r=length(p);float ang=atan(p.y,p.x);
+  vec3 a=vec3(0.12,0.12,0.13);
+  vec3 b=vec3(0.03,0.04,0.05);
+  vec3 c=vec3(1.0,1.0,1.0);
+  vec3 d=vec3(0.1,0.2,0.4);
+  vec3 col=palette(r*1.5+p0.x*0.5+u_time*0.1,a,b,c,d);
+  float disp=sin(r*25.0-u_time*1.5+ang*2.0)*0.5+0.5;
+  col+=vec3(disp*0.015,disp*0.01,disp*0.02);
+  float hi=pow(sin(p.x*4.0+p.y*3.0+u_time)*0.5+0.5,8.0);
+  col+=hi*0.08;
+  vec3 base=vec3(0.05,0.05,0.06);
+  col=mix(base,col,0.85);
+  gl_FragColor=vec4(col,1.0);
+}`;
+
+const FS_LIGHT = `precision highp float;
+uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float noise(vec2 p){
+  vec2 i=floor(p),f=fract(p);
+  float a=hash(i),b=hash(i+vec2(1,0));
+  float c=hash(i+vec2(0,1)),d=hash(i+vec2(1,1));
+  vec2 u=f*f*(3.0-2.0*f);
+  return mix(a,b,u.x)+(c-a)*u.y*(1.0-u.x)+(d-b)*u.x*u.y;
+}
+float fbm(vec2 p){
+  float v=0.0,a=0.5;
+  mat2 m=mat2(0.80,0.60,-0.60,0.80);
+  for(int i=0;i<5;i++){v+=a*noise(p);p=m*p*2.02;a*=0.5;}
+  return v;
+}
+void main(){
+  vec2 uv=gl_FragCoord.xy/u_resolution.xy;
+  vec2 p=uv;p.x*=u_resolution.x/u_resolution.y;
+  vec2 m=u_mouse;m.x*=u_resolution.x/u_resolution.y;
+  vec2 md=p-m;float dl=length(md);
+  p+=normalize(md+vec2(0.0001))*exp(-dl*5.0)*0.03;
+  vec2 q=vec2(fbm(p*1.8+u_time*0.07),fbm(p*1.8+vec2(5.2,1.3)+u_time*0.06));
+  vec2 r=vec2(fbm(p*2.0+q*1.3+vec2(1.7,9.2)+u_time*0.05),
+              fbm(p*2.0+q*1.3+vec2(8.3,2.8)+u_time*0.04));
+  float f=fbm(p*2.2+r*1.5);
+  vec3 silverDark=vec3(0.86,0.85,0.84);
+  vec3 paper=vec3(0.955,0.945,0.925);
+  vec3 col=mix(silverDark,paper,f);
+  float ph=r.x*2.2+u_time*0.35;
+  col+=vec3(0.78,0.62,0.92)*sin(ph)*0.055;
+  col+=vec3(0.55,0.72,0.95)*sin(ph*0.8+2.0)*0.05;
+  float hl=smoothstep(0.48,0.92,f);
+  col+=hl*0.06;
+  gl_FragColor=vec4(col,1.0);
+}`;
+
+const mouse={x:0.5,y:0.5};
+addEventListener('mousemove',e=>{mouse.x=e.clientX/innerWidth;mouse.y=e.clientY/innerHeight});
+
+function bootGL(canvasId, fsSrc){
+  const canvas=document.getElementById(canvasId);
+  const gl=canvas.getContext('webgl',{alpha:false,antialias:true});
+  if(!gl) return ()=>false;
+  const mk=(t,s)=>{const sh=gl.createShader(t);gl.shaderSource(sh,s);gl.compileShader(sh);return sh};
+  const prog=gl.createProgram();
+  gl.attachShader(prog,mk(gl.VERTEX_SHADER,VS));
+  gl.attachShader(prog,mk(gl.FRAGMENT_SHADER,fsSrc));
+  gl.linkProgram(prog);gl.useProgram(prog);
+  const buf=gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
+  const pos=gl.getAttribLocation(prog,'position');
+  gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+  const lRes=gl.getUniformLocation(prog,'u_resolution');
+  const lT=gl.getUniformLocation(prog,'u_time');
+  const lM=gl.getUniformLocation(prog,'u_mouse');
+  const resize=()=>{
+    const d=Math.min(window.devicePixelRatio||1,2);
+    canvas.width=innerWidth*d;canvas.height=innerHeight*d;
+    gl.viewport(0,0,canvas.width,canvas.height);
+  };
+  addEventListener('resize',resize);resize();
+  return (tSec)=>{
+    gl.uniform2f(lRes,canvas.width,canvas.height);
+    gl.uniform1f(lT,tSec);
+    gl.uniform2f(lM,mouse.x,1-mouse.y);
+    gl.drawArrays(gl.TRIANGLES,0,6);
+    return true;
+  };
+}
+const drawDark=bootGL('bg-dark',FS_DARK);
+const drawLight=bootGL('bg-light',FS_LIGHT);
+const t0=Date.now();
+(function loop(){
+  const t=(Date.now()-t0)/1000;
+  drawDark(t);drawLight(t);
+  requestAnimationFrame(loop);
+})();
+
+const deck=document.getElementById('deck');
+const slides=deck.querySelectorAll('.slide');
+const nav=document.getElementById('nav');
+let idx=0,total=slides.length,lock=false;
+
+deck.style.width=(total*100)+'vw';
+
+slides.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.className='dot';b.dataset.i=i;b.setAttribute('aria-label','Page '+(i+1));
+  b.onclick=()=>go(i);
+  nav.appendChild(b);
+});
+
+function go(n){
+  if(lock)return;
+  idx=Math.max(0,Math.min(total-1,n));
+  deck.style.transform=`translateX(${-idx*100}vw)`;
+  nav.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+  const el=slides[idx];
+  const th=el.dataset.theme || (el.classList.contains('light')?'light':(el.classList.contains('dark')?'dark':'dark'));
+  document.body.classList.toggle('light-bg',th==='light');
+  if(window.__playSlide) setTimeout(()=>window.__playSlide(idx), 450);
+  lock=true;setTimeout(()=>lock=false,700);
+}
+
+let overviewOn=false;
+const ov=document.createElement('div');
+ov.id='overview';
+ov.style.cssText='position:fixed;inset:0;z-index:100;background:rgba(var(--ink-rgb),.92);backdrop-filter:blur(12px);display:none;overflow-y:auto;padding:4vh 4vw';
+document.body.appendChild(ov);
+
+function buildOverview(){
+  ov.innerHTML='';
+  const grid=document.createElement('div');
+  grid.style.cssText='display:grid;grid-template-columns:repeat(4,1fr);gap:2vh 1.6vw;max-width:90vw;margin:0 auto';
+  slides.forEach((s,i)=>{
+    const card=document.createElement('div');
+    card.style.cssText='cursor:pointer;border-radius:6px;overflow:hidden;border:2px solid '+(i===idx?'rgba(var(--paper-rgb),.8)':'rgba(var(--paper-rgb),.15)')+';transition:border-color .2s';
+    card.onmouseenter=()=>card.style.borderColor='rgba(var(--paper-rgb),.6)';
+    card.onmouseleave=()=>card.style.borderColor=i===idx?'rgba(var(--paper-rgb),.8)':'rgba(var(--paper-rgb),.15)';
+    const wrap=document.createElement('div');
+    wrap.style.cssText='width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;pointer-events:none;background:'+(s.classList.contains('light')?'var(--paper)':'var(--ink)');
+    const clone=s.cloneNode(true);
+    clone.style.cssText='width:100vw;height:100vh;transform:scale('+(1/4.5)+');transform-origin:top left;position:absolute;top:0;left:0;pointer-events:none';
+    wrap.appendChild(clone);
+    const label=document.createElement('div');
+    label.style.cssText='padding:6px 10px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper);opacity:.7';
+    label.textContent=(i+1)+' / '+total;
+    card.appendChild(wrap);
+    card.appendChild(label);
+    card.onclick=()=>{toggleOverview();go(i)};
+    grid.appendChild(card);
+  });
+  ov.appendChild(grid);
+}
+
+function toggleOverview(){
+  overviewOn=!overviewOn;
+  if(overviewOn){buildOverview();ov.style.display='block';}
+  else{ov.style.display='none';}
+}
+
+addEventListener('keydown',e=>{
+  if(e.key==='Escape'){e.preventDefault();toggleOverview();return;}
+  if(overviewOn)return;
+  if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '||e.key==='ArrowDown'){
+    if(window.__pipeAdvance && window.__pipeAdvance()) return;
+    go(idx+1);
+    return;
+  }
+  if(e.key==='ArrowLeft'||e.key==='PageUp'||e.key==='ArrowUp')go(idx-1);
+  if(e.key==='Home')go(0);
+  if(e.key==='End')go(total-1);
+});
+
+let wheelTO=null,wheelAcc=0;
+addEventListener('wheel',e=>{
+  wheelAcc+=e.deltaY+e.deltaX;
+  if(Math.abs(wheelAcc)>50){
+    if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
+      wheelAcc=0;
+    }else{
+      go(idx+(wheelAcc>0?1:-1));wheelAcc=0;
+    }
+  }
+  clearTimeout(wheelTO);wheelTO=setTimeout(()=>wheelAcc=0,150);
+},{passive:true});
+
+let tx=0,ty=0;
+addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{
+  const dx=(e.changedTouches[0].clientX-tx);
+  const dy=(e.changedTouches[0].clientY-ty);
+  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){
+    if(dx<0 && window.__pipeAdvance && window.__pipeAdvance()) return;
+    go(idx+(dx<0?1:-1));
+  }
+},{passive:true});
+
+go(0);
+</script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+
+<script type="module">
+let motion;
+try {
+  motion = await import('./assets/motion.min.js');
+} catch(e1) {
+  try {
+    motion = await import('https://cdn.jsdelivr.net/npm/motion@11.11.17/+esm');
+  } catch(e2) {
+    console.warn('[motion] local + CDN both failed, disabling animations', e1, e2);
+    document.querySelectorAll('[data-anim]').forEach(el=>{el.style.opacity='1';el.style.transform='none'});
+  }
+}
+
+if(motion){
+  const { animate, stagger } = motion;
+  document.body.classList.add('motion-ready');
+  const EASE = [.22, 1, .36, 1];
+  const slides = [...document.querySelectorAll('.slide')];
+  let pipeStep = -1;
+  let lastIdx = -1;
+
+  function resetAnims(slide){
+    slide.querySelectorAll('[data-anim]').forEach(el=>{
+      el.style.opacity='';
+      el.style.transform='';
+    });
+  }
+
+  function playSlide(i){
+    const slide = slides[i];
+    if(!slide) return;
+    lastIdx = i;
+    const recipe = slide.dataset.animate || (slide.classList.contains('hero') ? 'hero' : 'cascade');
+
+    if(recipe === 'pipeline'){
+      pipeStep = -1;
+      slide.querySelectorAll('[data-anim]').forEach(el=>{
+        el.style.opacity='0.15';
+        el.style.transform='none';
+      });
+      return;
+    }
+
+    resetAnims(slide);
+    const all = [...slide.querySelectorAll('[data-anim]')];
+    if(!all.length) return;
+
+    if(recipe === 'hero'){
+      animate(all, {opacity:[0,1], y:[14,0]}, {duration:.9, delay:stagger(.16, {start:.2}), easing:EASE});
+      return;
+    }
+
+    animate(all, {opacity:[0,1], y:[16,0]}, {duration:.75, delay:stagger(.1, {start:.15}), easing:EASE});
+  }
+
+  window.__playSlide = playSlide;
+  playSlide(0);
+}
+</script>
+</body>
+</html>
