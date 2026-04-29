@@ -58,7 +58,6 @@ cd ~/.opencode/skills/university-info-skill && git pull
 > MIT的QS排名是多少？
 > CMU和斯坦福CS哪个好？
 > 我GPA3.5能冲CMU吗？
-> MIT学费多少？有奖学金吗？
 
 # 学术会议 & 赛事
 > NeurIPS是什么级别的会议？
@@ -94,14 +93,12 @@ cd ~/.opencode/skills/university-info-skill && git pull
 
 ---
 
-## 🤝 贡献 & 联系
-
-欢迎提交 PR 补充数据或修正错误。
-
-合作联系：realJerryKing@163.com
-
----
-
 ## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+## 📧 联系我们
+
+合作联系：realJerryKing@163.com
