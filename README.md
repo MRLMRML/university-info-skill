@@ -31,12 +31,16 @@
 
 ---
 
-## 🚀 安装
+## 🚀 安装 & 更新
 
 ```bash
+# 安装
 mkdir -p ~/.opencode/skills
 git clone https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill
 cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
+
+# 更新
+cd ~/.opencode/skills/university-info-skill && git pull
 ```
 
 ---
@@ -79,14 +83,6 @@ cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
 | 竞赛赛事 | 48 个（28 国际 + 20 国内） |
 | 实验室 | 56 个（36 国内 + 20 国际） |
 | 学科排名 | 10 学科 QS 2026 TOP20 |
-
----
-
-## 🔄 数据更新
-
-```bash
-cd ~/.opencode/skills/university-info-skill && git pull
-```
 
 ---
 
