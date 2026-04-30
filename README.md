@@ -6,9 +6,8 @@
 
 [![OpenCode](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://github.com/sst/opencode)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-purple.svg)](https://docs.anthropic.com/en/docs/claude-code)
+[![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-Compatible-purple.svg)](https://hermes-agent.nousresearch.com/)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-orange.svg)](https://github.com/openclaw)
-[![Cursor](https://img.shields.io/badge/Cursor-Compatible-black.svg)](https://cursor.sh)
-[![Windsurf](https://img.shields.io/badge/Windsurf-Compatible-teal.svg)](https://codeium.com/windsurf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [中文](#-特性) | [English](README_en.md)
