@@ -432,4 +432,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details
 
 **📧 Contact Us**: [realJerryKing@163.com](mailto:realJerryKing@163.com)
 
+We welcome the following forms of collaboration:
+
+- 📊 **Data Contribution** — Supplement university employment/research/lab/admission data
+- 🐛 **Bug Reports** — Found incorrect data? Submit an Issue or PR with source links
+- 💡 **Feature Suggestions** — New query scenarios or data dimensions? Let's discuss
+- 🌍 **Internationalization** — Help expand university data for more countries/regions
+- 🏫 **Institutional Partnership** — Data collaboration with universities/edu platforms/recruiters
+- 📝 **Documentation** — Help translate or improve multilingual docs
+
 </div>
