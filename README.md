@@ -4,6 +4,8 @@
 
 **覆盖 323+ 高校 · 30 种查询 · 27 国数据的 AI Agent 高校情报系统**
 
+[![收录于 JerryKing's Trove](https://img.shields.io/badge/收录于-JerryKing's%20Trove-blue)](https://github.com/MRLMRML/JerryKing-s-Trove)
+
 [![OpenCode](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://github.com/sst/opencode)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-purple.svg)](https://docs.anthropic.com/en/docs/claude-code)
 [![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-Compatible-purple.svg)](https://hermes-agent.nousresearch.com/)
