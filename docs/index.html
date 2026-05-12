@@ -525,6 +525,8 @@
     transition: all 0.3s ease;
     cursor: default;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: relative;
+    overflow: hidden;
   }
 
   .query-card:hover {
@@ -537,11 +539,41 @@
   .query-icon {
     font-size: 28px;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
   }
 
   .query-name {
     font-size: 13px;
     font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .query-example {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 12px;
+    background: linear-gradient(180deg, transparent 0%, rgba(99,102,241,0.95) 100%);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .query-card:hover .query-example {
+    transform: translateY(0);
+  }
+
+  .query-card:hover .query-icon {
+    transform: scale(1.2);
+  }
+
+  .query-card:hover .query-name {
+    color: var(--accent);
   }
 
   /* Install Section */
@@ -1021,24 +1053,96 @@
       <p>覆盖高校查询全场景</p>
     </div>
     <div class="query-grid">
-      <div class="query-card fade-in"><div class="query-icon">📋</div><div class="query-name">基础信息</div></div>
-      <div class="query-card fade-in"><div class="query-icon">📚</div><div class="query-name">学科实力</div></div>
-      <div class="query-card fade-in"><div class="query-icon">💼</div><div class="query-name">就业质量</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🔬</div><div class="query-name">科研水平</div></div>
-      <div class="query-card fade-in"><div class="query-icon">📊</div><div class="query-name">录取分数</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🏆</div><div class="query-name">大学排名</div></div>
-      <div class="query-card fade-in"><div class="query-icon">👨‍🏫</div><div class="query-name">师资力量</div></div>
-      <div class="query-card fade-in"><div class="query-icon">⚖️</div><div class="query-name">高校对比</div></div>
-      <div class="query-card fade-in"><div class="query-icon">💡</div><div class="query-name">智能推荐</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🎓</div><div class="query-name">学术会议</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🏅</div><div class="query-name">竞赛赛事</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🏫</div><div class="query-name">实验室</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🌐</div><div class="query-name">国际高校</div></div>
-      <div class="query-card fade-in"><div class="query-icon">✈️</div><div class="query-name">留学择校</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🎯</div><div class="query-name">海归评估</div></div>
-      <div class="query-card fade-in"><div class="query-icon">📈</div><div class="query-name">学科排名</div></div>
-      <div class="query-card fade-in"><div class="query-icon">🎯</div><div class="query-name">录取难度</div></div>
-      <div class="query-card fade-in"><div class="query-icon">📝</div><div class="query-name">报告生成</div></div>
+      <div class="query-card fade-in">
+        <div class="query-icon">📋</div>
+        <div class="query-name">基础信息</div>
+        <div class="query-example">"北大是什么层次的学校？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">📚</div>
+        <div class="query-name">学科实力</div>
+        <div class="query-example">"清华有哪些A+学科？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">💼</div>
+        <div class="query-name">就业质量</div>
+        <div class="query-example">"浙大毕业生就业去向？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🔬</div>
+        <div class="query-name">科研水平</div>
+        <div class="query-example">"上交有哪些重点实验室？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">📊</div>
+        <div class="query-name">录取分数</div>
+        <div class="query-example">"复旦在河南多少分能上？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🏆</div>
+        <div class="query-name">大学排名</div>
+        <div class="query-example">"南大软科排名多少？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">👨‍🏫</div>
+        <div class="query-name">师资力量</div>
+        <div class="query-example">"中科大有多少院士？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">⚖️</div>
+        <div class="query-name">高校对比</div>
+        <div class="query-example">"浙大和上交哪个好？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">💡</div>
+        <div class="query-name">智能推荐</div>
+        <div class="query-example">"计算机考研推荐哪些学校？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🎓</div>
+        <div class="query-name">学术会议</div>
+        <div class="query-example">"NeurIPS是什么级别的会议？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🏅</div>
+        <div class="query-name">竞赛赛事</div>
+        <div class="query-example">"挑战杯是什么比赛？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🏫</div>
+        <div class="query-name">实验室</div>
+        <div class="query-example">"清华有哪些国家重点实验室？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🌐</div>
+        <div class="query-name">国际高校</div>
+        <div class="query-example">"MIT的QS排名是多少？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">✈️</div>
+        <div class="query-name">留学择校</div>
+        <div class="query-example">"CS硕士去美国哪些学校？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🎯</div>
+        <div class="query-name">海归评估</div>
+        <div class="query-example">"帝国理工回国认可度？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">📈</div>
+        <div class="query-name">学科排名</div>
+        <div class="query-example">"CS全球TOP10是哪些？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">🎯</div>
+        <div class="query-name">录取难度</div>
+        <div class="query-example">"GPA3.5能冲CMU吗？"</div>
+      </div>
+      <div class="query-card fade-in">
+        <div class="query-icon">📝</div>
+        <div class="query-name">报告生成</div>
+        <div class="query-example">"帮我生成校招策略报告"</div>
+      </div>
     </div>
   </div>
 </section>
