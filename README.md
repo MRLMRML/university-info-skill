@@ -37,10 +37,16 @@
 mkdir -p ~/.opencode/skills
 git clone https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill
 cp -r /tmp/uni-skill ~/.opencode/skills/university-info-skill
+bash ~/.opencode/skills/university-info-skill/install.sh
 
 # 更新
 cd ~/.opencode/skills/university-info-skill && git pull
 ```
+
+**安装后会自动注册三个 Skill：**
+- 🎓 **高校信息检索** — 通用查询（学科/排名/就业/师资/分数线）
+- 📚 **择校分析** — 学生场景（考研难度/性价比择校/调剂建议）
+- 💼 **校招助手** — HR 专用（目标校筛选/校招策略/ROI估算）
 
 ---
 
