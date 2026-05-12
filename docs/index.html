@@ -11,14 +11,14 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
-    --bg: #0a0a0f;
-    --card: #12121a;
-    --card-hover: #1a1a25;
-    --text: #ffffff;
-    --text-secondary: #8b8b9e;
-    --border: rgba(255,255,255,0.06);
+    --bg: #f8f9fc;
+    --card: #ffffff;
+    --card-hover: #f0f1f5;
+    --text: #1a1a2e;
+    --text-secondary: #6b7280;
+    --border: rgba(0,0,0,0.08);
     --accent: #6366f1;
-    --accent-light: rgba(99,102,241,0.15);
+    --accent-light: rgba(99,102,241,0.1);
     --gradient-1: #6366f1;
     --gradient-2: #a855f7;
     --gradient-3: #ec4899;
@@ -47,6 +47,7 @@
     padding: 100px 0 80px;
     text-align: center;
     position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
   }
 
   .header::before {
@@ -57,7 +58,7 @@
     transform: translateX(-50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -95,7 +96,7 @@
     letter-spacing: -0.04em;
     line-height: 1.1;
     margin-bottom: 24px;
-    background: linear-gradient(135deg, #fff 0%, #a0a0b0 100%);
+    background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -126,12 +127,14 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
   .stat-card:hover {
-    background: var(--card-hover);
+    background: var(--card);
     transform: translateY(-4px);
     border-color: rgba(99,102,241,0.3);
+    box-shadow: 0 12px 40px rgba(99,102,241,0.12);
   }
 
   .stat-card::before {
@@ -227,10 +230,12 @@
     border-radius: 20px;
     padding: 32px;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
   .chart-card:hover {
     border-color: rgba(99,102,241,0.2);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
   }
 
   .chart-header {
@@ -278,11 +283,13 @@
     text-align: center;
     transition: all 0.3s ease;
     cursor: default;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
 
   .coverage-card:hover {
-    background: var(--card-hover);
+    background: var(--card);
     transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
   }
 
   .coverage-flag {
@@ -339,6 +346,7 @@
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
   .progress-header {
@@ -361,7 +369,7 @@
 
   .progress-bar {
     height: 12px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.05);
     border-radius: 100px;
     overflow: hidden;
     margin-bottom: 16px;
@@ -386,7 +394,7 @@
     align-items: center;
     gap: 8px;
     padding: 6px 12px;
-    background: rgba(255,255,255,0.03);
+    background: rgba(0,0,0,0.03);
     border-radius: 8px;
     font-size: 13px;
   }
@@ -407,6 +415,7 @@
     border: 1px solid var(--border);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
   .table-header {
@@ -425,7 +434,7 @@
   .table-tabs {
     display: flex;
     gap: 4px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.05);
     border-radius: 10px;
     padding: 4px;
   }
@@ -488,7 +497,7 @@
   }
 
   .data-table tr:hover td {
-    background: rgba(255,255,255,0.02);
+    background: rgba(0,0,0,0.02);
   }
 
   .table-value {
@@ -515,12 +524,14 @@
     text-align: center;
     transition: all 0.3s ease;
     cursor: default;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
 
   .query-card:hover {
     background: var(--accent-light);
     border-color: var(--accent);
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(99,102,241,0.15);
   }
 
   .query-icon {
@@ -540,7 +551,7 @@
   }
 
   .install-card {
-    background: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(168,85,247,0.1) 100%);
+    background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(168,85,247,0.08) 100%);
     border: 1px solid rgba(99,102,241,0.2);
     border-radius: 24px;
     padding: 60px;
@@ -560,8 +571,8 @@
   }
 
   .install-code {
-    background: rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
     text-align: left;
@@ -588,7 +599,7 @@
 
   .install-badge {
     padding: 10px 20px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.04);
     border: 1px solid var(--border);
     border-radius: 100px;
     font-size: 13px;
@@ -623,7 +634,7 @@
 
   .footer-copy {
     font-size: 12px;
-    color: rgba(255,255,255,0.3);
+    color: var(--text-secondary);
   }
 
   /* Animations */
@@ -1134,8 +1145,8 @@ const chartColors = {
   gray: '#6b7280'
 };
 
-Chart.defaults.color = '#8b8b9e';
-Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+Chart.defaults.color = '#6b7280';
+Chart.defaults.borderColor = 'rgba(0,0,0,0.06)';
 Chart.defaults.font.family = 'Inter, sans-serif';
 
 // University Chart
@@ -1184,7 +1195,7 @@ new Chart(document.getElementById('disciplineChart'), {
     maintainAspectRatio: false,
     plugins: { legend: { display: false } },
     scales: {
-      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.03)' } },
+      y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.04)' } },
       x: { grid: { display: false } }
     }
   }
@@ -1233,7 +1244,7 @@ new Chart(document.getElementById('dataSourceChart'), {
     indexAxis: 'y',
     plugins: { legend: { display: false } },
     scales: {
-      x: { grid: { color: 'rgba(255,255,255,0.03)' } },
+      x: { grid: { color: 'rgba(0,0,0,0.04)' } },
       y: { grid: { display: false } }
     }
   }
