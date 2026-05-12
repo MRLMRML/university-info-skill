@@ -4,276 +4,290 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>高校信息检索 Skill - 数据看板</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
-    --bg: #fafafa;
-    --card: #ffffff;
-    --text: #1d1d1f;
-    --text-secondary: #6e6e73;
-    --border: rgba(0,0,0,0.06);
-    --accent: #0071e3;
-    --accent-light: rgba(0,113,227,0.1);
-    --gradient-1: #667eea;
-    --gradient-2: #764ba2;
-    --gradient-3: #f093fb;
-    --shadow: 0 2px 12px rgba(0,0,0,0.08);
-    --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+    --bg: #0a0a0f;
+    --card: #12121a;
+    --card-hover: #1a1a25;
+    --text: #ffffff;
+    --text-secondary: #8b8b9e;
+    --border: rgba(255,255,255,0.06);
+    --accent: #6366f1;
+    --accent-light: rgba(99,102,241,0.15);
+    --gradient-1: #6366f1;
+    --gradient-2: #a855f7;
+    --gradient-3: #ec4899;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --info: #3b82f6;
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     background: var(--bg);
     color: var(--text);
     -webkit-font-smoothing: antialiased;
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
   }
 
   /* Header */
   .header {
-    padding: 80px 0 60px;
+    padding: 100px 0 80px;
     text-align: center;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
     position: relative;
-    overflow: hidden;
   }
 
   .header::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 50%, rgba(118, 75, 162, 0.15) 0%, transparent 50%);
-  }
-
-  .header-content {
-    position: relative;
-    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+    pointer-events: none;
   }
 
   .header-badge {
-    display: inline-block;
-    padding: 6px 16px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: var(--accent-light);
+    border: 1px solid rgba(99,102,241,0.3);
     border-radius: 100px;
     font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    margin-bottom: 24px;
-    backdrop-filter: blur(10px);
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 32px;
+  }
+
+  .header-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
   }
 
   .header h1 {
-    font-size: clamp(32px, 5vw, 56px);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    margin-bottom: 16px;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #fff 0%, #a0a0b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .header p {
     font-size: 18px;
-    color: rgba(255,255,255,0.7);
-    max-width: 600px;
+    color: var(--text-secondary);
+    max-width: 500px;
     margin: 0 auto;
   }
 
-  /* Stats Overview */
-  .stats-overview {
-    padding: 60px 0;
-    background: white;
-    margin-top: -40px;
-    position: relative;
-    z-index: 2;
+  /* Stats Grid */
+  .stats-section {
+    padding: 0 0 80px;
   }
 
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    gap: 20px;
   }
 
   .stat-card {
-    background: white;
+    background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px;
-    text-align: center;
+    border-radius: 20px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow);
   }
 
   .stat-card:hover {
+    background: var(--card-hover);
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    border-color: rgba(99,102,241,0.3);
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .stat-card:hover::before {
+    opacity: 1;
+  }
+
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
   .stat-number {
     font-size: 48px;
     font-weight: 800;
     letter-spacing: -0.04em;
-    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 1;
+    margin-bottom: 8px;
   }
 
-  .stat-unit {
-    font-size: 20px;
-    font-weight: 600;
+  .stat-number .count-up {
+    display: inline-block;
   }
 
   .stat-label {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    color: var(--text);
-    margin-top: 8px;
-  }
-
-  .stat-desc {
-    font-size: 12px;
     color: var(--text-secondary);
-    margin-top: 4px;
   }
 
-  /* Section */
-  .section {
-    padding: 80px 0;
+  .stat-change {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 12px;
+    padding: 4px 10px;
+    background: rgba(34,197,94,0.15);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--success);
   }
 
-  .section-header {
-    text-align: center;
+  /* Section Title */
+  .section-title {
     margin-bottom: 48px;
   }
 
-  .section-header h2 {
+  .section-title h2 {
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -0.02em;
     margin-bottom: 12px;
   }
 
-  .section-header p {
+  .section-title p {
     font-size: 16px;
     color: var(--text-secondary);
   }
 
-  /* Data Cards */
-  .data-grid {
+  /* Charts Section */
+  .charts-section {
+    padding: 80px 0;
+  }
+
+  .charts-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
-  .data-card {
-    background: white;
+  .chart-card {
+    background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 32px;
-    box-shadow: var(--shadow);
     transition: all 0.3s ease;
   }
 
-  .data-card:hover {
-    box-shadow: var(--shadow-lg);
+  .chart-card:hover {
+    border-color: rgba(99,102,241,0.2);
   }
 
-  .data-card-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-
-  .data-card-icon {
-    width: 48px;
-    height: 48px;
-    background: var(--accent-light);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-  }
-
-  .data-card-title {
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .data-card-subtitle {
-    font-size: 13px;
-    color: var(--text-secondary);
-  }
-
-  .data-list {
-    list-style: none;
-  }
-
-  .data-list li {
+  .chart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 14px;
+    margin-bottom: 24px;
   }
 
-  .data-list li:last-child {
-    border-bottom: none;
+  .chart-title {
+    font-size: 18px;
+    font-weight: 700;
   }
 
-  .data-list-label {
-    color: var(--text-secondary);
-  }
-
-  .data-list-value {
+  .chart-badge {
+    padding: 4px 12px;
+    background: var(--accent-light);
+    border-radius: 100px;
+    font-size: 12px;
     font-weight: 600;
-    color: var(--text);
-  }
-
-  .data-list-value.highlight {
     color: var(--accent);
   }
 
-  /* University Coverage */
+  .chart-container {
+    position: relative;
+    height: 250px;
+  }
+
+  /* Coverage Section */
+  .coverage-section {
+    padding: 80px 0;
+  }
+
   .coverage-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
 
-  .coverage-item {
-    background: white;
+  .coverage-card {
+    background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 16px;
+    padding: 24px;
     text-align: center;
     transition: all 0.3s ease;
+    cursor: default;
   }
 
-  .coverage-item:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
+  .coverage-card:hover {
+    background: var(--card-hover);
+    transform: translateY(-4px);
   }
 
   .coverage-flag {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 40px;
+    margin-bottom: 12px;
   }
 
   .coverage-name {
@@ -283,9 +297,11 @@
   }
 
   .coverage-count {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--accent);
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .coverage-unit {
@@ -293,92 +309,296 @@
     color: var(--text-secondary);
   }
 
+  .coverage-schools {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    display: none;
+  }
+
+  .coverage-card:hover .coverage-schools {
+    display: block;
+  }
+
+  /* Progress Section */
+  .progress-section {
+    padding: 80px 0;
+  }
+
+  .progress-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .progress-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+  }
+
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .progress-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .progress-value {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  .progress-bar {
+    height: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+    transition: width 1.5s ease;
+    width: 0;
+  }
+
+  .progress-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .progress-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .progress-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  /* Data Table */
+  .table-section {
+    padding: 80px 0;
+  }
+
+  .table-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .table-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .table-tabs {
+    display: flex;
+    gap: 4px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 4px;
+  }
+
+  .table-tab {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-secondary);
+  }
+
+  .table-tab.active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .table-tab:hover:not(.active) {
+    color: var(--text);
+  }
+
+  .table-content {
+    padding: 0;
+  }
+
+  .table-panel {
+    display: none;
+  }
+
+  .table-panel.active {
+    display: block;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .data-table th {
+    padding: 16px 32px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table td {
+    padding: 16px 32px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .data-table tr:hover td {
+    background: rgba(255,255,255,0.02);
+  }
+
+  .table-value {
+    font-weight: 600;
+    color: var(--accent);
+  }
+
   /* Query Types */
+  .query-section {
+    padding: 80px 0;
+  }
+
   .query-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
   }
 
-  .query-item {
-    background: white;
+  .query-card {
+    background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 12px;
+    border-radius: 12px;
+    padding: 20px 16px;
     text-align: center;
-    font-size: 13px;
-    font-weight: 500;
     transition: all 0.3s ease;
     cursor: default;
   }
 
-  .query-item:hover {
+  .query-card:hover {
     background: var(--accent-light);
     border-color: var(--accent);
-    color: var(--accent);
+    transform: translateY(-2px);
   }
 
-  /* Database Section */
-  .db-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  .query-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 
-  .db-card {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    border-radius: 16px;
-    padding: 32px;
-    color: white;
-  }
-
-  .db-card-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-
-  .db-card-icon {
-    width: 48px;
-    height: 48px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-  }
-
-  .db-card-title {
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  .db-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  .db-table td {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-size: 14px;
-  }
-
-  .db-table td:last-child {
-    text-align: right;
+  .query-name {
+    font-size: 13px;
     font-weight: 600;
   }
 
-  .db-table tr:last-child td {
-    border-bottom: none;
+  /* Install Section */
+  .install-section {
+    padding: 80px 0 120px;
+    text-align: center;
+  }
+
+  .install-card {
+    background: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(168,85,247,0.1) 100%);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 24px;
+    padding: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .install-card h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+
+  .install-card p {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+  }
+
+  .install-code {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+
+  .install-code .comment {
+    color: var(--text-secondary);
+  }
+
+  .install-code .command {
+    color: var(--accent);
+  }
+
+  .install-badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .install-badge {
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
   }
 
   /* Footer */
   .footer {
     padding: 40px 0;
-    background: white;
     border-top: 1px solid var(--border);
     text-align: center;
   }
@@ -386,7 +606,7 @@
   .footer-links {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 32px;
     margin-bottom: 16px;
   }
 
@@ -403,14 +623,14 @@
 
   .footer-copy {
     font-size: 12px;
-    color: var(--text-secondary);
+    color: rgba(255,255,255,0.3);
   }
 
   /* Animations */
   .fade-in {
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .fade-in.visible {
@@ -421,18 +641,19 @@
   /* Responsive */
   @media (max-width: 1024px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .coverage-grid { grid-template-columns: repeat(2, 1fr); }
+    .coverage-grid { grid-template-columns: repeat(3, 1fr); }
     .query-grid { grid-template-columns: repeat(4, 1fr); }
   }
 
   @media (max-width: 768px) {
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .data-grid { grid-template-columns: 1fr; }
-    .db-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .charts-grid { grid-template-columns: 1fr; }
+    .progress-grid { grid-template-columns: 1fr; }
     .coverage-grid { grid-template-columns: repeat(2, 1fr); }
     .query-grid { grid-template-columns: repeat(3, 1fr); }
     .header { padding: 60px 0 40px; }
-    .section { padding: 60px 0; }
+    .container { padding: 0 20px; }
+    .install-card { padding: 40px 24px; }
   }
 </style>
 </head>
@@ -440,406 +661,395 @@
 
 <!-- Header -->
 <header class="header">
-  <div class="container header-content">
-    <div class="header-badge">DATA DASHBOARD</div>
+  <div class="container">
+    <div class="header-badge">
+      <span>LIVE DATA DASHBOARD</span>
+    </div>
     <h1>高校信息检索 Skill</h1>
     <p>覆盖 323+ 高校 · 30 种查询 · 27 国数据的 AI Agent 高校情报系统</p>
   </div>
 </header>
 
-<!-- Stats Overview -->
-<section class="stats-overview">
+<!-- Stats -->
+<section class="stats-section">
   <div class="container">
     <div class="stats-grid">
       <div class="stat-card fade-in">
-        <div class="stat-number">323<span class="stat-unit">+</span></div>
+        <div class="stat-icon">🏛️</div>
+        <div class="stat-number"><span class="count-up" data-target="323">0</span><span class="stat-unit">+</span></div>
         <div class="stat-label">高校覆盖</div>
-        <div class="stat-desc">中国 148 + 国际 175</div>
+        <div class="stat-change">↑ 中国 148 + 国际 175</div>
       </div>
       <div class="stat-card fade-in">
-        <div class="stat-number">1483</div>
+        <div class="stat-icon">📚</div>
+        <div class="stat-number"><span class="count-up" data-target="1483">0</span></div>
         <div class="stat-label">学科评估</div>
-        <div class="stat-desc">95 学科 A+/A/A-/B+</div>
+        <div class="stat-change">95 学科全覆盖</div>
       </div>
       <div class="stat-card fade-in">
-        <div class="stat-number">30</div>
+        <div class="stat-icon">🔍</div>
+        <div class="stat-number"><span class="count-up" data-target="30">0</span></div>
         <div class="stat-label">查询类型</div>
-        <div class="stat-desc">从排名到实验室</div>
+        <div class="stat-change">从排名到实验室</div>
       </div>
       <div class="stat-card fade-in">
-        <div class="stat-number">27</div>
+        <div class="stat-icon">🌍</div>
+        <div class="stat-number"><span class="count-up" data-target="27">0</span></div>
         <div class="stat-label">国家/地区</div>
-        <div class="stat-desc">全球视野</div>
+        <div class="stat-change">全球视野</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- University Coverage -->
-<section class="section">
+<!-- Charts -->
+<section class="charts-section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-title">
+      <h2>数据分布</h2>
+      <p>多维度数据可视化展示</p>
+    </div>
+    <div class="charts-grid">
+      <div class="chart-card fade-in">
+        <div class="chart-header">
+          <div class="chart-title">高校覆盖分布</div>
+          <div class="chart-badge">323+ 所</div>
+        </div>
+        <div class="chart-container">
+          <canvas id="universityChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card fade-in">
+        <div class="chart-header">
+          <div class="chart-title">学科评估等级</div>
+          <div class="chart-badge">1483 条</div>
+        </div>
+        <div class="chart-container">
+          <canvas id="disciplineChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card fade-in">
+        <div class="chart-header">
+          <div class="chart-title">学术会议 & 竞赛</div>
+          <div class="chart-badge">98 个</div>
+        </div>
+        <div class="chart-container">
+          <canvas id="eventChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card fade-in">
+        <div class="chart-header">
+          <div class="chart-title">数据源覆盖</div>
+          <div class="chart-badge">13 文件</div>
+        </div>
+        <div class="chart-container">
+          <canvas id="dataSourceChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage -->
+<section class="coverage-section">
+  <div class="container">
+    <div class="section-title">
       <h2>全球高校覆盖</h2>
-      <p>175 所国际高校 + 148 所中国高校</p>
+      <p>悬停查看代表性高校</p>
     </div>
     <div class="coverage-grid">
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇺🇸</div>
         <div class="coverage-name">美国</div>
         <div class="coverage-count">56</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">MIT · Stanford · Harvard · Caltech · Princeton</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇬🇧</div>
         <div class="coverage-name">英国</div>
         <div class="coverage-count">30</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">Oxford · Cambridge · Imperial · UCL · Edinburgh</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇨🇳</div>
         <div class="coverage-name">中国</div>
         <div class="coverage-count">148</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">清华 · 北大 · 浙大 · 上交 · 复旦</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇨🇦</div>
         <div class="coverage-name">加拿大</div>
         <div class="coverage-count">10</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">Toronto · UBC · McGill · Alberta · McMaster</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇦🇺</div>
         <div class="coverage-name">澳大利亚</div>
         <div class="coverage-count">10</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">Melbourne · Sydney · ANU · UNSW · Monash</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇯🇵</div>
         <div class="coverage-name">日本</div>
         <div class="coverage-count">10</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">东大 · 京大 · 早稻田 · 庆应 · 大阪</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇸🇬</div>
         <div class="coverage-name">新加坡/香港</div>
         <div class="coverage-count">10</div>
         <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">NUS · NTU · 港大 · 港科大 · 港中文</div>
       </div>
-      <div class="coverage-item fade-in">
+      <div class="coverage-card fade-in">
         <div class="coverage-flag">🇮🇳</div>
         <div class="coverage-name">印度</div>
         <div class="coverage-count">19</div>
         <div class="coverage-unit">所高校</div>
-      </div>
-      <div class="coverage-item fade-in">
-        <div class="coverage-flag">🇪🇺</div>
-        <div class="coverage-name">欧洲其他</div>
-        <div class="coverage-count">20</div>
-        <div class="coverage-unit">所高校</div>
-      </div>
-      <div class="coverage-item fade-in">
-        <div class="coverage-flag">🌍</div>
-        <div class="coverage-name">中东</div>
-        <div class="coverage-count">11</div>
-        <div class="coverage-unit">所高校</div>
-      </div>
-      <div class="coverage-item fade-in">
-        <div class="coverage-flag">🌏</div>
-        <div class="coverage-name">东南亚</div>
-        <div class="coverage-count">5</div>
-        <div class="coverage-unit">所高校</div>
-      </div>
-      <div class="coverage-item fade-in">
-        <div class="coverage-flag">📊</div>
-        <div class="coverage-name">印度专题</div>
-        <div class="coverage-count">4</div>
-        <div class="coverage-unit">所高校</div>
+        <div class="coverage-schools">IIT Bombay · IIT Delhi · IIM Ahmedabad</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Data Sources -->
-<section class="section" style="background: white;">
+<!-- Progress -->
+<section class="progress-section">
   <div class="container">
-    <div class="section-header">
-      <h2>数据源详情</h2>
-      <p>13 个数据文件，覆盖高校全维度信息</p>
+    <div class="section-title">
+      <h2>数据覆盖度</h2>
+      <p>各维度数据完整性展示</p>
     </div>
-    <div class="data-grid">
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🏛️</div>
-          <div>
-            <div class="data-card-title">中国高校</div>
-            <div class="data-card-subtitle">universities.json / universities.db</div>
+    <div class="progress-grid">
+      <div class="progress-card fade-in">
+        <div class="progress-header">
+          <div class="progress-title">中国高校数据</div>
+          <div class="progress-value">148 所</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="100"></div>
+        </div>
+        <div class="progress-items">
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--success)"></div>
+            <span>985: 39 所</span>
+          </div>
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--info)"></div>
+            <span>211: 31 所</span>
+          </div>
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--warning)"></div>
+            <span>双一流: 4 所</span>
           </div>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">高校总数</span><span class="data-list-value">148 所</span></li>
-          <li><span class="data-list-label">985 高校</span><span class="data-list-value">39 所</span></li>
-          <li><span class="data-list-label">211 高校</span><span class="data-list-value">31 所</span></li>
-          <li><span class="data-list-label">双一流高校</span><span class="data-list-value">4 所</span></li>
-          <li><span class="data-list-label">就业数据</span><span class="data-list-value highlight">57 所</span></li>
-          <li><span class="data-list-label">科研数据</span><span class="data-list-value highlight">51 所</span></li>
-          <li><span class="data-list-label">师资数据</span><span class="data-list-value highlight">69 所</span></li>
-          <li><span class="data-list-label">生源数据</span><span class="data-list-value highlight">69 所</span></li>
-        </ul>
       </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🌍</div>
-          <div>
-            <div class="data-card-title">国际高校</div>
-            <div class="data-card-subtitle">international_universities.json</div>
+      <div class="progress-card fade-in">
+        <div class="progress-header">
+          <div class="progress-title">就业数据覆盖</div>
+          <div class="progress-value">57 所</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="38"></div>
+        </div>
+        <div class="progress-items">
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--success)"></div>
+            <span>985 全覆盖</span>
+          </div>
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--warning)"></div>
+            <span>部分 211</span>
           </div>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">高校总数</span><span class="data-list-value">175 所</span></li>
-          <li><span class="data-list-label">覆盖国家</span><span class="data-list-value">27 个</span></li>
-          <li><span class="data-list-label">美国高校</span><span class="data-list-value">56 所</span></li>
-          <li><span class="data-list-label">英国高校</span><span class="data-list-value">30 所</span></li>
-          <li><span class="data-list-label">加拿大高校</span><span class="data-list-value">10 所</span></li>
-          <li><span class="data-list-label">澳大利亚高校</span><span class="data-list-value">10 所</span></li>
-          <li><span class="data-list-label">日本高校</span><span class="data-list-value">10 所</span></li>
-          <li><span class="data-list-label">印度高校</span><span class="data-list-value">19 所</span></li>
-        </ul>
       </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">📚</div>
-          <div>
-            <div class="data-card-title">学科评估</div>
-            <div class="data-card-subtitle">disciplines.csv</div>
+      <div class="progress-card fade-in">
+        <div class="progress-header">
+          <div class="progress-title">师资数据覆盖</div>
+          <div class="progress-value">69 所</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="46"></div>
+        </div>
+        <div class="progress-items">
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--accent)"></div>
+            <span>院士/杰青/长江学者</span>
           </div>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">评估记录</span><span class="data-list-value">1483 条</span></li>
-          <li><span class="data-list-label">覆盖学科</span><span class="data-list-value">95 个</span></li>
-          <li><span class="data-list-label">数据来源</span><span class="data-list-value">教育部第四轮学科评估</span></li>
-          <li><span class="data-list-label">评级覆盖</span><span class="data-list-value">A+/A/A-/B+</span></li>
-        </ul>
       </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🏆</div>
-          <div>
-            <div class="data-card-title">大学排名</div>
-            <div class="data-card-subtitle">rankings.csv</div>
+      <div class="progress-card fade-in">
+        <div class="progress-header">
+          <div class="progress-title">录取分数线</div>
+          <div class="progress-value">504 条</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="53"></div>
+        </div>
+        <div class="progress-items">
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--success)"></div>
+            <span>79 校</span>
+          </div>
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--info)"></div>
+            <span>31 省</span>
+          </div>
+          <div class="progress-item">
+            <div class="progress-dot" style="background: var(--warning)"></div>
+            <span>含 2025 年</span>
           </div>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">排名记录</span><span class="data-list-value">239 条</span></li>
-          <li><span class="data-list-label">排名来源</span><span class="data-list-value">软科 2026</span></li>
-          <li><span class="data-list-label">覆盖范围</span><span class="data-list-value">TOP 239</span></li>
-        </ul>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">📊</div>
-          <div>
-            <div class="data-card-title">录取分数线</div>
-            <div class="data-card-subtitle">scores.db</div>
-          </div>
+<!-- Data Table -->
+<section class="table-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>数据库详情</h2>
+      <p>SQLite 数据库表结构与记录数</p>
+    </div>
+    <div class="table-card fade-in">
+      <div class="table-header">
+        <div class="table-title">数据表概览</div>
+        <div class="table-tabs">
+          <div class="table-tab active" data-tab="unidb">universities.db</div>
+          <div class="table-tab" data-tab="scoresdb">scores.db</div>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">分数线记录</span><span class="data-list-value">504 条</span></li>
-          <li><span class="data-list-label">覆盖高校</span><span class="data-list-value">79 所</span></li>
-          <li><span class="data-list-label">覆盖省份</span><span class="data-list-value">31 个</span></li>
-          <li><span class="data-list-label">数据年份</span><span class="data-list-value">含 2025 年</span></li>
-        </ul>
       </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🎓</div>
-          <div>
-            <div class="data-card-title">学术会议</div>
-            <div class="data-card-subtitle">conferences.json</div>
-          </div>
+      <div class="table-content">
+        <div class="table-panel active" id="unidb">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>表名</th>
+                <th>记录数</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>universities</td>
+                <td class="table-value">148</td>
+                <td>高校基础信息</td>
+              </tr>
+              <tr>
+                <td>employment</td>
+                <td class="table-value">57</td>
+                <td>就业数据</td>
+              </tr>
+              <tr>
+                <td>research</td>
+                <td class="table-value">51</td>
+                <td>科研数据</td>
+              </tr>
+              <tr>
+                <td>faculty</td>
+                <td class="table-value">69</td>
+                <td>师资数据</td>
+              </tr>
+              <tr>
+                <td>students</td>
+                <td class="table-value">69</td>
+                <td>生源数据</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">会议总数</span><span class="data-list-value">50 个</span></li>
-          <li><span class="data-list-label">国际会议</span><span class="data-list-value">44 个</span></li>
-          <li><span class="data-list-label">国内会议</span><span class="data-list-value">6 个</span></li>
-          <li><span class="data-list-label">覆盖级别</span><span class="data-list-value">CCF-A/B/C</span></li>
-        </ul>
-      </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🏅</div>
-          <div>
-            <div class="data-card-title">竞赛赛事</div>
-            <div class="data-card-subtitle">competitions.json</div>
-          </div>
+        <div class="table-panel" id="scoresdb">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>表名</th>
+                <th>记录数</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admission_scores</td>
+                <td class="table-value">504</td>
+                <td>录取分数线</td>
+              </tr>
+              <tr>
+                <td>覆盖高校</td>
+                <td class="table-value">79</td>
+                <td>所高校</td>
+              </tr>
+              <tr>
+                <td>覆盖省份</td>
+                <td class="table-value">31</td>
+                <td>个省份</td>
+              </tr>
+              <tr>
+                <td>数据年份</td>
+                <td class="table-value">2024-2025</td>
+                <td>含最新数据</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">赛事总数</span><span class="data-list-value">48 个</span></li>
-          <li><span class="data-list-label">国际赛事</span><span class="data-list-value">28 个</span></li>
-          <li><span class="data-list-label">国内赛事</span><span class="data-list-value">20 个</span></li>
-          <li><span class="data-list-label">覆盖级别</span><span class="data-list-value">A/B 类</span></li>
-        </ul>
-      </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🔬</div>
-          <div>
-            <div class="data-card-title">实验室</div>
-            <div class="data-card-subtitle">labs.json</div>
-          </div>
-        </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">实验室总数</span><span class="data-list-value">56 个</span></li>
-          <li><span class="data-list-label">国内实验室</span><span class="data-list-value">36 个</span></li>
-          <li><span class="data-list-label">国际实验室</span><span class="data-list-value">20 个</span></li>
-          <li><span class="data-list-label">覆盖类型</span><span class="data-list-value">国家重点/省部级</span></li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Query Types -->
-<section class="section">
+<section class="query-section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-title">
       <h2>30 种查询类型</h2>
-      <p>从基础信息到智能推荐，覆盖高校查询全场景</p>
+      <p>覆盖高校查询全场景</p>
     </div>
     <div class="query-grid">
-      <div class="query-item fade-in">基础信息</div>
-      <div class="query-item fade-in">学科实力</div>
-      <div class="query-item fade-in">就业质量</div>
-      <div class="query-item fade-in">科研水平</div>
-      <div class="query-item fade-in">录取分数</div>
-      <div class="query-item fade-in">大学排名</div>
-      <div class="query-item fade-in">师资力量</div>
-      <div class="query-item fade-in">高校对比</div>
-      <div class="query-item fade-in">智能推荐</div>
-      <div class="query-item fade-in">学术会议</div>
-      <div class="query-item fade-in">竞赛赛事</div>
-      <div class="query-item fade-in">实验室</div>
-      <div class="query-item fade-in">国际高校</div>
-      <div class="query-item fade-in">留学择校</div>
-      <div class="query-item fade-in">海归评估</div>
-      <div class="query-item fade-in">学科排名</div>
-      <div class="query-item fade-in">录取难度</div>
-      <div class="query-item fade-in">报告生成</div>
+      <div class="query-card fade-in"><div class="query-icon">📋</div><div class="query-name">基础信息</div></div>
+      <div class="query-card fade-in"><div class="query-icon">📚</div><div class="query-name">学科实力</div></div>
+      <div class="query-card fade-in"><div class="query-icon">💼</div><div class="query-name">就业质量</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🔬</div><div class="query-name">科研水平</div></div>
+      <div class="query-card fade-in"><div class="query-icon">📊</div><div class="query-name">录取分数</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🏆</div><div class="query-name">大学排名</div></div>
+      <div class="query-card fade-in"><div class="query-icon">👨‍🏫</div><div class="query-name">师资力量</div></div>
+      <div class="query-card fade-in"><div class="query-icon">⚖️</div><div class="query-name">高校对比</div></div>
+      <div class="query-card fade-in"><div class="query-icon">💡</div><div class="query-name">智能推荐</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🎓</div><div class="query-name">学术会议</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🏅</div><div class="query-name">竞赛赛事</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🏫</div><div class="query-name">实验室</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🌐</div><div class="query-name">国际高校</div></div>
+      <div class="query-card fade-in"><div class="query-icon">✈️</div><div class="query-name">留学择校</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🎯</div><div class="query-name">海归评估</div></div>
+      <div class="query-card fade-in"><div class="query-icon">📈</div><div class="query-name">学科排名</div></div>
+      <div class="query-card fade-in"><div class="query-icon">🎯</div><div class="query-name">录取难度</div></div>
+      <div class="query-card fade-in"><div class="query-icon">📝</div><div class="query-name">报告生成</div></div>
     </div>
   </div>
 </section>
 
-<!-- Database Stats -->
-<section class="section" style="background: white;">
+<!-- Install -->
+<section class="install-section">
   <div class="container">
-    <div class="section-header">
-      <h2>数据库详情</h2>
-      <p>SQLite 数据库，支持复杂查询</p>
-    </div>
-    <div class="db-grid">
-      <div class="db-card fade-in">
-        <div class="db-card-header">
-          <div class="db-card-icon">💾</div>
-          <div class="db-card-title">universities.db</div>
-        </div>
-        <table class="db-table">
-          <tr><td>universities</td><td>148 条</td></tr>
-          <tr><td>employment</td><td>57 条</td></tr>
-          <tr><td>research</td><td>51 条</td></tr>
-          <tr><td>faculty</td><td>69 条</td></tr>
-          <tr><td>students</td><td>69 条</td></tr>
-        </table>
+    <div class="install-card fade-in">
+      <h2>即刻开始</h2>
+      <p>四条命令，让 AI 成为你的高校专家</p>
+      <div class="install-code">
+        <div><span class="comment"># 安装</span></div>
+        <div><span class="command">mkdir -p</span> ~/.opencode/skills</div>
+        <div><span class="command">git clone</span> https://github.com/MRLMRML/university-info-skill.git /tmp/uni-skill</div>
+        <div><span class="command">cp -r</span> /tmp/uni-skill ~/.opencode/skills/university-info-skill</div>
+        <div><span class="command">bash</span> ~/.opencode/skills/university-info-skill/install.sh</div>
       </div>
-      <div class="db-card fade-in">
-        <div class="db-card-header">
-          <div class="db-card-icon">📈</div>
-          <div class="db-card-title">scores.db</div>
-        </div>
-        <table class="db-table">
-          <tr><td>admission_scores</td><td>504 条</td></tr>
-          <tr><td>覆盖高校</td><td>79 所</td></tr>
-          <tr><td>覆盖省份</td><td>31 个</td></tr>
-          <tr><td>数据年份</td><td>2024-2025</td></tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Additional Data -->
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>更多数据维度</h2>
-      <p>留学费用、学科排名、印度高校专题</p>
-    </div>
-    <div class="data-grid">
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">💰</div>
-          <div>
-            <div class="data-card-title">留学费用</div>
-            <div class="data-card-subtitle">tuition_costs.json</div>
-          </div>
-        </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">覆盖国家</span><span class="data-list-value">8 个</span></li>
-          <li><span class="data-list-label">数据内容</span><span class="data-list-value">学费 + 生活费</span></li>
-          <li><span class="data-list-label">包含城市</span><span class="data-list-value">主要留学城市</span></li>
-          <li><span class="data-list-label">奖学金信息</span><span class="data-list-value highlight">有</span></li>
-        </ul>
-      </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">📊</div>
-          <div>
-            <div class="data-card-title">学科排名</div>
-            <div class="data-card-subtitle">subject_rankings.json</div>
-          </div>
-        </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">覆盖学科</span><span class="data-list-value">10 个</span></li>
-          <li><span class="data-list-label">排名来源</span><span class="data-list-value">QS 2026</span></li>
-          <li><span class="data-list-label">排名范围</span><span class="data-list-value">TOP 10/20/30</span></li>
-        </ul>
-      </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">🇮🇳</div>
-          <div>
-            <div class="data-card-title">印度高校</div>
-            <div class="data-card-subtitle">india_universities.json</div>
-          </div>
-        </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">高校数量</span><span class="data-list-value">4 所</span></li>
-          <li><span class="data-list-label">包含类型</span><span class="data-list-value">IIT/IIM</span></li>
-          <li><span class="data-list-label">数据内容</span><span class="data-list-value">排名/录取/就业</span></li>
-        </ul>
-      </div>
-
-      <div class="data-card fade-in">
-        <div class="data-card-header">
-          <div class="data-card-icon">⚙️</div>
-          <div>
-            <div class="data-card-title">配置文件</div>
-            <div class="data-card-subtitle">config.yaml</div>
-          </div>
-        </div>
-        <ul class="data-list">
-          <li><span class="data-list-label">985 高校</span><span class="data-list-value">39 所</span></li>
-          <li><span class="data-list-label">211 高校</span><span class="data-list-value">31 所</span></li>
-          <li><span class="data-list-label">双一流高校</span><span class="data-list-value">4 所</span></li>
-          <li><span class="data-list-label">简称映射</span><span class="data-list-value">283 个</span></li>
-        </ul>
+      <div class="install-badges">
+        <span class="install-badge">OpenCode</span>
+        <span class="install-badge">Claude Code</span>
+        <span class="install-badge">Hermes Agent</span>
+        <span class="install-badge">OpenClaw</span>
       </div>
     </div>
   </div>
@@ -853,22 +1063,181 @@
       <a href="https://github.com/MRLMRML/university-info-skill/blob/master/LICENSE">MIT License</a>
       <a href="mailto:realJerryKing@163.com">联系我们</a>
     </div>
-    <div class="footer-copy">
-      © 2026 University Info Skill. Data updated as of May 2026.
-    </div>
+    <div class="footer-copy">© 2026 University Info Skill · Data updated May 2026</div>
   </div>
 </footer>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
+// CountUp Animation
+function animateCountUp(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 2000;
+  const start = performance.now();
+  
+  function update(currentTime) {
+    const elapsed = currentTime - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(eased * target);
+    el.textContent = current.toLocaleString();
+    
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    }
+  }
+  
+  requestAnimationFrame(update);
+}
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+// Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      
+      if (entry.target.querySelector('.count-up')) {
+        entry.target.querySelectorAll('.count-up').forEach(animateCountUp);
+      }
+      
+      if (entry.target.querySelector('.progress-fill')) {
+        entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+          setTimeout(() => {
+            bar.style.width = bar.dataset.width + '%';
+          }, 300);
+        });
+      }
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Tab Switching
+document.querySelectorAll('.table-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.table-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.table-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Charts
+const chartColors = {
+  purple: '#6366f1',
+  pink: '#ec4899',
+  blue: '#3b82f6',
+  green: '#22c55e',
+  yellow: '#f59e0b',
+  orange: '#f97316',
+  cyan: '#06b6d4',
+  gray: '#6b7280'
+};
+
+Chart.defaults.color = '#8b8b9e';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+Chart.defaults.font.family = 'Inter, sans-serif';
+
+// University Chart
+new Chart(document.getElementById('universityChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['美国', '英国', '加拿大', '澳大利亚', '日本', '新加坡/香港', '印度', '欧洲', '中东', '东南亚', '中国'],
+    datasets: [{
+      data: [56, 30, 10, 10, 10, 10, 19, 20, 11, 5, 148],
+      backgroundColor: [
+        chartColors.purple, chartColors.pink, chartColors.blue, 
+        chartColors.green, chartColors.yellow, chartColors.orange,
+        chartColors.cyan, chartColors.gray, '#8b5cf6', '#14b8a6', '#ef4444'
+      ],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'right',
+        labels: { padding: 12, usePointStyle: true, pointStyleWidth: 8, font: { size: 11 } }
+      }
+    },
+    cutout: '65%'
+  }
+});
+
+// Discipline Chart
+new Chart(document.getElementById('disciplineChart'), {
+  type: 'bar',
+  data: {
+    labels: ['A+', 'A', 'A-', 'B+'],
+    datasets: [{
+      label: '学科数量',
+      data: [350, 420, 380, 333],
+      backgroundColor: [chartColors.purple, chartColors.pink, chartColors.blue, chartColors.green],
+      borderRadius: 8,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.03)' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// Event Chart
+new Chart(document.getElementById('eventChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['国际会议', '国内会议', '国际赛事', '国内赛事'],
+    datasets: [{
+      data: [44, 6, 28, 20],
+      backgroundColor: [chartColors.purple, chartColors.pink, chartColors.blue, chartColors.green],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: { padding: 16, usePointStyle: true, pointStyleWidth: 8 }
+      }
+    },
+    cutout: '60%'
+  }
+});
+
+// Data Source Chart
+new Chart(document.getElementById('dataSourceChart'), {
+  type: 'bar',
+  data: {
+    labels: ['高校', '学科', '排名', '分数', '会议', '竞赛', '实验室', '费用'],
+    datasets: [{
+      label: '记录数',
+      data: [148, 1483, 239, 504, 50, 48, 56, 8],
+      backgroundColor: chartColors.purple,
+      borderRadius: 6,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: 'rgba(255,255,255,0.03)' } },
+      y: { grid: { display: false } }
+    }
+  }
+});
 </script>
 
 </body>
