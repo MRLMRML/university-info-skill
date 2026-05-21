@@ -14,7 +14,7 @@ description: 中国高校信息查询与情报分析工具。覆盖全国 985/21
 | `data/universities.db` | 148所高校全维度（5表：基础/就业/科研/师资/生源） | `sqlite3` SQL查询 |
 | `data/universities.json` | 同上（JSON格式，兼容旧版） | 直接读取 |
 | `data/disciplines.csv` | 1483条学科评估（95学科 A+/A/A-/B+） | grep/awk |
-| `data/rankings.csv` | 软科2024排名 TOP240 | grep/awk |
+| `data/rankings.csv` | 软科2026排名 TOP239 | grep/awk |
 | `data/scores.db` | 录取分数线（SQLite） | `sqlite3` SQL查询 |
 | `data/config.yaml` | 985/211/双一流名单 | 直接读取 |
 | `data/conferences.json` | 国际+国内顶级学术会议（CCF-A/B等） | 直接读取 |
