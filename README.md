@@ -20,6 +20,20 @@
 
 ---
 
+> ⚠️ **本项目已停止维护**
+>
+> 本项目已被 [全球高校洞察系统 (University Insight)](https://github.com/MRLMRML/university-insight) 取代，不再更新。
+>
+> **University Insight 新增功能：**
+> - 🏆 **人才排名** — 基于企业内部数据的结果导向高校排名
+> - 📊 **JD 解析** — 自然语言输入，自动解析岗位需求
+> - 🔒 **数据安全** — 原始数据不存储，只保留脱敏指标
+> - 📈 **多维指标** — 6 个一级指标，覆盖专业能力、AI 能力、潜力等
+>
+> 👉 **请访问 [University Insight](https://github.com/MRLMRML/university-insight) 获取最新版本**
+
+---
+
 ## ✨ 特性
 
 - **权威数据** — 985/211/双一流名单、学科评估均源自教育部原始文件
